@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { track } from "@/lib/analytics";
 
 /**
  * Client-side CV builder. Everything lives in the browser — the form data is
@@ -164,7 +165,10 @@ export function CvBuilder() {
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
-              onClick={() => window.print()}
+              onClick={() => {
+                track({ name: "cv_export" });
+                window.print();
+              }}
               className="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary-dark"
             >
               Imprimer / Enregistrer en PDF

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Occupation, Channel } from "@/lib/allemagne-types";
+import { track } from "@/lib/analytics";
 
 /**
  * Occupation × city employer finder. It does NOT host jobs — it builds the exact
@@ -97,6 +98,9 @@ export function EmployerFinder({
               href={l.url}
               rel="noopener noreferrer"
               target="_blank"
+              onClick={() =>
+                track({ name: "employer_search", occupation: occ?.de ?? "", city: city.trim() })
+              }
               className="group flex flex-col rounded-xl border border-border p-4 transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-sm"
             >
               <div className="flex items-center gap-2">

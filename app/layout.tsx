@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@/app/globals.css";
 import { SITE } from "@/lib/site-config";
+import { SiteAnalytics, GtmNoScript } from "@/components/site-analytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 // Bricolage Grotesque — the characterful display face that carries the identity.
@@ -41,7 +42,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="fr" className={`${inter.variable} ${bricolage.variable} ${cairo.variable} h-full`}>
       <body className="flex min-h-full flex-col font-sans">
+        <GtmNoScript />
         {children}
+        <SiteAnalytics />
         <Analytics />
         <SpeedInsights />
       </body>

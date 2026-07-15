@@ -5,15 +5,26 @@ const IS_DEV = process.env.NODE_ENV !== "production";
 const DEV_SCRIPT_SRC = IS_DEV ? " 'unsafe-eval'" : "";
 const DEV_CONNECT_SRC = IS_DEV ? " ws://localhost:* http://localhost:*" : "";
 
+// Analytics CSP is widened only when a Google tag ID is actually configured, so
+// the default policy stays tight. Supabase (if set) needs connect-src to its host.
+const ANALYTICS_ON = !!(process.env.NEXT_PUBLIC_GTM_ID || process.env.NEXT_PUBLIC_GA_ID);
+const G_SCRIPT = ANALYTICS_ON ? " https://www.googletagmanager.com https://www.google-analytics.com" : "";
+const G_CONNECT = ANALYTICS_ON
+  ? " https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net"
+  : "";
+const G_FRAME = process.env.NEXT_PUBLIC_GTM_ID ? "https://www.googletagmanager.com" : "'none'";
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+const SB_CONNECT = SUPABASE_URL ? ` ${SUPABASE_URL} ${SUPABASE_URL.replace("https://", "wss://")}` : "";
+
 const CSP = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${DEV_SCRIPT_SRC}`,
+  `script-src 'self' 'unsafe-inline'${DEV_SCRIPT_SRC}${G_SCRIPT}`,
   "script-src-attr 'none'",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https:",
   "font-src 'self' data:",
-  `connect-src 'self' https://va.vercel-analytics.com https://vitals.vercel-insights.com${DEV_CONNECT_SRC}`,
-  "frame-src 'none'",
+  `connect-src 'self' https://va.vercel-analytics.com https://vitals.vercel-insights.com${G_CONNECT}${SB_CONNECT}${DEV_CONNECT_SRC}`,
+  `frame-src ${G_FRAME}`,
   "object-src 'none'",
   "worker-src 'self'",
   "manifest-src 'self'",
