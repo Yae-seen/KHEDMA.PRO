@@ -56,6 +56,15 @@ export const ARTICLES: ArticleMeta[] = [
     updatedAt: "2026-07-15",
   },
   {
+    slug: "anapec-inscription-espace-candidat",
+    title: "ANAPEC : inscription et espace candidat, le guide clair",
+    description:
+      "Comment créer votre espace candidat ANAPEC, postuler aux offres et vous connecter — un guide simple, gratuit et sans arnaque pour votre recherche d'emploi.",
+    category: "Emploi",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
     slug: "trouver-emploi-public-maroc",
     title: "Emploi public au Maroc : comment le décrocher (guide complet)",
     description:

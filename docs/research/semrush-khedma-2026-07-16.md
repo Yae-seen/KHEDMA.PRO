@@ -104,6 +104,40 @@ cluster and ③'s seasonal long-tails). Depth + volume, not high-value clicks.
 
 ## 2. Competitor & gap
 
+> **Correction (owner, 2026-07-16):** khedma.pro's real competitors are **job
+> portals**, NOT the Massar lookalikes. The massarservic.net analysis below is the
+> *sibling* site's (massar-service.net) rival and is kept only to prove the point.
+
+### Real competitors = the Moroccan job portals
+
+These are the domains khedma.pro actually fights in the SERP — all surfaced by the
+`emploi maroc` / `concours maroc` related pulls. They rank for the exact clusters in §1:
+
+| Portal | Example term it owns | Vol | KD |
+|---|---|--:|--:|
+| **indeed.com/maroc** | `indeed maroc` | 40,500 | 38 |
+| **rekrute.com** | `rekrute` | 27,100 | 40 |
+| **dreamjob.ma** | `dream job` / `dreamjob` | 49,500 / 18,100 | 42 / 46 |
+| **emploi-public.ma** | `emploi public` / `emploi public ma` | 110,000 / 22,200 | 31 / **22** |
+| **ijob.ma** | `ijob ma` | 9,900 | 58 |
+| **marocannonces.com** | `maroc annonce rabat` | 8,100 | **24** |
+| **anapec.org** | `anapec` / `anapec postuler` | 246,000 / 14,800 | 36 / **18** |
+| **m-job / rekrute-type aggregators** | `offre d'emploi <ville>` | 3.6K–9.9K | **14–21** |
+
+**How khedma.pro beats them:** the portals are thin listing pages with weak on-page
+depth. khedma.pro wins on **guide-grade content + genuine tools** (CV builder, employer
+finder) around the SAME queries — "how to use ANAPEC", "how to find emploi public",
+"offre d'emploi <ville> + how to apply safely" — plus the anti-scam trust angle none of
+them own. The `city × emploi` cluster (KD 14–21) is where their listing pages are
+weakest and a genuinely useful city guide can outrank them.
+
+**moutamadris.ma** (from the owner's anchor CSV) is a partial competitor on the
+**concours/recruitment** overlap only (alwadifa, far/gr/protection-civile, concours) —
+and a *link-building model*: downloads + lessons + scholarship/recruitment guides pull
+its links. Study it for that, not as a head-to-head jobs rival.
+
+### (Sibling-site reference) massarservic.net — NOT khedma.pro's fight
+
 **massarservic.net** (the same-name lookalike) — AS **46**, **849 backlinks / 305 ref
 domains** (337 follow). Its traffic is overwhelmingly Massar/Moutamadris brand &
 login intent, all from ONE homepage URL ranking pos 2–3:

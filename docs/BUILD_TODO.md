@@ -40,8 +40,11 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 ## ◐ / ☐ Build work (me — unblocked) — reprioritized by the 2026-07-16 SEMrush scrape
 
 **Content priority order (volume ÷ difficulty, on khedma.pro's own turf):**
-- ☐ **①  ANAPEC hub** — `anapec` 246K, `anapec postuler` 14.8K/KD18, `anapec login`
-  3.6K/KD12. "How to register, search, apply on ANAPEC." Highest ratio win.
+- ☑ **①  ANAPEC hub — SHIPPED 2026-07-16** (`/blog/anapec-inscription-espace-candidat`,
+  linked from `/emploi`). Targets `anapec` 246K, `anapec postuler` 14.8K/KD18, `anapec
+  login` 3.6K/KD12, `inscription anapec`, `espace candidat`. YMYL research→draft→verify
+  workflow; grounded in loi 51-99, anapec.ma, ANAPEC anti-scam alert. **Follow-up: confirm
+  exact form-field labels + login URLs during the Morocco window (2026-08-16 → 09-04).**
 - ☐ **②  Public-employment pillar** — `emploi public` 110K/KD31, `emploi public ma`
   22.2K/KD22, `emploi public maroc` 12.1K/KD25, `بوابة التشغيل العمومي` 33.1K/KD31.
 - ☐ **③  `city × emploi` programmatic cluster** — Rabat/Casa/Fès/Agadir/Tanger (KD 14–21);
@@ -58,8 +61,10 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 - ☑ **Arabic deep content — guides done**: all 21 guides LIVE — `/ar/concours` (hub + 12)
   and `/ar/blog` (hub + 9), RTL, hreflang, sitemap. Remaining: `/ar/emploi` + `/ar/allemagne`
   HUBS (interactive tools need Arabic labels — lower priority than the content above).
-- ☐ **Logo + animated wordmark**: work-suitcase mark + "Khedma Pro" animated wordmark,
-  wired into header/footer/OG. (Unblocked — our OWN brand, no trademark issue.)
+- ☑ **Logo + animated wordmark — SHIPPED 2026-07-16.** "Career case" mark (Majorelle
+  suitcase, saffron handle+latch = career-track start) + Bricolage wordmark with the
+  track-line hover sweep + one-time entrance; reduced-motion safe. `<Logo/>` in header +
+  footer. TODO later: wire the mark into the OG image + a favicon.
 - ☐ **FR↔AR hreflang** completion as more AR pages go live.
 
 > **Ecosystem note (blind spot from the scrape):** the giant untapped gap vs

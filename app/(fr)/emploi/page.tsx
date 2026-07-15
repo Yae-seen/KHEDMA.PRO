@@ -138,9 +138,17 @@ export default function EmploiPage() {
               Candidatures directes, ANAPEC, et recrutements par contrat (y compris dans le public).
               Un bon CV et une bonne préparation font la différence.
             </p>
-            <Link href="/cv" className="mt-3 inline-block text-sm font-semibold text-primary hover:text-primary-dark">
-              Préparer mon CV →
-            </Link>
+            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+              <Link
+                href="/blog/anapec-inscription-espace-candidat"
+                className="inline-block text-sm font-semibold text-primary hover:text-primary-dark"
+              >
+                Guide ANAPEC →
+              </Link>
+              <Link href="/cv" className="inline-block text-sm font-semibold text-primary hover:text-primary-dark">
+                Préparer mon CV →
+              </Link>
+            </div>
           </div>
         </div>
 

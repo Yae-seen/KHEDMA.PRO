@@ -4,6 +4,7 @@ import { article as arnaques } from "@/content/blog/concours-arnaques-comment-le
 import { article as exemplesSujets } from "@/content/blog/exemples-concours-anciens-sujets";
 import { article as calendrier } from "@/content/blog/calendrier-concours-maroc";
 import { article as parNiveau } from "@/content/blog/concours-par-niveau-diplome";
+import { article as anapec } from "@/content/blog/anapec-inscription-espace-candidat";
 import { article as emploiPublic } from "@/content/blog/trouver-emploi-public-maroc";
 import { article as cvMaroc } from "@/content/blog/modele-cv-maroc";
 import { article as chancenkarte } from "@/content/blog/chancenkarte-carte-opportunite-guide";
@@ -15,6 +16,7 @@ const articles: ArticleContent[] = [
   exemplesSujets,
   calendrier,
   parNiveau,
+  anapec,
   emploiPublic,
   cvMaroc,
   chancenkarte,
