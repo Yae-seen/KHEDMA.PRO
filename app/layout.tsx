@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Cairo, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Cairo, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@/app/globals.css";
 import { SITE } from "@/lib/site-config";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+// Bricolage Grotesque — the characterful display face that carries the identity.
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
 // Cairo covers Arabic + Latin — used on the RTL surface.
 const cairo = Cairo({ subsets: ["arabic", "latin"], variable: "--font-cairo", display: "swap" });
 
@@ -33,7 +39,7 @@ export const metadata: Metadata = {
  */
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${cairo.variable} h-full`}>
+    <html lang="fr" className={`${inter.variable} ${bricolage.variable} ${cairo.variable} h-full`}>
       <body className="flex min-h-full flex-col font-sans">
         {children}
         <Analytics />
