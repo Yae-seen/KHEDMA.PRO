@@ -74,16 +74,16 @@ export default function EmploiPage() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              href="/cv"
+              href="/emploi/offres"
               className="rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary-dark"
             >
-              Créer mon CV gratuitement
+              Voir les offres vérifiées
             </Link>
             <Link
-              href="/concours"
+              href="/cv"
               className="rounded-xl border border-border px-6 py-3 text-sm font-bold text-ink transition-colors hover:border-primary"
             >
-              Voir les concours publics →
+              Créer mon CV gratuitement
             </Link>
           </div>
         </div>
