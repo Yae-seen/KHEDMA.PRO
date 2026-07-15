@@ -13,10 +13,19 @@ export function dir(locale: Locale): "ltr" | "rtl" {
   return locale === "ar" ? "rtl" : "ltr";
 }
 
-/** Prefix a path for the given locale ("/" stays "/" in fr, becomes "/ar"). */
+/**
+ * Map a logical path to its URL for the given locale. Arabic only exists for a
+ * subset of sections so far; for anything not yet translated, the Arabic locale
+ * falls back to the French URL (graceful, no 404s). Extend AR_SECTIONS as more
+ * of the site is translated.
+ */
+const AR_SECTIONS = ["/concours"]; // has an Arabic version (hub + detail)
+
 export function localePath(locale: Locale, path: string): string {
   if (locale === "fr") return path;
-  return path === "/" ? "/ar" : `/ar${path}`;
+  if (path === "/") return "/ar";
+  if (AR_SECTIONS.some((s) => path === s || path.startsWith(`${s}/`))) return `/ar${path}`;
+  return path; // not translated yet → serve the French page
 }
 
 interface Dict {

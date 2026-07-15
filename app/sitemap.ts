@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ARTICLES } from "@/lib/articles";
 import { CONCOURS } from "@/lib/concours-data";
+import { CONCOURS_GUIDES_AR } from "@/content/ar/concours";
 import { SITE } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.baseUrl}/allemagne`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE.baseUrl}/ar`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE.baseUrl}/ar/concours`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE.baseUrl}/a-propos`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE.baseUrl}/contact`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE.baseUrl}/confidentialite`, lastModified, changeFrequency: "yearly", priority: 0.2 },
@@ -34,5 +36,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...concoursRoutes, ...articleRoutes];
+  const concoursArRoutes: MetadataRoute.Sitemap = CONCOURS.filter(
+    (c) => CONCOURS_GUIDES_AR[c.slug],
+  ).map((c) => ({
+    url: `${SITE.baseUrl}/ar/concours/${c.slug}`,
+    lastModified: new Date(c.lastVerified),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...concoursRoutes, ...articleRoutes, ...concoursArRoutes];
 }

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const PILLARS_AR = [
   {
-    href: "/concours",
+    href: "/ar/concours",
     tag: "الوظيفة العمومية",
     title: "المباريات",
     desc: "جميع مباريات التوظيف بالمغرب حسب الوزارة وآخر أجل — مع الشروط وكيفية الترشح عبر البوابة الرسمية دون نصب.",
@@ -83,7 +83,7 @@ export default function ArHomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/concours"
+              href="/ar/concours"
               className="rounded-xl bg-accent px-6 py-3 text-sm font-bold text-night shadow-lg transition-transform hover:-translate-y-0.5"
             >
               المباريات المفتوحة
@@ -162,7 +162,7 @@ export default function ArHomePage() {
           استكشف المباريات المفتوحة، العروض الموثوقة، وطريقك إلى ألمانيا.
         </p>
         <Link
-          href="/concours"
+          href="/ar/concours"
           className="mt-7 inline-flex rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-md transition-colors hover:bg-primary-dark"
         >
           استكشف المباريات

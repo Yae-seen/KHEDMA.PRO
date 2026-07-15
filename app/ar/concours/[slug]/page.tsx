@@ -1,26 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CONCOURS, STATUS_LABELS, getConcours } from "@/lib/concours-data";
-import { CONCOURS_GUIDES } from "@/content/concours";
+import { CONCOURS, getConcours } from "@/lib/concours-data";
 import { CONCOURS_GUIDES_AR } from "@/content/ar/concours";
-import {
-  buildArticleJsonLd,
-  buildHowToJsonLd,
-} from "@/lib/structured-data";
-import { AntiScamBanner } from "@/components/anti-scam-banner";
+import { CONCOURS_AR, STATUS_LABELS_AR } from "@/lib/concours-ar";
+import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { ConcoursCard } from "@/components/concours-card";
 import { ContentBlocks } from "@/components/content-blocks";
 import { FaqSection } from "@/components/faq-section";
 import { JsonLd } from "@/components/json-ld";
-import { LastVerified } from "@/components/last-verified";
 import { OfficialLink } from "@/components/official-link";
 import { RenderInline } from "@/components/render-inline";
 import { SourceList } from "@/components/source-list";
-import { StatusBadge } from "@/components/concours-card";
 
 export function generateStaticParams() {
-  return CONCOURS.map((c) => ({ slug: c.slug }));
+  return CONCOURS.filter((c) => CONCOURS_GUIDES_AR[c.slug]).map((c) => ({ slug: c.slug }));
 }
 
 export const dynamicParams = false;
@@ -33,40 +27,37 @@ export async function generateMetadata({
   const { slug } = await params;
   const concours = getConcours(slug);
   if (!concours) return {};
-  const hasAr = Boolean(CONCOURS_GUIDES_AR[slug]);
   return {
-    title: concours.title,
+    title: concours.titleAr,
     description: concours.metaDescription,
     alternates: {
-      canonical: `/concours/${slug}`,
-      ...(hasAr
-        ? { languages: { fr: `/concours/${slug}`, ar: `/ar/concours/${slug}` } }
-        : {}),
+      canonical: `/ar/concours/${slug}`,
+      languages: { fr: `/concours/${slug}`, ar: `/ar/concours/${slug}` },
     },
   };
 }
 
-export default async function ConcoursDetailPage({
+export default async function ConcoursDetailArPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
   const concours = getConcours(slug);
-  const guide = CONCOURS_GUIDES[slug];
+  const guide = CONCOURS_GUIDES_AR[slug];
   if (!concours || !guide) notFound();
 
   const related = CONCOURS.filter(
-    (c) => c.category === concours.category && c.slug !== concours.slug,
+    (c) => c.category === concours.category && c.slug !== concours.slug && CONCOURS_GUIDES_AR[c.slug],
   ).slice(0, 3);
 
   return (
     <>
       <JsonLd
         data={buildArticleJsonLd({
-          title: concours.title,
+          title: concours.titleAr,
           description: concours.metaDescription,
-          path: `/concours/${slug}`,
+          path: `/ar/concours/${slug}`,
           datePublished: "2026-07-15",
           dateModified: concours.lastVerified,
         })}
@@ -77,33 +68,26 @@ export default async function ConcoursDetailPage({
         <div className="mx-auto w-full max-w-4xl px-5 py-12 sm:px-8">
           <Breadcrumb
             items={[
-              { label: "Accueil", href: "/" },
-              { label: "Concours", href: "/concours" },
-              { label: concours.shortTitle, href: `/concours/${slug}` },
+              { label: CONCOURS_AR.homeCrumb, href: "/ar" },
+              { label: CONCOURS_AR.crumb, href: "/ar/concours" },
+              { label: concours.titleAr, href: `/ar/concours/${slug}` },
             ]}
           />
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <StatusBadge status={concours.status} />
-            {concours.deadline && (
-              <span className="text-sm font-semibold text-ink">
-                Date limite : {concours.deadline}
-              </span>
-            )}
+          <div className="mt-6 inline-flex rounded-full bg-accent/15 px-2.5 py-1 text-xs font-bold text-accent-dark">
+            {STATUS_LABELS_AR[concours.status]}
           </div>
           <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-            {concours.title}
-          </h1>
-          <p className="mt-2 text-lg text-muted" lang="ar" dir="rtl">
             {concours.titleAr}
-          </p>
-          <p className="mt-4 max-w-2xl leading-relaxed text-muted">{concours.statusNote}</p>
-          <AntiScamBanner />
+          </h1>
+          <aside className="mt-6 rounded-xl border border-accent/40 bg-accent/10 p-4 text-sm leading-loose text-ink">
+            {CONCOURS_AR.antiScam}
+          </aside>
         </div>
       </section>
 
       <article className="mx-auto w-full max-w-4xl px-5 py-12 sm:px-8">
         {guide.intro.map((paragraph, index) => (
-          <p key={index} className="mt-4 text-lg leading-relaxed text-muted first:mt-0">
+          <p key={index} className="mt-4 text-lg leading-loose text-muted first:mt-0">
             <RenderInline text={paragraph} />
           </p>
         ))}
@@ -113,7 +97,7 @@ export default async function ConcoursDetailPage({
         {guide.howTo && (
           <section className="mt-12">
             <h2 className="text-2xl font-bold tracking-tight text-ink">{guide.howTo.name}</h2>
-            <p className="mt-2 leading-relaxed text-muted">{guide.howTo.description}</p>
+            <p className="mt-2 leading-loose text-muted">{guide.howTo.description}</p>
             <ol className="mt-6 space-y-4">
               {guide.howTo.steps.map((step, index) => (
                 <li key={index} className="flex gap-4 rounded-xl border border-border bg-surface p-4">
@@ -124,7 +108,7 @@ export default async function ConcoursDetailPage({
                     <div className="font-bold text-ink">
                       <RenderInline text={step.name} />
                     </div>
-                    <p className="mt-1 text-sm leading-relaxed text-muted">
+                    <p className="mt-1 text-sm leading-loose text-muted">
                       <RenderInline text={step.text} />
                     </p>
                   </div>
@@ -135,28 +119,38 @@ export default async function ConcoursDetailPage({
         )}
 
         <OfficialLink
-          label={concours.officialLabel}
+          label={CONCOURS_AR.officialLabel}
           href={concours.officialUrl}
-          description={`Statut actuel : ${STATUS_LABELS[concours.status]}. Vérifiez toujours l'annonce et candidatez uniquement via le canal officiel.`}
+          description={CONCOURS_AR.officialDesc}
         />
 
-        <FaqSection items={guide.faq} />
+        <FaqSection title={CONCOURS_AR.faqTitle} items={guide.faq} />
         <SourceList sources={guide.sources} />
 
         {related.length > 0 && (
           <section className="mt-14">
-            <h2 className="text-xl font-bold tracking-tight text-ink">
-              Autres concours — {concours.organisme.includes("Ministère") ? "même famille" : "même secteur"}
-            </h2>
-            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 className="text-xl font-bold tracking-tight text-ink">{CONCOURS_AR.relatedTitle}</h2>
+            <ul className="mt-4 space-y-2">
               {related.map((c) => (
-                <ConcoursCard key={c.slug} concours={c} />
+                <li key={c.slug}>
+                  <Link
+                    href={`/ar/concours/${c.slug}`}
+                    className="font-semibold text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary"
+                  >
+                    {c.titleAr}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
-        <LastVerified date={concours.lastVerified} />
+        <p className="mt-8 text-xs font-medium text-muted">
+          {CONCOURS_AR.lastVerified} :{" "}
+          <time dateTime={concours.lastVerified} className="font-semibold text-ink">
+            {concours.lastVerified}
+          </time>
+        </p>
       </article>
     </>
   );

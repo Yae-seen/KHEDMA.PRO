@@ -20,7 +20,10 @@ export const metadata: Metadata = {
   title: "Concours de recrutement au Maroc 2026 — calendrier et guides",
   description:
     "Tous les concours de la fonction publique au Maroc : police, gendarmerie, douane, impôts, enseignement, santé. Conditions, épreuves et candidature officielle — sans arnaque.",
-  alternates: { canonical: "/concours" },
+  alternates: {
+    canonical: "/concours",
+    languages: { fr: "/concours", ar: "/ar/concours" },
+  },
 };
 
 // Re-render twice a day so the "open now" list filters against the real current
