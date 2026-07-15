@@ -58,11 +58,29 @@ parchment), root layout, homepage, and the three pillar landing pages
   external links official, no aggregator mis-flagged `official:true`.
 - JSON-LD validated in-browser; rendering confirmed in the browser preview.
 
+### Phase 4 — Allemagne pillar (this batch)
+- **/allemagne hub** with three client-side interactive tools:
+  - **Chancenkarte points calculator** — the official points system (threshold 6,
+    tiered language/experience/age, bonuses), baseline gates, live eligibility.
+  - **Employer finder** — occupation × German city → deep-links the official job
+    portals (Bundesagentur Jobbörse `was/wo`, EURES, Make it in Germany, Anerkennung
+    Finder). The "métier × ville" intent from the brief, small-city angle.
+  - **Cost estimator** — indicative budget; proof-of-funds (Sperrkonto) separated
+    from real spend, toggleable lines, months slider.
+- **2 Allemagne guides**: chancenkarte-carte-opportunite-guide, trouver-employeur-
+  allemagne-metier-ville. Ecosystem link back to massar-service.net.
+- **YMYL discipline**: all figures traced to official German sources (make-it-in-
+  germany.com, BAMF, gesetze-im-internet §20b AufenthG, anerkennung-in-deutschland.de,
+  rabat.diplo.de). Verified by an adversarial pass — caught + fixed the age-bracket
+  boundary (strictly <35 = 2 pts). Digest: docs/research/allemagne-research-2026-07-15.json.
+  Tools are labelled indicative, never legal advice. Re-verify figures annually
+  (Foreign-Office funds figure is reset each January).
+
 ## Not built yet
 - **Phase 3 remainder (needs backend):** live job board, accounts, application tracking.
-- **Phase 4 — Allemagne**: Chancenkarte eligibility calculator, occupation×small-city
-  employer finder, cost calculator; absorb the massar `/carriere/allemagne` corridor.
 - **Phase 5 — Arabic**: AR/RTL localization of the content pages.
+- **Phase 4 nice-to-have:** Ausbildung-specific blocked-account figure (€959/mo),
+  live Mangelberufe list link, more small-city landing pages.
 
 ## Owner / operational follow-ups
 - Deploy to Vercel; point khedma.pro DNS.

@@ -62,8 +62,10 @@ weekly and re-check statuses against the official portals.
   Live job-board ingestion, accounts, and application tracking are deferred — they need a
   backend the stack excludes.
 - **Trust pages (done):** `/a-propos`, `/contact`, `/confidentialite`, `/mentions-legales`.
-- **Phase 4:** Allemagne — Chancenkarte calculator + occupation×city employer finder.
-- **Phase 5:** Arabic (AR/RTL) localization.
+- **Phase 4 (done):** Allemagne — Chancenkarte points calculator, occupation×city employer
+  finder (deep-links official job portals), cost estimator + 2 guides. YMYL: figures from
+  official German sources, adversarially verified.
+- **Phase 5 (next):** Arabic (AR/RTL) localization.
 
 See `docs/BUILD_BRIEF.md` for the keyword-informed roadmap and `docs/PROJECT_STATUS.md`
 for the detailed state.

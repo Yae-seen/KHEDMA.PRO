@@ -49,8 +49,12 @@ Perishable trial data — captured here so it survives the trial expiry (~2026-0
   sitemap/robots/llms.txt/OG/JSON-LD. 12 concours guides + 5 blog guides, all grounded in
   official-source research (see `docs/research/concours-research-2026-07-15.json` and
   `docs/OFFICIAL_SOURCES.md`). Ecosystem links to massar-service.net seeded on 3 pages.
-- **Phase 3:** Emploi job board + CV builder + accounts.
-- **Phase 4:** Allemagne — Chancenkarte calculator + occupation×city employer finder; Massar links.
+- **Phase 3 (done, SEO core):** Emploi hub + client-side CV builder + 2 guides. Live job
+  board/accounts deferred (need a backend the stack excludes).
+- **Phase 4 (done, 2026-07-15):** Allemagne — Chancenkarte points calculator, occupation×city
+  employer finder (deep-links Jobbörse/EURES/Make it in Germany), cost estimator + 2 guides +
+  Massar ecosystem link. YMYL figures from official German sources, adversarially verified
+  (docs/research/allemagne-research-2026-07-15.json).
 - **Phase 5:** Arabic (AR/RTL) localization.
 
 ## Phase 2 notes (for the next session)

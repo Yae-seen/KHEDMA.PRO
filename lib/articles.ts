@@ -73,6 +73,24 @@ export const ARTICLES: ArticleMeta[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
   },
+  {
+    slug: "trouver-employeur-allemagne-metier-ville",
+    title: "Trouver un employeur en Allemagne : la stratégie métier × ville",
+    description:
+      "Les Marocains ne cherchent pas « Ausbildung » : ils cherchent un métier dans une ville allemande qui recrute. La méthode concrète pour trouver un employeur qui parraine.",
+    category: "Allemagne",
+    publishedAt: "2026-07-15",
+    updatedAt: "2026-07-15",
+  },
+  {
+    slug: "chancenkarte-carte-opportunite-guide",
+    title: "Chancenkarte (carte d'opportunité) : le guide pour les Marocains",
+    description:
+      "La Chancenkarte permet de venir chercher un emploi qualifié en Allemagne. Conditions, système de points, durée et démarches — expliqués simplement, sources officielles.",
+    category: "Allemagne",
+    publishedAt: "2026-07-15",
+    updatedAt: "2026-07-15",
+  },
 ];
 
 export function getArticleMeta(slug: string): ArticleMeta | undefined {

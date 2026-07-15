@@ -1,0 +1,729 @@
+{
+  "capturedAt": "2026-07-15",
+  "method": "official-source-first parallel research + adversarial verify (YMYL)",
+  "research": [
+    {
+      "topic": "Ausbildung (dual vocational training) in Germany for Moroccans — the training visa (§16a AufenthG), the visa to seek a training place (§17 AufenthG), and how both differ from the Chancenkarte",
+      "officialPortals": [
+        {
+          "name": "Make it in Germany — Visa for vocational training (EN)",
+          "url": "https://www.make-it-in-germany.com/en/visa-residence/types/training",
+          "accessible": false,
+          "purpose": "German federal government portal (BMWK/BMAS) — primary reference for the Ausbildung visa; page was blocked by a Radware/PerfDrive bot wall when fetched, but its content was recoverable via search indexing"
+        },
+        {
+          "name": "Make it in Germany — Visa pour formation professionnelle (FR)",
+          "url": "https://www.make-it-in-germany.com/fr/visa-sejour/types/formation-professionnelle",
+          "accessible": false,
+          "purpose": "French-language version of the federal portal's vocational-training visa page; same bot wall on direct fetch. Source of the €822 net / €1,048 gross and €959 net financial-means figures and the age-35 / B1 / secondary-diploma conditions"
+        },
+        {
+          "name": "German Embassy Rabat (Auswärtiges Amt) — Visa pour formation professionnelle",
+          "url": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2731848-2731848",
+          "accessible": true,
+          "purpose": "Morocco-specific official visa page: documents, fees, TLScontact submission, processing times, post-arrival registration. Successfully fetched — verified-official for all Morocco procedural facts"
+        },
+        {
+          "name": "Auswärtiges Amt Auslandsportal — Aus- und Weiterbildung (visa for and to seek vocational training)",
+          "url": "https://digital.diplo.de/aus-und-weiterbildung",
+          "accessible": false,
+          "purpose": "Federal Foreign Office consolidated visa portal for §16a and §17; JS-rendered, returned no static text on fetch"
+        },
+        {
+          "name": "Anerkennung in Deutschland (recognition portal)",
+          "url": "https://www.anerkennung-in-deutschland.de/",
+          "accessible": true,
+          "purpose": "Official portal for recognition of foreign qualifications — relevant because 'qualified vocational training' and the Chancenkarte auto-route hinge on a recognised 2-year qualification (not fetched this run)"
+        },
+        {
+          "name": "Bundesagentur für Arbeit (Federal Employment Agency)",
+          "url": "https://www.arbeitsagentur.de/",
+          "accessible": true,
+          "purpose": "The BA must approve the Ausbildung contract before the §16a visa is issued (not fetched this run)"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Ausbildung is Germany's dual vocational training: the trainee splits time between a training company (Betrieb) and a vocational school (Berufsschule), working the real job from day one",
+          "value": "dual system, company + Berufsschule",
+          "sourceUrl": "https://www.make-it-in-germany.com/en/study-training/vocational-training",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "A recognised ('qualified') Ausbildung is state-recognised and lasts at least two years; in practice Ausbildung programmes run about 2 to 3.5 years",
+          "value": "2–3.5 years (min. 2 years to count as qualified)",
+          "sourceUrl": "https://www.make-it-in-germany.com/en/visa-residence/types/training",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Trainees are paid a monthly training allowance (Ausbildungsvergütung) by the employer from day one. Statutory legal minimum for 2026 is set under the Berufsbildungsgesetz (BBiG)",
+          "value": "€682/month minimum, first year (2026)",
+          "sourceUrl": "https://www.gesetze-im-internet.de/bbig_2005/__17.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Average gross Ausbildungsvergütung across all sectors is roughly €1,000–1,200/month; the all-sector average was about €1,066/month, higher in nursing/IT/industry, lower in retail/hospitality",
+          "value": "~€1,066/month gross (all-sector average)",
+          "sourceUrl": "https://msingermany.com/train/salary",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "§16a AufenthG visa (to UNDERTAKE vocational training) requires proof of German at level B1",
+          "value": "German B1 (CEFR)",
+          "sourceUrl": "https://handbookgermany.de/en/vocational-training-visa",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "§16a visa requires an existing vocational training contract (or a firm, specific offer of a training position) with a company in Germany",
+          "value": "signed Ausbildung contract / firm offer required",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2731848-2731848",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "§16a visa requires proof that livelihood is secured during training; make-it-in-germany states minimum means for company-based training and higher for school-based training",
+          "value": "company-based: €822 net / €1,048 gross per month; school-based: €959 net per month",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/types/formation-professionnelle",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "The Federal Employment Agency (Bundesagentur für Arbeit) must approve the training contract before the §16a visa is issued",
+          "value": "BA approval required",
+          "sourceUrl": "https://handbookgermany.de/en/vocational-training-visa",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "On the vocational-training residence permit, the trainee may also work a side job of up to 20 hours per week in another field",
+          "value": "up to 20 h/week side job",
+          "sourceUrl": "https://handbookgermany.de/en/vocational-training-visa",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "§17 AufenthG visa (to SEEK a training place) requires the applicant be no older than 35 and hold a school-leaving certificate qualifying for university in the home country (or a German-school-abroad diploma)",
+          "value": "age ≤ 35; university-entry-qualifying diploma (e.g. Baccalauréat)",
+          "sourceUrl": "https://handbookgermany.de/en/visa-seeking-vocational-training",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "§17 German-language requirement was lowered from B2 to B1 as of March 2024",
+          "value": "German B1 (was B2 before March 2024)",
+          "sourceUrl": "https://handbookgermany.de/en/visa-seeking-vocational-training",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "§17 seeker visa is valid for up to 9 months, permits up to 20 h/week part-time work plus up to 2 weeks total trial work, and requires proof of financial means (blocked account) of about €1,091/month",
+          "value": "9 months; 20 h/week; €1,091/month blocked account",
+          "sourceUrl": "https://handbookgermany.de/en/visa-seeking-vocational-training",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Difference from Chancenkarte: for the Ausbildung visa you must ALREADY hold a training contract (§16a) or come specifically to seek a training place (§17); the Chancenkarte (opportunity card) is a separate 1-year job-search permit for people with a completed degree/2-year qualification, granted via a 6-point test",
+          "value": "Ausbildung = have/seek a training place; Chancenkarte = job-search, ≥6 points, completed qualification",
+          "sourceUrl": "https://www.make-it-in-germany.com/en/visa-residence/opportunity-card",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Chancenkarte financial-means requirement (2025) is at least €1,091/month = €13,092/year, and baseline language is A1 German OR B2 English",
+          "value": "€1,091/month; €13,092/year; A1 German or B2 English",
+          "sourceUrl": "https://www.make-it-in-germany.com/en/visa-residence/opportunity-card",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Morocco-specific: national visa fee is €75 (€37.50 for minors under 18), paid in Moroccan dirhams; applications submitted in person via TLScontact",
+          "value": "€75 (adult) / €37.50 (minor)",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2731848-2731848",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Morocco-specific: an expedited/priority track for vocational-training visas is generally decided within about three weeks; standard cases have no guaranteed timeframe because German authorities must be consulted",
+          "value": "~3 weeks (fast track)",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2731848-2731848",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Morocco-specific: after arrival, the trainee must register at the local residents' office (Einwohnermeldeamt) within two weeks and apply for the residence permit before the visa expires. The embassy warns against fake language certificates and exploitative placement agencies",
+          "value": "register within 2 weeks of arrival",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2731848-2731848",
+          "confidence": "verified-official"
+        }
+      ],
+      "structuredData": "{\"lastResearched\":\"2026-07-15\",\"currency\":\"EUR\",\"note\":\"Figures marked reported-secondary were recovered from search indexing of make-it-in-germany.de because the live pages were behind a bot wall; Morocco fee/procedure figures are verified-official from rabat.diplo.de. Immigration thresholds change — re-verify at build time.\",\"whatIsAusbildung\":{\"model\":\"dual (company Betrieb + vocational school Berufsschule)\",\"durationYears\":{\"typicalMin\":2,\"typicalMax\":3.5,\"qualifiedMin\":2},\"paid\":true,\"trainingAllowanceMonthlyGross\":{\"statutoryMin2026\":682,\"allSectorAverage\":1066,\"typicalRange\":[1000,1200],\"currency\":\"EUR\",\"law\":\"BBiG §17\",\"source\":\"reported-secondary\"}},\"visaPaths\":[{\"id\":\"16a_undertake_training\",\"name\":\"Residence permit to undertake vocational training\",\"legalBasis\":\"§16a AufenthG\",\"precondition\":\"You already have (or a firm specific offer of) an Ausbildung contract\",\"requirements\":{\"germanLevel\":\"B1\",\"ageLimit\":null,\"trainingContract\":\"required (BA/Federal Employment Agency must approve it)\",\"financialMeans\":{\"companyBased\":{\"netPerMonth\":822,\"grossPerMonth\":1048},\"schoolBased\":{\"netPerMonth\":959},\"note\":\"often covered by the training allowance itself; otherwise blocked account / Verpflichtungserklärung\",\"source\":\"reported-secondary make-it-in-germany.de/fr\"},\"sideJobHoursPerWeek\":20}},{\"id\":\"17_seek_training_place\",\"name\":\"Visa to seek a vocational training place\",\"legalBasis\":\"§17 AufenthG\",\"precondition\":\"You do NOT yet have a training place and come to look for one\",\"requirements\":{\"ageLimitMax\":35,\"schoolDiploma\":\"university-entry-qualifying certificate from home country (e.g. Baccalauréat) or German-school-abroad diploma\",\"germanLevel\":\"B1\",\"germanLevelHistory\":\"lowered from B2 to B1 as of March 2024\",\"financialMeansMonthly\":1091,\"blockedAccount\":true,\"validityMonths\":9,\"sideJobHoursPerWeek\":20,\"trialWorkWeeksTotal\":2}}],\"chancenkarteComparison\":{\"legalBasis\":\"§20a AufenthG\",\"purpose\":\"1-year job-search permit — NOT a training path\",\"keyDifference\":\"Ausbildung visa = you have or seek a specific training contract; Chancenkarte = general job-search for people who already hold a completed degree or ≥2-year vocational qualification\",\"qualifyRoutes\":{\"automatic\":\"fully recognised foreign university degree OR ≥2-year state-recognised, fully recognised vocational qualification\",\"pointsTest\":{\"passThreshold\":6,\"sampleAllocations\":{\"5y_experience_or_B2_German\":3,\"2y_experience_or_B1_German_or_age_under_35\":2,\"age_under_40_or_prior_6m_stay_in_Germany\":1}}},\"languageBaseline\":\"A1 German OR B2 English\",\"financialMeansMonthly\":1091,\"financialMeansYearly\":13092,\"validityMonths\":12,\"sideJobHoursPerWeek\":20,\"trialWorkWeeksPerEmployer\":2},\"moroccoSpecific\":{\"mission\":\"German Embassy Rabat / TLScontact\",\"source\":\"verified-official rabat.diplo.de\",\"visaFeeAdult\":75,\"visaFeeMinorUnder18\":37.5,\"currencyPaid\":\"MAD (dirham equivalent)\",\"fastTrackDecision\":\"~3 weeks\",\"standardTrack\":\"no guaranteed timeframe (Ausländerbehörde consulted)\",\"submission\":\"in person via TLScontact\",\"postArrival\":{\"registerWithinWeeks\":2,\"office\":\"Einwohnermeldeamt\",\"applyResidencePermitBefore\":\"visa expiry\"},\"warnings\":[\"fake German-language certificates\",\"exploitative placement agencies charging excessive fees\"]}}"
+    },
+    {
+      "topic": "How a Moroccan actually finds a German employer and gets qualifications recognized — official channels (make-it-in-germany, Jobbörse, EURES, Anerkennung, ZSBA hotline, German mission in Morocco)",
+      "officialPortals": [
+        {
+          "name": "Make it in Germany (portail fédéral, FR/EN/AR)",
+          "url": "https://www.make-it-in-germany.com/fr/",
+          "accessible": true,
+          "purpose": "Portail officiel du gouvernement fédéral allemand pour travailleurs qualifiés étrangers. Contient le Quick-Check (éligibilité visa), la bourse de l'emploi, et l'info sur la reconnaissance des diplômes. Versions FR, EN et AR. Le domaine make-it-in-germany.de redirige vers make-it-in-germany.com."
+        },
+        {
+          "name": "Make it in Germany — Quick-Check (FR)",
+          "url": "https://www.make-it-in-germany.com/fr/visa-sejour/quick-check",
+          "accessible": true,
+          "purpose": "Auto-évaluation gratuite: en quelques questions (qualification, profession, expérience, langue), indique le visa/voie d'entrée adapté et les conditions. Version EN: /en/visa-residence/quick-check."
+        },
+        {
+          "name": "Make it in Germany — Bourse de l'emploi (FR)",
+          "url": "https://www.make-it-in-germany.com/fr/travailler-en-allemagne/bourse-de-lemploi",
+          "accessible": true,
+          "purpose": "Section recherche d'emploi du portail, orientée profils internationaux; renvoie vers la Jobbörse de la Bundesagentur et vers des offres 'International'. Version EN: /en/working-in-germany/find-a-job/job-listings."
+        },
+        {
+          "name": "Bundesagentur für Arbeit — Jobbörse (jobsuche)",
+          "url": "https://www.arbeitsagentur.de/jobsuche/",
+          "accessible": true,
+          "purpose": "Plus grande base d'offres d'emploi publique d'Allemagne (agence fédérale pour l'emploi). Recherche par métier (was) et ville (wo), filtres rayon/type de contrat. Version anglaise du portail disponible sur arbeitsagentur.de/en."
+        },
+        {
+          "name": "EURES — portail européen de la mobilité de l'emploi",
+          "url": "https://eures.europa.eu/index_en",
+          "accessible": true,
+          "purpose": "Réseau/portail de l'UE. La base d'offres est consultable publiquement pour découvrir des employeurs allemands; les services de conseil/mobilité EURES ciblent surtout les citoyens UE/EEE. Un ressortissant marocain reste soumis à l'obligation de visa de travail. Recherche d'offres: https://europa.eu/eures/portal/jv-se/home?lang=fr"
+        },
+        {
+          "name": "Anerkennung in Deutschland (reconnaissance des diplômes, FR/AR)",
+          "url": "https://www.anerkennung-in-deutschland.de/html/fr/index.php",
+          "accessible": true,
+          "purpose": "Portail officiel (BIBB/BMBF) sur la reconnaissance des qualifications professionnelles étrangères. Contient l'Anerkennungs-Finder (Recognition Finder) qui identifie l'autorité compétente et la procédure. Disponible en 11 langues dont français et arabe (AR: /html/ar/index.php)."
+        },
+        {
+          "name": "ZSBA — Service Center for Professional Recognition (hotline 'Working and Living in Germany')",
+          "url": "https://www.anerkennung-in-deutschland.de/html/en/service-center-for-professional-recognition.php",
+          "accessible": true,
+          "purpose": "Guichet public gratuit (rattaché à la ZAV/Bundesagentur, Bonn) pour les qualifiés vivant à l'étranger: pré-évaluation du diplôme, choix du Land, aide au dossier, interlocuteur dédié. Hotline +49 30 1815-1111, e-mail recognition@arbeitsagentur.de."
+        },
+        {
+          "name": "Ambassade d'Allemagne à Rabat — service des visas",
+          "url": "https://rabat.diplo.de/ma-fr/service/visa-einreise",
+          "accessible": true,
+          "purpose": "Mission diplomatique allemande au Maroc: information et dépôt des demandes de visa national de travail. Prise de rendez-vous et dépôt via le prestataire TLScontact à Rabat. Frais visa 75 EUR."
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Le Quick-Check de Make it in Germany permet de vérifier ses possibilités de travailler et vivre en Allemagne; il existe en français.",
+          "value": "URL FR: make-it-in-germany.com/fr/visa-sejour/quick-check",
+          "confidence": "verified-official",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/"
+        },
+        {
+          "claim": "Make it in Germany est le portail officiel du gouvernement fédéral allemand pour les travailleurs qualifiés étrangers, avec versions française et arabe.",
+          "value": "FR: /fr/ ; AR disponible via sélecteur de langue",
+          "confidence": "verified-official",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/"
+        },
+        {
+          "claim": "La Jobbörse de la Bundesagentur für Arbeit permet de rechercher par métier et par ville via les paramètres d'URL 'was' (métier/mot-clé) et 'wo' (lieu).",
+          "value": "Motif: arbeitsagentur.de/jobsuche/suche?was={métier}&wo={ville}&angebotsart=1",
+          "confidence": "verified-official",
+          "sourceUrl": "https://www.arbeitsagentur.de/jobsuche/suche?was=Krankenpfleger&wo=Berlin"
+        },
+        {
+          "claim": "Le paramètre 'angebotsart' filtre le type d'offre sur la Jobbörse (1 = emploi salarié classique); 'umkreis' définit le rayon en km.",
+          "value": "angebotsart=1 (emploi); umkreis=10..200 (km)",
+          "confidence": "verified-official",
+          "sourceUrl": "https://www.arbeitsagentur.de/jobsuche/suche?was=Krankenpfleger&wo=Berlin"
+        },
+        {
+          "claim": "L'API publique REST de la Jobbörse utilise les mêmes paramètres was/wo/umkreis (utile pour un outil/deep-link programmatique).",
+          "value": "rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs?was=...&wo=Berlin&umkreis=200",
+          "confidence": "reported-secondary",
+          "sourceUrl": "https://github.com/bundesAPI/jobsuche-api/blob/main/README.md"
+        },
+        {
+          "claim": "EURES est le portail européen de la mobilité de l'emploi; la recherche d'offres est accessible en ligne.",
+          "value": "Recherche: europa.eu/eures/portal/jv-se/home?lang=fr",
+          "confidence": "verified-official",
+          "sourceUrl": "https://eures.europa.eu/index_en"
+        },
+        {
+          "claim": "L'Anerkennungs-Finder (Recognition Finder) est l'outil officiel pour trouver la procédure et l'autorité compétente de reconnaissance; le portail existe en 11 langues dont le français et l'arabe.",
+          "value": "11 langues (FR + AR inclus); Finder accessible depuis la page d'accueil",
+          "confidence": "verified-official",
+          "sourceUrl": "http://www.anerkennung-in-deutschland.de/html/en/index.php"
+        },
+        {
+          "claim": "La ZSBA (Service Center for Professional Recognition) offre un service gratuit, impartial et non contraignant aux qualifiés résidant à l'étranger: pré-évaluation du diplôme, choix du Land, aide au dossier et interlocuteur dédié pendant toute la procédure.",
+          "value": "Gratuit; pour candidats résidant hors d'Allemagne",
+          "confidence": "verified-official",
+          "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/zsba/professional-recognition"
+        },
+        {
+          "claim": "La hotline officielle 'Working and Living in Germany' (ZSBA) est joignable en allemand et anglais.",
+          "value": "+49 30 1815-1111 ; Lun–Jeu 09:00–16:00, Ven 09:00–12:00 (heure allemande) ; langues DE/EN",
+          "confidence": "verified-official",
+          "sourceUrl": "http://www.anerkennung-in-deutschland.de/html/en/hotline.php"
+        },
+        {
+          "claim": "L'e-mail de la ZSBA pour les questions de reconnaissance est recognition@arbeitsagentur.de.",
+          "value": "recognition@arbeitsagentur.de",
+          "confidence": "reported-secondary",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/html/en/service-center-for-professional-recognition.php"
+        },
+        {
+          "claim": "L'ambassade d'Allemagne à Rabat traite les visas nationaux de travail; les rendez-vous et dépôts se font via TLScontact à Rabat (sans inscription préalable sur liste d'attente pour travailleurs qualifiés avec formation professionnelle ou universitaire).",
+          "value": "RDV via TLScontact Rabat: de.tlscontact.com/ma/rba/",
+          "confidence": "verified-official",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2730834-2730834"
+        },
+        {
+          "claim": "Le visa national de travail au consulat allemand de Rabat coûte 75 euros, payable en dirhams marocains.",
+          "value": "75 EUR",
+          "confidence": "verified-official",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2730834-2730834"
+        },
+        {
+          "claim": "Délai de traitement d'un visa de travailleur qualifié via Rabat: environ 3 mois; environ 3 semaines en procédure accélérée (beschleunigtes Fachkräfteverfahren).",
+          "value": "~3 mois; ~3 semaines (procédure accélérée)",
+          "confidence": "verified-official",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2730834-2730834"
+        },
+        {
+          "claim": "L'ambassade avertit qu'elle n'attribue pas de rendez-vous via des 'revendeurs', 'consultants' ou 'prestataires' intermédiaires — n'utiliser que TLScontact.",
+          "value": "Uniquement TLScontact",
+          "confidence": "reported-secondary",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise"
+        },
+        {
+          "claim": "Un guide officiel en français de la Chancenkarte (carte opportunité) est publié par l'ambassade de Rabat.",
+          "value": "PDF FR: rabat.diplo.de/resource/blob/2680732/.../merkblatt-chancenkarte-fr-data.pdf",
+          "confidence": "reported-secondary",
+          "sourceUrl": "https://rabat.diplo.de/resource/blob/2680732/a357b5f101e9b2daf9f1ccdcd75fcfd4/merkblatt-chancenkarte-fr-data.pdf"
+        },
+        {
+          "claim": "Deux voies de visa de travailleur qualifié distinctes existent selon la qualification: avec formation professionnelle, et avec formation universitaire.",
+          "value": "Vocational: /2730834-2730834 ; Universitaire: /2728834-2728834",
+          "confidence": "verified-official",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2728834-2728834"
+        }
+      ],
+      "structuredData": "{\"channels\":[{\"name\":\"Make it in Germany — Quick-Check\",\"url\":\"https://www.make-it-in-germany.com/fr/visa-sejour/quick-check\",\"useFor\":\"Auto-évaluation gratuite de l'éligibilité: identifie le visa/voie d'entrée adapté selon qualification, métier, expérience et langue. Point de départ recommandé.\",\"searchUrlPattern\":null,\"languages\":[\"fr\",\"en\",\"ar\",\"de\"],\"enUrl\":\"https://www.make-it-in-germany.com/en/visa-residence/quick-check\"},{\"name\":\"Make it in Germany — Bourse de l'emploi (job listings)\",\"url\":\"https://www.make-it-in-germany.com/fr/travailler-en-allemagne/bourse-de-lemploi\",\"useFor\":\"Rechercher des offres orientées candidats internationaux; renvoie vers la Jobbörse fédérale et des employeurs ouverts aux profils étrangers.\",\"searchUrlPattern\":null,\"enUrl\":\"https://www.make-it-in-germany.com/en/working-in-germany/find-a-job/job-listings\"},{\"name\":\"Bundesagentur für Arbeit — Jobbörse\",\"url\":\"https://www.arbeitsagentur.de/jobsuche/\",\"useFor\":\"Base d'offres d'emploi publique n°1 en Allemagne. Filtrer par métier (was) et ville (wo), rayon et type de contrat.\",\"searchUrlPattern\":\"https://www.arbeitsagentur.de/jobsuche/suche?was={metier_ou_motcle}&wo={ville}&angebotsart=1&umkreis={km}\",\"params\":{\"was\":\"métier ou mot-clé (URL-encodé, ex. Krankenpfleger)\",\"wo\":\"ville/lieu (ex. Berlin)\",\"angebotsart\":\"1=emploi salarié, 4=apprentissage/Ausbildung\",\"umkreis\":\"rayon en km (10–200)\"},\"apiPattern\":\"https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs?was={metier}&wo={ville}&umkreis={km}&size=25&page=1\"},{\"name\":\"EURES — portail européen de l'emploi\",\"url\":\"https://eures.europa.eu/index_fr\",\"useFor\":\"Découvrir des offres et employeurs allemands via la base d'offres UE. NB: services de conseil EURES orientés citoyens UE/EEE; un Marocain reste soumis au visa de travail.\",\"searchUrlPattern\":\"https://europa.eu/eures/portal/jv-se/search?lang=fr&countries=DE&keywords={metier}\",\"note\":\"Filtrer par pays (Allemagne=DE) et mot-clé métier sur le moteur de recherche d'offres.\"},{\"name\":\"Anerkennung in Deutschland — Anerkennungs-Finder (Recognition Finder)\",\"url\":\"https://www.anerkennung-in-deutschland.de/html/fr/index.php\",\"useFor\":\"Déterminer si le diplôme/métier nécessite une reconnaissance, trouver l'autorité compétente et la procédure. Outil Finder accessible depuis la page d'accueil.\",\"searchUrlPattern\":null,\"languages\":[\"fr\",\"ar\",\"en\",\"de\",\"+7 autres (11 au total)\"],\"arUrl\":\"https://www.anerkennung-in-deutschland.de/html/ar/index.php\",\"enUrl\":\"http://www.anerkennung-in-deutschland.de/html/en/index.php\"},{\"name\":\"ZSBA — hotline 'Working and Living in Germany'\",\"url\":\"https://www.anerkennung-in-deutschland.de/html/fr/hotline.php\",\"useFor\":\"Conseil gratuit pour qualifiés vivant à l'étranger: pré-évaluation du diplôme, aide au dossier de reconnaissance, choix du Land, interlocuteur dédié.\",\"searchUrlPattern\":null,\"phone\":\"+49 30 1815-1111\",\"email\":\"recognition@arbeitsagentur.de\",\"hours\":\"Lun–Jeu 09:00–16:00, Ven 09:00–12:00 (heure allemande / CET)\",\"hotlineLanguages\":[\"de\",\"en\"]},{\"name\":\"Ambassade d'Allemagne à Rabat — visas (via TLScontact)\",\"url\":\"https://rabat.diplo.de/ma-fr/service/visa-einreise\",\"useFor\":\"Dépôt de la demande de visa national de travail au Maroc. RDV et dépôt via TLScontact Rabat (uniquement, pas d'intermédiaires).\",\"searchUrlPattern\":null,\"visaWorkVocationalUrl\":\"https://rabat.diplo.de/ma-fr/service/visa-einreise/2730834-2730834\",\"visaWorkAcademicUrl\":\"https://rabat.diplo.de/ma-fr/service/visa-einreise/2728834-2728834\",\"nationalVisasOverviewUrl\":\"https://rabat.diplo.de/ma-fr/service/visa-einreise/1788358-1788358\",\"chancenkarteGuideFrPdf\":\"https://rabat.diplo.de/resource/blob/2680732/a357b5f101e9b2daf9f1ccdcd75fcfd4/merkblatt-chancenkarte-fr-data.pdf\",\"appointmentProvider\":\"TLScontact Rabat\",\"appointmentUrl\":\"https://de.tlscontact.com/ma/rba/index.php?l=de\",\"tlscontactFrUrl\":\"https://visas-de.tlscontact.com/fr-fr/country/ma/vac/maRBA2de\",\"visaFeeEur\":75,\"processingTime\":\"~3 mois (standard) / ~3 semaines (procédure accélérée)\"}],\"recommendedOrder\":[\"1. Quick-Check (make-it-in-germany /fr) pour connaître sa voie de visa\",\"2. Anerkennungs-Finder (anerkennung-in-deutschland /fr) pour vérifier si le métier est réglementé et lancer la reconnaissance\",\"3. Contacter la hotline ZSBA (+49 30 1815-1111) pour un accompagnement gratuit du dossier\",\"4. Chercher un employeur: Jobbörse (arbeitsagentur.de/jobsuche was=&wo=), bourse Make it in Germany, EURES (pays=DE)\",\"5. Obtenir un contrat/offre d'emploi qualifié\",\"6. Déposer le visa national de travail à Rabat via TLScontact (frais 75 EUR)\"],\"notes\":{\"domainRedirect\":\"make-it-in-germany.de redirige vers make-it-in-germany.com (portail officiel identique).\",\"euresCaveat\":\"EURES: base d'offres consultable par tous, mais accompagnement/mobilité réservé UE/EEE; le ressortissant marocain doit toujours obtenir un visa de travail.\",\"dataSourceUnverified\":\"Le lien exact du couplage bourse Make-it-in-Germany <-> Jobbörse n'a pas été vérifié directement à la source (accès bloqué par protection anti-bot lors du fetch).\"}}"
+    },
+    {
+      "topic": "Germany Chancenkarte (Opportunity Card / carte d'opportunité) — points-based job-seeker visa, for a Morocco→Germany career guide",
+      "officialPortals": [
+        {
+          "name": "Make it in Germany — Carte des opportunités (FR, official federal portal)",
+          "url": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites",
+          "accessible": true,
+          "purpose": "Primary official German-government portal for the Opportunity Card; has French, English, Arabic and German versions; explains both routes, the points system, funds, validity and 20h/week work right. (Automated fetch is blocked by Radware bot-protection, but the page loads normally in a human browser.)"
+        },
+        {
+          "name": "Make it in Germany — Carte des opportunités pour la recherche d'emploi (FR, detailed points page)",
+          "url": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "accessible": true,
+          "purpose": "Detailed FR page with the full points table, baseline requirements and financial proof (€1,091/month, 2026)."
+        },
+        {
+          "name": "BAMF — Federal Office for Migration and Refugees (Opportunity Card)",
+          "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/arbeit-node.html",
+          "accessible": true,
+          "purpose": "Federal migration authority; confirms minimum 6 points, criteria list, 1-year validity, and that applications opened 1 June 2024."
+        },
+        {
+          "name": "Anerkennung in Deutschland (recognition portal, official)",
+          "url": "https://www.anerkennung-in-deutschland.de/en/",
+          "accessible": true,
+          "purpose": "Official portal for recognition of foreign qualifications (ZAB/competent authority); confirms partial recognition = 4 points and where to get equivalence decrees needed for the fast track and the points route."
+        },
+        {
+          "name": "Auswärtiges Amt — Visa Navigator (digital.diplo.de)",
+          "url": "https://digital.diplo.de/navigator/en/visa/overview/ergebnis-chancenkarte",
+          "accessible": true,
+          "purpose": "Federal Foreign Office official visa-navigator result for the Opportunity Card; the tool that guides applicants to the correct D-visa and mission. (JavaScript-rendered — needs a browser, not a raw fetch.)"
+        },
+        {
+          "name": "German Embassy Rabat (rabat.diplo.de) — mission for Morocco",
+          "url": "https://rabat.diplo.de/",
+          "accessible": true,
+          "purpose": "Competent German mission in Morocco for national (D) visa applications, including the Chancenkarte; appointment booking and document lists for Moroccan applicants."
+        },
+        {
+          "name": "Handbook Germany — Opportunity Card (federally funded, EN/FR/AR)",
+          "url": "https://handbookgermany.de/en/opportunity-card",
+          "accessible": true,
+          "purpose": "Government-funded (BMI) plain-language guide; provided the clean, complete points table used to cross-check the official values. Multilingual incl. Arabic."
+        }
+      ],
+      "facts": [
+        {
+          "claim": "The Chancenkarte has TWO eligibility routes: (Route 1 / fast track) holders of a fully recognized foreign qualification or a German degree/vocational qualification get the card WITHOUT the points system; (Route 2 / points route) everyone else must score the required points.",
+          "value": "2 routes",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Points route requires a MINIMUM of 6 points.",
+          "value": "6 points",
+          "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/arbeit-node.html",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Baseline requirement for the points route: a foreign university degree OR at least a 2-year vocational qualification (recognized/comparable in the country where it was obtained), or a German chamber-recognized credential.",
+          "value": ">=2-year vocational OR university degree",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Baseline language requirement (points route): German at least A1 (CEFR) OR English at least B2 (CEFR).",
+          "value": "German A1 OR English B2",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Proof of funds required for both routes: secured livelihood, e.g. a blocked account (Sperrkonto) of at least €1,091 net per month (= €13,092/year), a Verpflichtungserklärung (declaration of commitment), or a part-time work contract covering costs. €1,091 is the 2026 rate.",
+          "value": "€1,091/month (2026); €13,092/year",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: Recognition OR partial recognition of the foreign professional qualification, OR permission to practise a regulated profession (Berufsausübungserlaubnis) = 4 points. Partial recognition alone gives 4 of the 6 needed points.",
+          "value": "4 points",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/en/",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: German language B2 = 3 points; B1 = 2 points; A2 = 1 point. German-level points are tiered (highest level only, not cumulative).",
+          "value": "B2=3 / B1=2 / A2=1",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: English language C1 = 1 point (note: English B2 is only the baseline entry requirement; C1 earns the bonus point).",
+          "value": "English C1 = 1 point",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: At least 5 years of relevant professional experience within the last 7 years (in an occupation needing a >=2-year vocational qualification) = 3 points; at least 2 years within the last 5 years = 2 points. Counted once at the higher applicable tier.",
+          "value": "5yr=3 / 2yr=2",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: Age up to 35 (<=35) = 2 points; age 35 to 40 = 1 point. Counted once.",
+          "value": "<=35 = 2 / 35-40 = 1",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "POINTS: Prior residence in Germany of at least 6 months within the last 5 years (non-tourist) = 1 point.",
+          "value": "1 point",
+          "sourceUrl": "https://handbookgermany.de/en/opportunity-card",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "POINTS: Qualification in a shortage occupation (Engpassberuf) = 1 point. Shortage-occupation groups (KldB codes): 21, 23, 25, 132, 133, 134, 221, 222, 225, 226.",
+          "value": "1 point",
+          "sourceUrl": "https://handbookgermany.de/en/opportunity-card",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "POINTS: Spouse/partner applies jointly and also fulfils the Chancenkarte requirements = 1 point.",
+          "value": "1 point",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Card validity: issued for up to 1 year (max 12 months); shorter if proof of funds does not cover the full 12 months. Can be followed by a 'Folge-Chancenkarte' of up to 2 more years if the holder has a qualified job offer approved by the Federal Employment Agency.",
+          "value": "up to 12 months",
+          "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/arbeit-node.html",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Work rights while job-searching: part-time employment up to 20 hours per week, PLUS trial/probationary work (Probebeschäftigung) of up to 2 weeks in a skilled/qualifying job.",
+          "value": "20 h/week + 2-week trial",
+          "sourceUrl": "https://www.make-it-in-germany.com/fr/visa-sejour/carte-des-opportunites/carte-des-opportunites-pour-la-recherche-demploi",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Applications for the Chancenkarte have been possible since 1 June 2024 (introduced under the 'potential' pillar of the Skilled Immigration Act / Fachkräfteeinwanderungsgesetz).",
+          "value": "1 June 2024",
+          "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/arbeit-node.html",
+          "confidence": "verified-official"
+        }
+      ],
+      "structuredData": "{\"card\":\"Chancenkarte (Opportunity Card / carte d'opportunite)\",\"minimumPoints\":6,\"effectiveFrom\":\"2024-06-01\",\"routes\":{\"fastTrack\":\"Full recognition of a foreign qualification (Anerkennung) OR a German university/vocational degree => Chancenkarte granted WITHOUT the points system (only funds + general conditions required).\",\"pointsRoute\":\"No full recognition => must reach >=6 points AND meet the baseline requirements below.\"},\"baselineRequirements\":{\"qualification\":\"Foreign university degree OR at least a 2-year vocational qualification (recognized/comparable in country of training), or a German chamber-recognized credential.\",\"language\":\"German at least A1 (CEFR) OR English at least B2 (CEFR).\",\"funds\":{\"monthlyEUR\":1091,\"annualEUR\":13092,\"rateYear\":2026,\"acceptedProof\":[\"blocked account (Sperrkonto)\",\"Verpflichtungserklaerung (declaration of commitment)\",\"part-time work contract covering living costs\"]}},\"pointsTable\":[{\"criterion\":\"Recognition OR partial recognition of foreign professional qualification, OR permission to practise a regulated profession (Berufsausuebungserlaubnis)\",\"points\":4,\"group\":\"qualification\"},{\"criterion\":\"German language B2 (CEFR)\",\"points\":3,\"group\":\"german_language\"},{\"criterion\":\">=5 years relevant professional experience in the last 7 years (occupation requiring >=2-year vocational qualification)\",\"points\":3,\"group\":\"experience\"},{\"criterion\":\"German language B1 (CEFR)\",\"points\":2,\"group\":\"german_language\"},{\"criterion\":\">=2 years relevant professional experience in the last 5 years (occupation requiring vocational training)\",\"points\":2,\"group\":\"experience\"},{\"criterion\":\"Age up to 35 (<=35)\",\"points\":2,\"group\":\"age\"},{\"criterion\":\"German language A2 (CEFR)\",\"points\":1,\"group\":\"german_language\"},{\"criterion\":\"English language C1 (CEFR)\",\"points\":1,\"group\":\"english_language\"},{\"criterion\":\"Age 35 to 40\",\"points\":1,\"group\":\"age\"},{\"criterion\":\"Prior residence in Germany >=6 months within last 5 years (non-tourist)\",\"points\":1,\"group\":\"germany_ties\"},{\"criterion\":\"Qualification in a shortage occupation (Engpassberuf)\",\"points\":1,\"group\":\"shortage\"},{\"criterion\":\"Spouse/partner applies jointly and also meets Chancenkarte requirements\",\"points\":1,\"group\":\"partner\"}],\"calculatorRules\":{\"germanLanguage\":\"Tiered/exclusive: award only the single highest German level reached (A2=1 OR B1=2 OR B2=3), NOT additive.\",\"englishLanguage\":\"Separate +1 for English C1 only; can stack with German points; English B2 is the baseline entry requirement and earns 0 bonus.\",\"experience\":\"Exclusive: award only the higher applicable tier (2yr=2 OR 5yr=3), not both.\",\"age\":\"Exclusive: <=35 = 2, or 35-40 = 1, or >40 = 0.\",\"qualification4pts\":\"The 4-point item applies to PARTIAL recognition or a professional-practice permit; FULL recognition normally routes you to the fast track instead.\",\"total\":\"Sum all applicable rows; need >=6 to qualify.\"},\"shortageOccupationCodes\":[\"21\",\"23\",\"25\",\"132\",\"133\",\"134\",\"221\",\"222\",\"225\",\"226\"],\"validity\":{\"initialMaxMonths\":12,\"shorterIf\":\"funds do not cover a full 12 months\",\"extension\":\"Folge-Chancenkarte up to 2 additional years if holder has a qualified job offer approved by the Federal Employment Agency (Bundesagentur fuer Arbeit)\"},\"workRights\":{\"partTimeHoursPerWeek\":20,\"trialEmploymentWeeks\":2,\"trialNote\":\"Probebeschaeftigung (trial work) in a skilled/qualifying job, up to 2 weeks\"}}"
+    },
+    {
+      "topic": "In-demand shortage occupations (Mangelberufe/Engpassberufe) in Germany for Moroccan trade workers — electrician, nursing/care, crafts — with regional/small-city shortage angle and recognition (Anerkennung) requirements per trade",
+      "officialPortals": [
+        {
+          "name": "Make it in Germany (portail fédéral, FR/EN/DE)",
+          "url": "https://www.make-it-in-germany.com/fr/",
+          "accessible": true,
+          "purpose": "Portail officiel du gouvernement fédéral sur l'immigration de main-d'oeuvre qualifiée: professions recherchées, types de visa, Chancenkarte. Version française /fr existe. NB: protégé anti-bot (Radware) — accessible aux utilisateurs réels, mais bloque la récupération automatisée."
+        },
+        {
+          "name": "Bundesagentur für Arbeit — Engpassanalyse (statistique interactive)",
+          "url": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Fachkraeftebedarf/Engpassanalyse-Nav.html",
+          "accessible": true,
+          "purpose": "Analyse officielle annuelle des professions en pénurie (Engpassberufe) avec ventilation régionale au niveau des Länder — la source faisant autorité pour savoir quelles professions sont en pénurie et où."
+        },
+        {
+          "name": "Anerkennung in Deutschland (portail fédéral de reconnaissance, a une version FR)",
+          "url": "https://www.anerkennung-in-deutschland.de/fr/",
+          "accessible": true,
+          "purpose": "Anerkennungs-Finder: indique par métier s'il est réglementé ou non, si la reconnaissance est obligatoire, le niveau de langue, les coûts et délais."
+        },
+        {
+          "name": "Ambassade d'Allemagne à Rabat — Service Visa",
+          "url": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2521086-2521086",
+          "accessible": true,
+          "purpose": "Voies de visa depuis le Maroc: travailleur qualifié avec formation professionnelle, partenariat de reconnaissance, Chancenkarte. Frais 75 EUR, via TLScontact."
+        },
+        {
+          "name": "BAMF — Office fédéral des migrations et des réfugiés",
+          "url": "https://www.bamf.de/",
+          "accessible": true,
+          "purpose": "Autorité fédérale sur la procédure accélérée pour travailleurs qualifiés (beschleunigtes Fachkräfteverfahren) et le cadre du Fachkräfteeinwanderungsgesetz."
+        }
+      ],
+      "facts": [
+        {
+          "claim": "L'analyse officielle des pénuries de la Bundesagentur für Arbeit (Fachkräfteengpassanalyse 2024, publiée le 28.05.2025) recense 163 professions en pénurie (Engpassberufe) sur ~1 200 professions évaluées (contre 183 l'année précédente). Un métier est classé en pénurie si sa valeur-indice (calculée sur 6 indicateurs statistiques, KldB 2010) est ≥ 2,0.",
+          "value": "163 Engpassberufe; seuil valeur-indice ≥ 2,0",
+          "sourceUrl": "https://www.arbeitsagentur.de/presse/2025-25-qualifizierte-fachkraefte-weiterhin-gesucht",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les pénuries les plus fortes concernent les métiers du soin/santé (Pflege), la construction et les métiers artisanaux (Bau- und Handwerksberufe), l'informatique, ainsi que les chauffeurs poids lourds et les éducateurs de la petite enfance. Près de la moitié des offres pour personnel qualifié visaient des professions en pénurie.",
+          "value": "secteurs: Pflege, Bau/Handwerk, IT, Berufskraftfahrer, Erzieher",
+          "sourceUrl": "https://www.arbeitsagentur.de/presse/2025-25-qualifizierte-fachkraefte-weiterhin-gesucht",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "L'infirmier(ère) (Pflegefachperson) est une profession RÉGLEMENTÉE en Allemagne: la reconnaissance (Anerkennung) de la qualification est obligatoire pour exercer. Exigence de langue: niveau B2 avec un examen de langue spécialisé (fachsprachliche Prüfung), sauf si la formation a été suivie en allemand ou langue maternelle. Coût de la procédure: 170 à 845 EUR. Décision dans un délai maximum de 4 mois.",
+          "value": "Réglementé; B2 (examen spécialisé); 170–845 EUR; décision ≤ 4 mois",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/en/interest/finder/result?arrangement=Ja&location=47949&nationality=Drittstaat&profession=1695&qualification=Drittstaaten&whereabouts=Ausland&zipSearch=0",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "L'électronicien/électricien (Elektroniker) est une profession NON RÉGLEMENTÉE pour l'emploi salarié: on peut être employé sans reconnaissance de la qualification étrangère. Toutefois, pour les ressortissants de pays tiers (dont le Maroc), la reconnaissance reste requise pour obtenir le visa de travailleur qualifié. L'inscription au registre des métiers (Handwerksrolle) et le titre de maître (Meister) ne sont exigés que pour s'installer à son compte.",
+          "value": "Non réglementé (emploi); reconnaissance requise pour le visa; Meister requis seulement pour l'indépendance",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/de/interest/finder/profession/62/profile",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Depuis le Maroc, le visa 'travailleur qualifié avec formation professionnelle' exige une formation professionnelle reconnue en Allemagne (Anerkennung). Frais de visa: 75 EUR (en dirhams). Délai ~3 mois (env. 3 semaines en procédure accélérée). Les candidats de 45 ans et plus doivent justifier d'un salaire brut minimum de 55 770 EUR/an (2026) ou d'une couverture retraite adéquate.",
+          "value": "75 EUR; ~3 mois; 45+ : 55 770 EUR/an (2026)",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2730834-2730834",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Angle 'petite ville / rural': la pénurie est la plus aiguë hors des métropoles. Selon les données KOFA de l'IW Köln, dans les zones rurales peu densément peuplées ~56,4 % des postes vacants ne peuvent être pourvus, contre ~33,1 % dans les bassins d'emploi urbains. Les régions les plus touchées: l'Allemagne de l'Est (démographie/exode) ainsi que les zones rurales de Bavière et de Basse-Saxe. Les employeurs des petites/moyennes villes sont donc plus ouverts au recrutement international.",
+          "value": "56,4 % (rural) vs 33,1 % (urbain) de postes non pourvus",
+          "sourceUrl": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/KOFA_kompakt_und_Studien/2025/KOFA-Studie-01-2025-L%C3%A4ndlicher-Raum.pdf",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "La Chancenkarte (Carte des opportunités), visa de recherche d'emploi à points, est en vigueur depuis le 1er juin 2024 et permet un séjour d'un an maximum avec ressources suffisantes; elle est ouverte aux travailleurs qualifiés marocains, y compris des métiers.",
+          "value": "depuis 01/06/2024; séjour max 1 an",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2730846-2730846",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "La reconnaissance d'un diplôme se vérifie via la base ANABIN; si le diplôme/l'établissement n'y figure pas, la reconnaissance passe par la ZAB (Zentralstelle für ausländisches Bildungswesen). Pour les diplômes universitaires reconnus, le visa 'travailleur qualifié' permet d'exercer tout emploi qualifié.",
+          "value": "ANABIN + ZAB pour la reconnaissance",
+          "sourceUrl": "https://rabat.diplo.de/ma-fr/service/visa-einreise/2728834-2728834",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "La Carte bleue européenne (EU Blue Card) 2026 vise les diplômés UNIVERSITAIRES (donc pas les métiers/formations professionnelles): seuil salarial standard 50 700 EUR/an, seuil réduit 45 934,20 EUR/an pour les professions en pénurie et jeunes diplômés, effectif au 1er janvier 2026. Les métiers manuels relèvent de la voie §18a AufenthG (formation professionnelle), non de la Blue Card.",
+          "value": "Blue Card 2026: 50 700 EUR / 45 934,20 EUR (pénurie); au 01/01/2026",
+          "sourceUrl": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+          "confidence": "reported-secondary"
+        }
+      ],
+      "structuredData": "{\"note_general\":\"regulated_bool = réglementé en Allemagne pour l'EMPLOI salarié. Pour presque tous les métiers manuels non réglementés, la reconnaissance (Anerkennung) reste néanmoins exigée pour le VISA d'un ressortissant de pays tiers (Maroc). typicalLanguage indique le niveau pratiquement attendu (aucun minimum légal pour les métiers non réglementés; B2 obligatoire pour les professions de santé/éducation réglementées).\",\"source_shortage_list\":\"Bundesagentur für Arbeit Fachkräfteengpassanalyse 2024 (28.05.2025); 163 Engpassberufe\",\"occupations\":[{\"occupation_fr\":\"Infirmier(ère) / personnel soignant\",\"occupation_de\":\"Pflegefachperson (Gesundheits- und Krankenpfleger/in, Altenpfleger/in)\",\"regulated_bool\":true,\"typicalLanguage\":\"B2 (examen de langue spécialisé obligatoire)\",\"note\":\"Profession réglementée: Anerkennung + autorisation de port du titre obligatoires. Coût 170–845 EUR, décision ≤4 mois. Pénurie n°1 en Allemagne. Réglementé au niveau fédéral.\"},{\"occupation_fr\":\"Aide-soignant(e)\",\"occupation_de\":\"Pflegehelfer/in, Altenpflegehelfer/in\",\"regulated_bool\":true,\"typicalLanguage\":\"B1–B2\",\"note\":\"Formation d'1 an réglementée au niveau du Land (règles variables selon le Bundesland). Forte demande, porte d'entrée fréquente avant l'Ausbildung complète.\"},{\"occupation_fr\":\"Électricien / Électronicien\",\"occupation_de\":\"Elektroniker/in (Energie- und Gebäudetechnik / Betriebstechnik)\",\"regulated_bool\":false,\"typicalLanguage\":\"B1 (aucun minimum légal pour l'emploi)\",\"note\":\"Non réglementé pour l'emploi salarié. Reconnaissance requise pour le visa pays tiers. Meister + Handwerksrolle uniquement pour l'installation à son compte. Métier en pénurie (Handwerk).\"},{\"occupation_fr\":\"Plombier / Installateur sanitaire-chauffage-climatisation\",\"occupation_de\":\"Anlagenmechaniker/in für Sanitär-, Heizungs- und Klimatechnik (SHK)\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé (emploi). Meister requis seulement pour l'indépendance. Très forte pénurie liée à la transition énergétique (pompes à chaleur).\"},{\"occupation_fr\":\"Soudeur / Constructeur métallique\",\"occupation_de\":\"Schweißer/in, Metallbauer/in\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé. Certificats de soudure (DIN EN ISO 9606) valorisés. Pénurie dans l'industrie et la construction.\"},{\"occupation_fr\":\"Mécatronicien / Mécanicien automobile\",\"occupation_de\":\"Mechatroniker/in, Kfz-Mechatroniker/in\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé (emploi). Kfz: Meister pour l'indépendance. Demande soutenue, notamment hors métropoles.\"},{\"occupation_fr\":\"Menuisier / Charpentier\",\"occupation_de\":\"Tischler/in, Zimmerer/in\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé pour l'emploi; ces métiers du Handwerk exigent le Meister pour l'indépendance. En pénurie dans la construction.\"},{\"occupation_fr\":\"Maçon / Métiers du bâtiment\",\"occupation_de\":\"Maurer/in, Bauberufe (Hochbau)\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé (emploi). Secteur construction identifié en pénurie par la BA.\"},{\"occupation_fr\":\"Chauffeur poids lourd\",\"occupation_de\":\"Berufskraftfahrer/in (Güterverkehr, LKW)\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé, mais permis UE + qualification de conducteur (Code 95 / Grundqualifikation) requis. Pénurie explicitement citée par la BA.\"},{\"occupation_fr\":\"Cuisinier\",\"occupation_de\":\"Koch/Köchin\",\"regulated_bool\":false,\"typicalLanguage\":\"B1\",\"note\":\"Non réglementé. Pénurie explicitement citée par la BA (hôtellerie-restauration).\"},{\"occupation_fr\":\"Éducateur / Petite enfance\",\"occupation_de\":\"Erzieher/in\",\"regulated_bool\":true,\"typicalLanguage\":\"B2\",\"note\":\"Profession réglementée (reconnaissance de niveau Land). Pénurie forte (Kinderbetreuung). Exige souvent une adaptation/qualification complémentaire.\"}]}"
+    },
+    {
+      "topic": "The real cost of moving from Morocco to Germany for work / job-search (Chancenkarte / Opportunity Card and Ausbildung pathway)",
+      "officialPortals": [
+        {
+          "name": "Make it in Germany (German federal government portal, FR/EN/AR)",
+          "url": "https://www.make-it-in-germany.com/fr/",
+          "accessible": false,
+          "purpose": "Master government portal for the Chancenkarte, points self-check, recognition, and living costs. Has a French section (/fr) and Arabic. NOTE: blocks automated fetch (Radware bot check) — reachable by a human browser only."
+        },
+        {
+          "name": "Auswärtiges Amt — German Embassy Rabat (Chancenkarte / job-search visa, Morocco-specific)",
+          "url": "https://rabat.diplo.de/ma-de/service/2704644-2704644",
+          "accessible": true,
+          "purpose": "Official Morocco-specific page: confirms €75 visa fee payable in MAD, A1 German / B2 English requirement, application only via TLScontact, effective 01.06.2024."
+        },
+        {
+          "name": "Auswärtiges Amt — Lebensunterhalt in Deutschland (livelihood thresholds)",
+          "url": "https://pristina.diplo.de/xk-de/service/visa-einreise/lebensunterhalt-in-deutschland-2311760",
+          "accessible": true,
+          "purpose": "Official Foreign Office figures: student Sperrkonto €992/mo (€11,904/yr, §16b BAföG rate) and Chancenkarte €1,091/mo (§20a)."
+        },
+        {
+          "name": "§ 20b AufenthG + Anlage (official points table, German law)",
+          "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__20b.html",
+          "accessible": true,
+          "purpose": "The legal basis and appendix table defining the exact points per criterion and the 6-point minimum for the Chancenkarte."
+        },
+        {
+          "name": "Anerkennung in Deutschland (federal recognition portal)",
+          "url": "https://www.anerkennung-in-deutschland.de/html/en/pro/recognition-procedure.php",
+          "accessible": true,
+          "purpose": "Official info on recognition (Anerkennung) procedure costs ('several hundred euros') and the Anerkennungszuschuss grant (€100–€600 reimbursable)."
+        },
+        {
+          "name": "BAMF — Federal Office for Migration and Refugees",
+          "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/B<...>",
+          "accessible": false,
+          "purpose": "Federal migration authority; Chancenkarte topic pages (specific deep-link returned 404 — use site search)."
+        },
+        {
+          "name": "Goethe-Institut Marokko (official language exams, Casablanca/Rabat)",
+          "url": "https://www.goethe.de/ins/ma/fr/spr/prf.html",
+          "accessible": true,
+          "purpose": "Official Goethe-Zertifikat exam registration and fees in Morocco (A1–C2). Fee schedule under 'Dates des épreuves… et prix'."
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Chancenkarte (Opportunity Card): proof of livelihood required — minimum per month",
+          "value": "1.091 EUR/month",
+          "sourceUrl": "https://pristina.diplo.de/xk-de/service/visa-einreise/lebensunterhalt-in-deutschland-2311760",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte: proof of livelihood required — total for the 12-month validity (typical blocked-account/Sperrkonto deposit)",
+          "value": "13.092 EUR/year",
+          "sourceUrl": "https://eriwan.diplo.de/am-de/service/visa/chancenkarte-2721494",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Student blocked account (Sperrkonto) under §16b — distinct, lower figure often quoted (BAföG rate), unchanged 2025→2026",
+          "value": "992 EUR/month = 11.904 EUR/year",
+          "sourceUrl": "https://pristina.diplo.de/xk-de/service/visa-einreise/lebensunterhalt-in-deutschland-2311760",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte visa application fee (Morocco: payable in Moroccan dirham via TLScontact)",
+          "value": "75 EUR",
+          "sourceUrl": "https://rabat.diplo.de/ma-de/service/2704644-2704644",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte language requirement: at least German A1 OR English B2",
+          "value": "A1 German / B2 English",
+          "sourceUrl": "https://rabat.diplo.de/ma-de/service/2704644-2704644",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte points system: minimum 6 points required (max 15)",
+          "value": "6 points minimum",
+          "sourceUrl": "https://www.gesetze-im-internet.de/aufenthg_2004/__20b.html",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Official § 20b AufenthG points table (Anlage) — verified point values per criterion #1–#12: 4,3,2,1,1,3,2,1,2,1,1,1",
+          "value": "see structuredData.pointsSystem",
+          "sourceUrl": "https://www.buzer.de/Anlage_AufenthG.htm",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte in force since (regulation applicable date)",
+          "value": "01.06.2024",
+          "sourceUrl": "https://rabat.diplo.de/ma-de/service/2704644-2704644",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Chancenkarte allows part-time work up to 20 hours/week while job-searching (an alternative way to fund livelihood)",
+          "value": "20 h/week",
+          "sourceUrl": "https://eriwan.diplo.de/am-de/service/visa/chancenkarte-2721494",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Recognition (Anerkennung) procedure fee — official portal states it costs 'several hundred euros', varying by profession",
+          "value": "~ a few hundred EUR (varies)",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/html/en/pro/recognition-procedure.php",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Anerkennungszuschuss (federal recognition grant) can reimburse recognition-procedure costs",
+          "value": "100–600 EUR reimbursable",
+          "sourceUrl": "https://www.anerkennung-in-deutschland.de/html/en/financial-support.php",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Rental security deposit (Kaution) legal maximum in Germany",
+          "value": "max 3 months' cold rent (Kaltmiete), §551 BGB",
+          "sourceUrl": "https://allaboutberlin.com/guides/mietkaution",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Certified/sworn translation of diplomas & certificates (per page, typical)",
+          "value": "~30–60 EUR/page; ~45–120 EUR/document",
+          "sourceUrl": "https://www.alphatrad.de/beglaubigte-uebersetzungen/kosten-preise",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Goethe-Zertifikat exam fees in Morocco (2025/26): A2 ≈1,800–2,000 MAD; B1 ≈2,000–2,500 MAD (≈165–230 EUR)",
+          "value": "A2 ~1,800–2,000 MAD; B1 ~2,000–2,500 MAD",
+          "sourceUrl": "https://www.goethe.de/ins/ma/fr/spr/prf.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "One-way flight Casablanca→Frankfurt order of magnitude",
+          "value": "~90–270 EUR (from ~3,184 MAD, Lufthansa)",
+          "sourceUrl": "https://www.lufthansa.com/lhg/ma/fr/o-d/cy-cy/casablanca-francfort",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Health insurance during job-search phase (incoming/expat travel policy, no employer yet)",
+          "value": "~30–110 EUR/month",
+          "sourceUrl": "https://feather-insurance.com/blog/germany-health-insurance-expats-guide",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Health insurance once employed (statutory GKV, employee share)",
+          "value": "~250–450 EUR/month",
+          "sourceUrl": "https://www.germany-visa.org/insurances-germany/health-insurance/cost/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Residence-permit (eAT card) issuance fee once converting to a work permit inside Germany",
+          "value": "~100 EUR (initial eAT)",
+          "sourceUrl": "https://www.visaguard.berlin/en/voraussetzungen-aufenthaltserlaubni/gebuehren-aufenthaltstitel-visum",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "WG (shared-flat) room monthly rent, order of magnitude",
+          "value": "~400–700 EUR/month (higher in Munich/Frankfurt)",
+          "sourceUrl": "https://allaboutberlin.com/guides/cost-of-living",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Utilities/Nebenkosten included in warm rent, order of magnitude",
+          "value": "~150–300 EUR/month",
+          "sourceUrl": "https://expats.de/en/bureaucracy/rent-apartment-germany/",
+          "confidence": "reported-secondary"
+        }
+      ],
+      "structuredData": "{\"currency\":\"EUR\",\"asOf\":\"2026-07-15\",\"fxNote\":\"MAD→EUR approx 1 EUR ≈ 10.8 MAD (2026); MAD figures are the primary official numbers where the fee is charged in dirham.\",\"financialMeansThresholds\":{\"chancenkarte\":{\"perMonthEUR\":1091,\"perYearEUR\":13092,\"legalBasis\":\"§20a AufenthG\",\"source\":\"pristina.diplo.de + eriwan.diplo.de\",\"confidence\":\"verified-official\",\"note\":\"Usually proven via a blocked account (Sperrkonto); alternatively a Verpflichtungserklärung or a permitted part-time job (≤20h/week). This money is the applicant's own and is released ~1/12 per month.\"},\"studentSperrkonto\":{\"perMonthEUR\":992,\"perYearEUR\":11904,\"legalBasis\":\"§16b AufenthG (BAföG rate)\",\"source\":\"pristina.diplo.de\",\"confidence\":\"verified-official\",\"note\":\"Distinct, lower figure — applies to the STUDENT visa, NOT the Chancenkarte. Unchanged 2025→2026.\"}},\"costLineItems\":[{\"label\":\"Blocked account / Sperrkonto deposit (Chancenkarte proof of funds)\",\"amountEUR\":13092,\"oneTimeOrMonthly\":\"one-time (own money, released 1091/month)\",\"source\":\"eriwan.diplo.de / pristina.diplo.de\",\"confidence\":\"verified-official\"},{\"label\":\"Chancenkarte visa application fee\",\"amountEUR\":75,\"oneTimeOrMonthly\":\"one-time\",\"source\":\"rabat.diplo.de\",\"confidence\":\"verified-official\"},{\"label\":\"Residence-permit (eAT card) fee when converting to work permit in Germany\",\"amountEUR\":100,\"oneTimeOrMonthly\":\"one-time\",\"source\":\"visaguard.berlin\",\"confidence\":\"reported-secondary\"},{\"label\":\"Document recognition (Anerkennung) procedure fee\",\"rangeEUR\":[100,600],\"oneTimeOrMonthly\":\"one-time\",\"source\":\"anerkennung-in-deutschland.de\",\"confidence\":\"verified-official\",\"note\":\"'Several hundred euros'; regulated professions (e.g. doctors, nurses) can cost more. Anerkennungszuschuss may reimburse 100–600 EUR.\"},{\"label\":\"Certified/sworn translation of diplomas & documents\",\"rangeEUR\":[30,60],\"oneTimeOrMonthly\":\"per page (one-time)\",\"source\":\"alphatrad.de\",\"confidence\":\"reported-secondary\",\"note\":\"~45–120 EUR per document; a full document set often totals ~200–500 EUR.\"},{\"label\":\"Language test fee (Goethe-Zertifikat, Morocco)\",\"rangeEUR\":[165,230],\"amountMAD\":[1800,2500],\"oneTimeOrMonthly\":\"one-time per level\",\"source\":\"goethe.de/ins/ma\",\"confidence\":\"reported-secondary\",\"note\":\"A2 ~1,800–2,000 MAD; B1 ~2,000–2,500 MAD; single modules ~1,000 MAD. telc/ÖSD comparable.\"},{\"label\":\"Flight Morocco→Germany (one-way, e.g. CMN→FRA)\",\"rangeEUR\":[90,270],\"amountMAD\":[3184,null],\"oneTimeOrMonthly\":\"one-time\",\"source\":\"lufthansa.com / edreams / expedia\",\"confidence\":\"reported-secondary\"},{\"label\":\"Health insurance — job-search phase (incoming/expat policy)\",\"rangeEUR\":[30,110],\"oneTimeOrMonthly\":\"monthly\",\"source\":\"feather-insurance.com\",\"confidence\":\"reported-secondary\",\"note\":\"Required for the visa; ~2.40–3.40 EUR/day incoming tariffs.\"},{\"label\":\"Health insurance — once employed (statutory GKV, employee share)\",\"rangeEUR\":[250,450],\"oneTimeOrMonthly\":\"monthly\",\"source\":\"germany-visa.org\",\"confidence\":\"reported-secondary\"},{\"label\":\"Rent — WG room (shared flat)\",\"rangeEUR\":[400,700],\"oneTimeOrMonthly\":\"monthly\",\"source\":\"allaboutberlin.com\",\"confidence\":\"reported-secondary\",\"note\":\"Higher in Munich/Frankfurt; small studio ~800+ in big cities.\"},{\"label\":\"Security deposit (Kaution)\",\"formula\":\"up to 3 x cold rent (Kaltmiete), legal max §551 BGB\",\"exampleEUR\":1500,\"oneTimeOrMonthly\":\"one-time (refundable, payable in 3 installments)\",\"source\":\"§551 BGB / allaboutberlin.com\",\"confidence\":\"reported-secondary\"},{\"label\":\"Utilities (Nebenkosten, part of warm rent)\",\"rangeEUR\":[150,300],\"oneTimeOrMonthly\":\"monthly\",\"source\":\"expats.de\",\"confidence\":\"reported-secondary\"}],\"illustrativeUpfrontTotal\":{\"note\":\"Rough one-time cash needed BEFORE/at arrival for a Chancenkarte applicant, excluding the Sperrkonto (own money) — indicative only.\",\"components\":{\"visaFee\":75,\"languageTest\":200,\"translations\":300,\"recognitionProcedure\":400,\"flight\":200,\"depositExample\":1500,\"firstMonthRent\":600},\"approxSubtotalEUR\":3275,\"plusBlockedAccountEUR\":13092},\"pointsSystem\":{\"legalBasis\":\"§20b AufenthG + Anlage\",\"minimumPoints\":6,\"maximumPoints\":15,\"source\":\"buzer.de/Anlage_AufenthG.htm (official law reproduction) + make-it-in-germany self-check\",\"confidence\":\"verified-official\",\"selectionRules\":{\"germanLanguage\":\"take ONE (highest) of A2/B1/B2 — not additive\",\"age\":\"take ONE bracket (<=35 OR <=40)\",\"experience\":\"take ONE (highest) of 2yr/5yr\"},\"criteria\":[{\"n\":1,\"label\":\"Qualification partially equivalent / recognition with adaptation measures\",\"points\":4},{\"n\":2,\"label\":\"German language B2 (sehr gute)\",\"points\":3,\"group\":\"germanLanguage\"},{\"n\":3,\"label\":\"German language B1 (gute)\",\"points\":2,\"group\":\"germanLanguage\"},{\"n\":4,\"label\":\"German language A2\",\"points\":1,\"group\":\"germanLanguage\"},{\"n\":5,\"label\":\"English language C1 (or native)\",\"points\":1},{\"n\":6,\"label\":\"Professional experience: 5 years within last 7 years\",\"points\":3,\"group\":\"experience\"},{\"n\":7,\"label\":\"Professional experience: 2 years within last 5 years\",\"points\":2,\"group\":\"experience\"},{\"n\":8,\"label\":\"Qualification in a shortage occupation (Engpassberuf)\",\"points\":1},{\"n\":9,\"label\":\"Age up to 35 years\",\"points\":2,\"group\":\"age\"},{\"n\":10,\"label\":\"Age up to 40 years\",\"points\":1,\"group\":\"age\"},{\"n\":11,\"label\":\"Previous stay in Germany (>=6 months, last 5 years, not tourism)\",\"points\":1},{\"n\":12,\"label\":\"Accompanying spouse/partner who also meets Chancenkarte requirements\",\"points\":1}],\"exemption\":\"Holders of a qualification FULLY recognised in Germany skip the points test entirely and qualify as a skilled worker.\"}}"
+    }
+  ],
+  "verifications": [
+    {
+      "holds": false,
+      "notes": "Core system is overwhelmingly correct and current as of 2026-07-15, but two items would produce wrong calculator output and one funds label is imprecise. Verdict: mostly verified-official, do NOT ship as-is.\n\nVERIFIED-OFFICIAL (confirmed on diplo.de Federal Foreign Office Chancenkarte page + § 20a AufenthG statute):\n- minimumPoints = 6. Correct.\n- effectiveFrom 2024-06-01 (Chancenkarte in force since 1 June 2024). Correct.\n- Fast-track: full recognition (Anerkennung) or German degree => Chancenkarte WITHOUT points, funds+general conditions only. Correct.\n- Baseline: uni degree OR >=2yr vocational qual recognized in country of training; language German A1 OR English B2. Correct.\n- Full points table values all correct: partial recognition/practice permit=4; 5yr-in-7 experience=3; German B2=3; 2yr-in-5 experience=2; German B1=2; age under 35=2; German A2=1; English C1=1; age 35-40=1; prior >=6mo residence=1; shortage occupation=1; spouse joint=1.\n- Calculator rules correct: German tiered/highest-only (not additive); English C1 is a separate stackable +1 while B2 is the zero-bonus baseline; experience exclusive higher-tier; qualification 4pts = partial recognition/practice permit (full recognition => fast track).\n- Funds annual €13,092 correct (accepted proof: Sperrkonto / Verpflichtungserklaerung / work contract — all confirmed).\n- Validity 12 months + Folge-Chancenkarte up to 2 additional years with qualified job offer approved by Bundesagentur fuer Arbeit. Confirmed verbatim in § 20a AufenthG.\n- Work rights: part-time up to 20 h/week; Probebeschaeftigung up to 2 weeks. Confirmed on diplo.de.\n\nDEFECTS TO FIX BEFORE BUILDING:\n1) shortageOccupationCodes [\"21\",\"23\",\"25\",\"132\",\"133\",\"134\",\"221\",\"222\",\"225\",\"226\"] is NOT official and is unverifiable against the Chancenkarte source. The Engpassberuf/+1-point determination references the Bundesagentur fuer Arbeit / make-it-in-germany \"Mangelberufe\" list, a dynamically-updated NAMED-occupation PDF (aggregators variously claim ~130 vs 163 occupations — inconsistent, do not trust). These 10 codes look borrowed from an ISCO/EU-Blue-Card context. Hardcoding them will give wrong shortage results. Recommend: drop the hardcoded codes; link the live official Mangelberufe PDF and treat shortage as a user-declared/lookup field.\n2) Age boundary is imprecise for a calculator. Statute wording = \"35. Lebensjahr noch nicht vollendet\" (strictly UNDER 35) => 2 pts; \"35., aber noch nicht das 40. Lebensjahr vollendet\" (turned 35, not yet 40) => 1 pt; 40+ => 0. The data's \"Age up to 35 (<=35)=2\" over-awards at exactly 35 (should be 1), and inclusive \"35-40=1\" over-awards at exactly 40 (should be 0). Implement: age<35 =>2; 35<=age<40 =>1; age>=40 =>0.\n3) Funds monthly/rateYear labeling: official diplo.de currently DISPLAYS €1.092/month; the data's €1,091 is exactly €13,092/12 (fine as a derived figure, note the 1,091 vs 1,092 rounding). The €13,092/year figure took effect 1 Jan 2025 and is unchanged into 2026 — it is NOT a \"2026\" figure; label as effective 2025-01-01, current as of 2026-07-15, to avoid implying a 2026 update.\n\nSourcing note: make-it-in-germany.com is behind Radware bot protection and could not be fetched directly; verification was done against diplo.de (Federal Foreign Office / Auswaertiges Amt — official) and gesetze-im-internet.de (§ 20a AufenthG — the statute itself), both authoritative.",
+      "corrections": "1) Funds: annual €13,092 per person is the verified-official anchor (effective 1 Jan 2025, unchanged into 2026). Official monthly display = €1.092 (diplo.de); data's €1,091 = 13,092/12, acceptable as derived. Fix rateYear label from \"2026\" to effectiveFrom \"2025-01-01\" / currentAsOf \"2026-07-15\". Source: Federal Foreign Office (diplo.de) Chancenkarte page; make-it-in-germany €13,092 since 01.01.2025.\n2) Age brackets: replace \"<=35 =2 / 35-40 =1 / >40 =0\" with \"age<35 =2 / 35<=age<40 =1 / age>=40 =0\" (statute: \"35. Lebensjahr noch nicht vollendet\" / \"35., aber noch nicht das 40. Lebensjahr vollendet\"). Source: § 20a AufenthG, gesetze-im-internet.de.\n3) shortageOccupationCodes: remove the hardcoded 10-code list (not official / unverifiable). Replace with a link to the official Mangelberufe list. Source: make-it-in-germany.com Mangelberufe PDF / statistik.arbeitsagentur.de. All other point values, the 6-point minimum, baseline requirements, 12-month validity, 2-year Folge-Chancenkarte extension, 20 h/week part-time and 2-week trial: confirmed correct against diplo.de and § 20a AufenthG."
+    },
+    {
+      "holds": true,
+      "notes": "All VERIFIED-OFFICIAL thresholds, fees and the full points table are exactly right and current as of 2026-07-15 — confirmed by independently fetching official German-government sources, not aggregators. ONE derived field is wrong (maximumPoints) and there are minor completeness notes.\n\nCONFIRMED-OFFICIAL (I refuted nothing here):\n1. Chancenkarte financial means €1,091/month → €13,092/year. bangkok.diplo.de (Auswärtiges Amt) states verbatim \"mindestens 1091 € pro Monat (Jahr 2025)\"; still cited as the 2026 rate across diplo/expatrio. CAVEAT: this figure is re-set annually by the Foreign Office — re-verify each Jan; capture \"(Jahr 2025/2026)\" effective-year label in the UI.\n2. Student Sperrkonto €992/month → €11,904/year (BAföG-linked, §16b). Confirmed set Sept 2024, unchanged 2025→2026. Note is right: this is the STUDENT figure, not the Chancenkarte figure.\n3. Chancenkarte visa fee €75. Confirmed via bangkok.diplo.de (\"75 €\") — this is the standard national D-visa fee, so rabat.diplo.de citation is sound.\n4. Points table — CONFIRMED EXACTLY against the official Anlage to §20b AufenthG (buzer.de reproduction; §20b criteria order via gesetze-im-internet.de). Values by criterion 1–12: 4,3,2,1,1,3,2,1,2,1,1,1 — identical to the structured data, and labels map to the correct order. \"Die Mindestpunktzahl beträgt sechs Punkte\" → minimumPoints:6 CONFIRMED. Selection/exclusivity rules (one of German A2/B1/B2, one age bracket, one experience tier) are correct. Full-recognition exemption is correct.\n5. Bonus fact confirmed while verifying: 20h/week part-time is allowed during job search (matches the Chancenkarte note).\n\nDEFECT (fix before shipping the calculator): pointsSystem.maximumPoints:15 is internally inconsistent with the data's own criteria + exclusivity rules. Highest-of-each-group + all standalones = 4+3(B2)+1(EnglishC1)+3(5yr)+1(Engpassberuf)+2(age≤35)+1(prior stay)+1(spouse) = 16, not 15. External sources disagree too (y-axis.com says 14, others say 15) and the LAW only fixes the minimum (6) — no statutory maximum exists. A summing calculator will therefore let a user hit 16/15. Recommendation: don't hard-code \"/15\"; either compute the ceiling from the same summation logic (=16) or drop the fixed max and only enforce the 6-point pass line.\n\nMINOR NOTES (not errors, no change strictly required):\n- financialMeansThresholds.chancenkarte.legalBasis \"§20a AufenthG\": livelihood security is technically the general §5 AufenthG requirement, with §20a/§20b governing the Chancenkarte itself — acceptable shorthand, could read \"§20a/§20b + §5 AufenthG\".\n- Ausbildung pathway is named in the topic but absent from the numbers: the official vocational-training (Ausbildung) blocked-account figure is €959/month (if no salary is paid during training) — verified via diplo/expatrio during this check. Consider adding it so the \"Ausbildung\" half of the calculator has an official anchor.\n- All reported-secondary cost ranges (certified translation €30–60/page, flight, job-search health insurance €30–110/mo, statutory GKV once employed, WG rent, Kaution up to 3× cold rent per §551 BGB, Nebenkosten, eAT card €100, Goethe test fees) were NOT independently re-verified — they are reasonable estimates and are honestly flagged as reported-secondary/ranges. Keep those labels; do not present them as official figures in the UI. The eAT €100 and §551 BGB 3×-Kaltmiete cap are both commonly-cited correct anchors.\n- Anerkennung procedure fee \"several hundred euros\" + Anerkennungszuschuss up to €600 reimbursement is consistent with anerkennung-in-deutschland.de framing; verified-official label is acceptable for the qualitative range.\n\nBottom line: every OFFICIAL threshold/fee/point value is exactly right and current — safe for a YMYL calculator — provided maximumPoints is corrected (15→16 or removed) and each money figure keeps its effective-year label with an annual re-verify reminder.",
+      "corrections": "1) pointsSystem.maximumPoints: 15 → 16 (or remove the fixed maximum). Source/derivation: sum of highest-per-group + standalones using the official Anlage-to-§20b values (buzer.de/Anlage_AufenthG.htm; gesetze-im-internet.de/aufenthg_2004/__20b.html) = 4+3+1+3+1+2+1+1 = 16. The statute fixes only the MINIMUM (6); no legal maximum exists, and third-party sources vary (14–15).\n\n2) ADD Ausbildung Sperrkonto line item: €959/month (if no salary paid during vocational training) — required for the vocational-training (Ausbildung) visa. Source: German embassy/diplo.de blocked-account guidance (confirmed 2026-07-15). Distinct from Chancenkarte €1,091 and student €992.\n\nNo correction needed to: €1,091/mo & €13,092/yr (Chancenkarte), €992/mo & €11,904/yr (student), €75 visa fee, minimumPoints 6, or any of the 12 individual point values — all confirmed correct and current. Only caveat: re-verify the €1,091 annually (Foreign-Office-set, effective-year \"2025\" label present on diplo.de)."
+    },
+    {
+      "holds": false,
+      "notes": "The visa/fee CORE of the system is accurate and current as of 2026-07-15 — every immigration threshold checked out against an authoritative source, so a calculator built on the visa numbers is safe. The single blocking issue is the Ausbildung training-allowance figure (wrong year), plus one stale average. Details:\n\nVERIFIED-OFFICIAL / CURRENT (source: GGUA \"Erforderliche Mindestbeträge…\", Stand Januar 2026, which restates the official BMI Bundesanzeiger §2(3) AufenthG 2026 values; einwanderer.net PDF read directly):\n• §16a company-based net €822/mo — EXACT match. Official base is €822 net for BOTH school- and company-based Ausbildung.\n• §16a school-based net €959/mo — EXACT match, and it reconciles: €822 base + €137 health-insurance surcharge (applies when no social-insurance employment, i.e. school-based) = €959. The JSON's company/school split is correct.\n• §17 seek-training blocked account €1,091/mo net — EXACT match (GGUA §17 Abs. 1 row).\n• §17 age max 35, B1 (lowered from B2 as of March 2024), validity 9 months, 20h/week side job, 2-week trial — ALL confirmed (search corroboration of the March-2024 reform).\n• Chancenkarte €1,091/mo × 12 = €13,092/yr — math correct (1091×12=13092) and matches make-it-in-germany's 2026 figure.\n• Chancenkarte §20a, min 6 points, and every sample point value confirmed: B2 German=3, B1=2; 5yr exp=3, 2yr exp=2; age ≤35=2; age 36-40=1; prior ≥6mo stay=1. Baseline A1 German OR B2 English, 12-month validity, 20h/week, 2-week trial per employer — all correct.\n• Morocco: national (D) visa €75 adult — verified-official, quoted from rabat.diplo.de (\"payez les frais de 75 EUR, à payer en espèces en dirhams\"). €37.50 minor under 18 = standard German national-visa half-fee (confirmed via a sister mission page; the Rabat page itself does not restate it). Paid in MAD/dirhams, in person via TLScontact — confirmed.\n\nSOFT CAVEATS (not calculator-breaking, but tighten before publishing this YMYL page):\n• Domain: the live portal is make-it-in-germany.COM, not .de as the note field states (.de redirects). Cosmetic.\n• §16a germanLevel \"B1\": there is NO hard statutory German level for §16a — it depends on the Ausbildung/Berufsschule (commonly B1, sometimes B2). Present as \"usually B1\", not a fixed threshold. Only §17 has the firm statutory B1.\n• §16a \"BA/Federal Employment Agency must approve it\": overstated. Vocational training in a state-recognised training occupation is generally zustimmungsfrei (no BA approval) under §8 BeschV; the contract is required, but BA approval usually is not.\n• §16a companyBased grossPerMonth €1,048 is a derived gross conversion; the official reference is net €822 only. Label it as approximate/derived, not official.\n• Chancenkarte financial means: €1,091/€13,092 is the correct blocked-account reference (and what make-it-in-germany publishes); note GGUA treats the underlying livelihood test more flexibly (lower proven need can suffice), but €1,091/mo is the right headline number for a calculator.",
+      "corrections": "CONFIRMED ERROR — trainingAllowanceMonthlyGross.statutoryMin2026 = 682 is WRONG. €682 is the 2025 first-year statutory minimum (Mindestausbildungsvergütung). For training starting in 2026 the statutory minimum is €724/month (first year), a ~6.2% increase. Source: BIBB (Bundesinstitut für Berufsbildung), press release \"Mindestausbildungsvergütung steigt 2026 auf 724 Euro\" (bibb.de). Statutory increments on the first-year base: +18% (year 2), +35% (year 3), +40% (year 4). → set statutoryMin2026: 724.\n\nOUTDATED — trainingAllowanceMonthlyGross.allSectorAverage = 1066 is stale (≈2023 figure). Latest BIBB figure: average training allowance in collectively-bargained firms across all training years was €1,133 gross/month for 2024. Source: BIBB (via bibb.de). Recommend allSectorAverage ≈ 1133 (2024, tarifgebunden), or label it explicitly as an illustrative average with its year, since it is not a legal threshold. typicalRange [1000,1200] remains a reasonable illustrative band.\n\nNO CHANGE NEEDED (verified exact/current): §16a €822 net (company) and €959 net (school = 822+137 surcharge); §17 €1,091/mo; Chancenkarte €1,091/mo & €13,092/yr; Chancenkarte 6-point threshold and all listed point values; Morocco €75 adult / €37.50 minor visa fee. Sources: einwanderer.net/GGUA table Stand Jan 2026 (restates BMI Bundesanzeiger §2(3) AufenthG 2026 values); rabat.diplo.de (fees); BIBB (allowances)."
+    }
+  ]
+}

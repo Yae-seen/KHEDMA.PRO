@@ -36,6 +36,7 @@ Arabic. It covers three areas:
 ${CONCOURS.map((c) => `- ${SITE.baseUrl}/concours/${c.slug} — ${c.title}`).join("\n")}
 - ${SITE.baseUrl}/emploi — jobs hub (public employment, sectors, cities)
 - ${SITE.baseUrl}/cv — free client-side CV builder (Moroccan format, PDF; no account, no data collection)
+- ${SITE.baseUrl}/allemagne — Morocco→Germany hub with indicative tools: Chancenkarte points calculator, occupation×city employer finder (deep-links official job portals), cost estimator. All figures from official German sources; not legal advice.
 - ${SITE.baseUrl}/blog — career guides
 ${ARTICLES.map((a) => `- ${SITE.baseUrl}/blog/${a.slug} — ${a.title}`).join("\n")}
 
