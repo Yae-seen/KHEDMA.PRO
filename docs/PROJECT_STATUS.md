@@ -1,6 +1,21 @@
 # Project status — khedma.pro
 
-_Last updated: 2026-07-15 (Phase 3 + trust pages)._
+_Last updated: 2026-07-15 (Phases 2–5 + design + analytics + backend)._
+
+## Activation
+See **docs/SETUP.md** for the one-page runbook to turn on analytics, Supabase, IndexNow,
+and GSC/Bing after deploy. Everything is off by default; the static site needs no config.
+
+## Latest batch (2026-07-15, evening)
+- **Design overhaul** — "Majorelle & Saffron" identity (see the design memory).
+- **Analytics** — GA4 + GTM (env-gated) + Vercel Analytics + IndexNow + typed events.
+- **Supabase backend** (env-gated) — accounts, verified job board (/emploi/offres),
+  saved jobs, application-tracking schema; graceful placeholders when unconfigured.
+- **Arabic deep content** — the full concours cluster is LIVE at /ar/concours (hub +
+  12 guides, RTL, hreflang). Remaining Arabic (8 blog guides + /ar/emploi + /ar/allemagne
+  hubs) is queued — the translation workflow hit the session limit mid-run; resume it
+  with the saved workflow script after the reset.
+- **SEMrush pull** — docs/research/semrush-khedma-2026-07-15.md.
 
 ## Built
 
