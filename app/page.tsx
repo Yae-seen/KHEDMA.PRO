@@ -41,10 +41,10 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/emploi"
+              href="/concours"
               className="rounded-xl bg-accent px-6 py-3 text-sm font-bold text-night shadow-lg transition-transform hover:-translate-y-0.5"
             >
-              Trouver un emploi
+              Voir les concours ouverts
             </Link>
             <Link
               href="/allemagne"
@@ -110,10 +110,10 @@ export default function HomePage() {
           Explorez les concours ouverts, les offres vérifiées, et votre parcours vers l&apos;Allemagne.
         </p>
         <Link
-          href="/emploi"
+          href="/concours"
           className="mt-7 inline-flex rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-md transition-colors hover:bg-primary-dark"
         >
-          Commencer gratuitement
+          Explorer les concours
         </Link>
       </section>
     </>

@@ -20,16 +20,10 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/emploi"
-            className="hidden rounded-lg border border-border px-3.5 py-2 text-sm font-semibold text-ink transition-colors hover:border-primary sm:inline-flex"
-          >
-            Se connecter
-          </Link>
-          <Link
-            href="/allemagne"
+            href="/concours"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary-dark"
           >
-            Commencer
+            Concours ouverts
           </Link>
         </div>
       </div>

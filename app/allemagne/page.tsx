@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Travailler en Allemagne depuis le Maroc : Ausbildung & Chancenkarte",
   description:
     "Votre parcours réel vers l'Allemagne : éligibilité Chancenkarte, métiers qui recrutent (électricité, soins, artisanat) et employeurs des petites villes qui embauchent des Marocains.",
+  alternates: { canonical: "/allemagne" },
 };
 
 export default function AllemagnePage() {

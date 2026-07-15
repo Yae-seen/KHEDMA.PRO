@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Emploi au Maroc : offres vérifiées & CV builder",
   description:
     "Des offres d'emploi vérifiées dans tout le Maroc, secteur public et privé, plus un CV builder adapté au marché marocain. Sans arnaques, sans frais.",
+  alternates: { canonical: "/emploi" },
 };
 
 export default function EmploiPage() {

@@ -45,7 +45,20 @@ Perishable trial data — captured here so it survives the trial expiry (~2026-0
 
 ## Phases
 - **Phase 1 (done):** scaffold — design system, layout, homepage, 3 pillar landing pages.
-- **Phase 2:** Concours listings + content engine (low-KD SEO backbone), sitemap/robots/SEO.
+- **Phase 2 (done, 2026-07-15):** Concours listings + content engine (low-KD SEO backbone),
+  sitemap/robots/llms.txt/OG/JSON-LD. 12 concours guides + 5 blog guides, all grounded in
+  official-source research (see `docs/research/concours-research-2026-07-15.json` and
+  `docs/OFFICIAL_SOURCES.md`). Ecosystem links to massar-service.net seeded on 3 pages.
 - **Phase 3:** Emploi job board + CV builder + accounts.
 - **Phase 4:** Allemagne — Chancenkarte calculator + occupation×city employer finder; Massar links.
 - **Phase 5:** Arabic (AR/RTL) localization.
+
+## Phase 2 notes (for the next session)
+- **Weekly refresh:** `lib/concours-actuels.ts` is a hand-verified snapshot of what's open;
+  its entries expire by deadline. Re-check statuses in `lib/concours-data.ts` against the
+  official portals each week — especially around the September rentrée surge (DGSN announces
+  ~mid-Sept, enseignement late-Oct/Nov, santé Dec-Jan).
+- **Morocco window:** several official portals (concours.dgsn.gov.ma, recrutement.gr.ma,
+  recrutement.far.ma, recrutement.fa.gov.ma, sante.gov.ma family, tawdif/wolouj.men.gov.ma)
+  are geo-blocked outside Morocco. Verify their live state from a Moroccan IP when possible.
+- **Indexing:** submit the sitemap to GSC + Bing and ping IndexNow after deploy.

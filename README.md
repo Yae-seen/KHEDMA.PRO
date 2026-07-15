@@ -20,13 +20,45 @@ npm run lint       # eslint
 
 ## Structure
 ```
-app/                homepage + concours / emploi / allemagne pillar pages
-components/         site-header, site-footer, pillar-layout
-lib/site-config.ts  site + pillar config (single source of truth)
-docs/BUILD_BRIEF.md SEMrush keyword research + content roadmap
+app/
+  concours/                hub + [slug] guide template (12 concours)
+  blog/                    index + [slug] article template (5 guides)
+  sitemap.ts robots.ts     SEO surfaces
+  opengraph-image.tsx      OG card (Satori-safe)
+  llms.txt/route.ts        AI-crawler guidance
+components/                json-ld, content-blocks, breadcrumb, faq-section,
+                           official-link, anti-scam-banner, concours-card, source-list
+lib/
+  site-config.ts           site + pillar config (single source of truth)
+  content-types.ts         typed content model (ConcoursGuide, ArticleContent, blocks)
+  concours-data.ts         concours registry (status/deadline, all official-source-verified)
+  concours-actuels.ts      hand-verified "open now" snapshot (refresh weekly)
+  structured-data.ts       JSON-LD builders (Article/FAQ/HowTo/Breadcrumb/ItemList/WebSite)
+  articles.ts              blog article registry (metadata)
+content/
+  concours/<slug>.ts       one typed module per concours guide
+  blog/<slug>.ts           one typed module per article
+docs/
+  BUILD_BRIEF.md           keyword research + phase roadmap
+  OFFICIAL_SOURCES.md      official-URL table + geo-block notes
+  PROJECT_STATUS.md        what's built / what's next
+  research/                captured research digests (JSON)
 ```
 
+## Content discipline
+Concours status/deadline facts come only from official sources (emploi-public.ma,
+ministry `.gov.ma` sites, maroc.ma) — see `docs/research/`. Reported-secondary facts
+are framed as "conditions des dernières sessions", never as the current announcement.
+Every page carries a "Dernière vérification" date. Refresh `lib/concours-actuels.ts`
+weekly and re-check statuses against the official portals.
+
 ## Status
-Phase 1 scaffold: design system, layout, homepage, and the three pillar landing pages
-(stubs). See `docs/BUILD_BRIEF.md` for the keyword-informed build roadmap (Phases 2+:
-concours listings, job board + CV builder, Chancenkarte tool, Massar ecosystem links).
+- **Phase 1 (done):** scaffold — design system, layout, homepage, 3 pillar pages.
+- **Phase 2 (done):** concours listings + content engine — 12 concours guides, 5 blog
+  guides, hub with "open now" list, sitemap/robots/llms.txt/OG, full JSON-LD.
+- **Phase 3 (next):** Emploi job board + CV builder + accounts.
+- **Phase 4:** Allemagne — Chancenkarte calculator + occupation×city employer finder.
+- **Phase 5:** Arabic (AR/RTL) localization.
+
+See `docs/BUILD_BRIEF.md` for the keyword-informed roadmap and `docs/PROJECT_STATUS.md`
+for the detailed state.

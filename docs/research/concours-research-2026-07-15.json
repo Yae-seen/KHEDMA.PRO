@@ -1,0 +1,1343 @@
+{
+  "capturedAt": "2026-07-15",
+  "method": "parallel web research, official-source-first, geo-blocked portals noted",
+  "results": [
+    {
+      "topic": "Official Moroccan public-employment portal(s): emploi-public.ma, official vs non-official channels, and the standard concours application flow",
+      "officialPortals": [
+        {
+          "name": "Portail National de l'Emploi Public (emploi-public.ma) — OFFICIAL",
+          "url": "https://www.emploi-public.ma/fr/",
+          "accessible": true,
+          "notes": "Live and fetched 2026-07-15. Arabic is the default language (البوابة الوطنية للتشغيل العمومي) at https://www.emploi-public.ma; French version at /fr/. Operated by the Ministère de la Transition Numérique et de la Réforme de l'Administration. Central listing of concours de recrutement (9,521 listed), postes supérieurs (331), postes de responsabilité (5,434), experts (37). Key URLs: /fr/concours-liste (open concours), /fr/concours/calendrier (calendar), /fr/candidat/register (candidate account), /fr/faq-liste (FAQ), /fr/content/textes-concours (legal texts). Supports online candidature ('Dépôt en ligne') with candidate account and 'Mes Candidatures' tracking."
+        },
+        {
+          "name": "Ministère de la Transition Numérique et de la Réforme de l'Administration (mmsp.gov.ma) — OFFICIAL",
+          "url": "https://www.mmsp.gov.ma/fr/nos-services/portail-de-l%E2%80%99emploi-public",
+          "accessible": true,
+          "notes": "Ministry page confirming it operates emploi-public.ma, implementing décret n°2.11.621 to 'simplifier la procédure de gestion des concours et la garantie de leur transparence'. Note the legacy domain 'mmsp' (ex-Ministère de la Modernisation des Secteurs Publics)."
+        },
+        {
+          "name": "Ministère de l'Éducation nationale — page Concours (men.gov.ma) — OFFICIAL",
+          "url": "https://www.men.gov.ma/fr/concours",
+          "accessible": true,
+          "notes": "Live. Lists MEN appels à candidatures (postes de responsabilité, directeurs provinciaux, etc.) and states these documents are also published on www.emploi-public.ma."
+        },
+        {
+          "name": "tawdif.men.gov.ma — OFFICIAL (education/teacher recruitment)",
+          "url": "http://tawdif.men.gov.ma",
+          "accessible": false,
+          "notes": "DNS resolution failed from outside Morocco (getaddrinfo ENOTFOUND) — consistent with geo-restriction or seasonal availability of some .gov.ma recruitment subdomains. Widely reported (Dreamjob, press) as the MEN portal where candidates validate electronic applications for the CRMEF teacher-recruitment concours. Verify from a Moroccan IP."
+        },
+        {
+          "name": "concours.men.gov.ma — OFFICIAL (education candidature login)",
+          "url": "https://concours.men.gov.ma/Account/Login",
+          "accessible": false,
+          "notes": "Seen only in search results (login page for MEN recruitment / bac verification); not fetched this session. Treat as official MEN subdomain but unverified."
+        },
+        {
+          "name": "Banque de Données Juridiques (bdj.mmsp.gov.ma) — OFFICIAL legal database",
+          "url": "https://bdj.mmsp.gov.ma/Fr/Document/8321-D%c3%a9cret-n-2-11-621-du-28-hija-1432-25-novembre-20.aspx",
+          "accessible": true,
+          "notes": "Page loads but the decree full text is JS-rendered — only metadata visible (décret 2-11-621, 25/11/2011, signed Abbas El Fassi). Companion subdomain refgrh.mmsp.gov.ma (procedure repository) is DNS-unreachable from outside Morocco."
+        },
+        {
+          "name": "ANAPEC (anapec.org) — OFFICIAL public agency, NOT the concours channel",
+          "url": "https://www.anapec.org",
+          "accessible": false,
+          "notes": "Not fetched this session. Public employment-promotion agency for labor-market intermediation (mostly private-sector offers and programs); fonction publique concours go through emploi-public.ma, not ANAPEC."
+        },
+        {
+          "name": "alwadifa-maroc.com — NON-OFFICIAL private aggregator",
+          "url": "https://www.alwadifa-maroc.com",
+          "accessible": false,
+          "notes": "Private site (since ~2009, mainly Arabic) that republishes concours announcements from emploi-public.ma. No government affiliation despite the 'alwadifa' (الوظيفة = the job) name. Not fetched directly; described by secondary sources."
+        },
+        {
+          "name": "dreamjob.ma — NON-OFFICIAL private aggregator",
+          "url": "https://www.dreamjob.ma/emploi-public/",
+          "accessible": false,
+          "notes": "Large private job portal aggregating public + private sector announcements, with an 'alwadifa' section. Seen in search results only this session."
+        },
+        {
+          "name": "jadid-alwadifa.com — NON-OFFICIAL private aggregator",
+          "url": "https://www.jadid-alwadifa.com",
+          "accessible": false,
+          "notes": "Private aggregator (public + private jobs, internships). Not government-run."
+        },
+        {
+          "name": "alwadifa-mag.com — NON-OFFICIAL private aggregator",
+          "url": "https://www.alwadifa-mag.com",
+          "accessible": false,
+          "notes": "Private aggregator seen in search results. Not government-run."
+        },
+        {
+          "name": "ijob.ma — NON-OFFICIAL private aggregator",
+          "url": "https://ijob.ma/category/alwadifa/",
+          "accessible": false,
+          "notes": "Private aggregator with an alwadifa/concours category. Not government-run."
+        },
+        {
+          "name": "wadifapublic.ma — NON-OFFICIAL private aggregator/guide",
+          "url": "https://www.wadifapublic.ma/fr",
+          "accessible": true,
+          "notes": "Fetched successfully. Private French/Arabic guide + listings site about emploi public; publishes an 8-step concours guide. Clearly not a government domain despite the name."
+        }
+      ],
+      "currentConcours": [
+        {
+          "title": "Concours Médecins premier grade (Échelle 11) — 10 postes",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "ouvert",
+          "deadline": "2026-07-23",
+          "examDate": "2026-07-26",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "sourceQuote": "Médecins premier grade - Échelle 11 ... 10 posts",
+          "confidence": "verified-official",
+          "notes": "Listed on the official portal's concours-liste page, fetched 2026-07-15. Deadline shown as 23/07/2026 16:30."
+        },
+        {
+          "title": "Concours Maître de conférences grade A (Échelle 11) — 1 poste",
+          "organisme": "Ministère de la Solidarité, de l'Insertion sociale et de la Famille",
+          "status": "ouvert",
+          "deadline": "2026-07-21",
+          "examDate": "2026-07-29",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "sourceQuote": "Maître de conférences grade A - Échelle 11",
+          "confidence": "verified-official",
+          "notes": "Official portal listing, fetched 2026-07-15. Deadline 21/07/2026 16:30. Same ministry also lists Technicien 3ème grade and Administrateur openings with similar deadlines (details on individual announcement pages)."
+        },
+        {
+          "title": "Concours Ingénieur d'État 1er grade (Échelle 11) — 10 postes",
+          "organisme": "Ministère de l'Agriculture — Département de la Pêche maritime",
+          "status": "ouvert",
+          "deadline": "2026-07-20",
+          "examDate": "2026-08-02",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "sourceQuote": "Ingénieur d'Etat 1er grade - Échelle 11 ... 10 posts",
+          "confidence": "verified-official",
+          "notes": "Official portal listing, fetched 2026-07-15."
+        },
+        {
+          "title": "Concours d'accès aux CRMEF (recrutement enseignants) — session 2025/2026, 20 000 postes",
+          "organisme": "Ministère de l'Éducation nationale, du Préscolaire et des Sports",
+          "status": "cloture",
+          "sourceUrl": "https://www.dreamjob.ma/alwadifa/tawdif-men-gov-ma/",
+          "sourceQuote": "18,000 are reserved for teaching staff and 2,000 for specialized personnel",
+          "confidence": "reported-secondary",
+          "notes": "The 2025/2026 CRMEF session (20,000 posts, applications via tawdif.men.gov.ma) is over; the next annual session announcement (2026/2027) is normally expected around the rentrée. tawdif.men.gov.ma is DNS-unreachable from outside Morocco, so this could not be verified officially. No dates for the next session — do not publish estimated dates."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "emploi-public.ma (Portail National de l'Emploi Public / البوابة الوطنية للتشغيل العمومي) is the official centralized government portal for fonction publique concours, operated by the Ministère de la Transition Numérique et de la Réforme de l'Administration.",
+          "sourceUrl": "https://www.mmsp.gov.ma/fr/nos-services/portail-de-l%E2%80%99emploi-public",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "The portal exists to enforce 'équité, égalité des chances et mérite' in access to public employment and to guarantee transparency by publishing conditions, dates, venues, lists of admitted candidates, final results and waiting lists.",
+          "sourceUrl": "https://www.mmsp.gov.ma/fr/nos-services/portail-de-l%E2%80%99emploi-public",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Legal framework for concours: Constitution (art. 31); Dahir n°1-58-008 (statut général de la fonction publique); décret n°2.11.621 du 25/11/2011 modifié (conditions et modalités d'organisation des concours); décret n°2.12.90 (diplômes requis par grade); décret n°2.15.770 (recrutement par contrat); circulaires n°14/2012 et n°16/2020; arrêté n°1394-17 (agents contractuels).",
+          "sourceUrl": "https://www.emploi-public.ma/fr/content/textes-concours",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Application channel on the official portal: the candidate creates an account (espace candidat at /fr/candidat/register, email activation), fills in personal info/diplomas/CV, then applies to offers marked 'Dépôt en ligne'. Attachments must be PDF, max 2 MB per document.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/faq-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "The recruiting administration receives the candidature dossier directly and handles all contact with candidates; emploi-public.ma itself never contacts candidates ('à aucun moment vous ne serez contacté par Emploi-public.ma'). Applications are tracked in the 'Mes Candidatures' section of the account.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/faq-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Spontaneous applications are not possible on the portal; candidates are advised to set up email alerts for new announcements instead.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/faq-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Ministries also publish avis, convocation lists and results on their own sites AND on emploi-public.ma — e.g. MEN: 'ces documents ... sont également mis en ligne sur le portail dédié aux emplois publics: www.emploi-public.ma'.",
+          "sourceUrl": "https://www.men.gov.ma/fr/concours",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Standard concours flow: (1) avis publié (Bulletin officiel + emploi-public.ma + site de l'administration) → (2) dossier de candidature en ligne via le portail ou par voie postale avant la date limite → (3) commission de vérification de conformité des dossiers → (4) épreuves écrites → (5) publication des résultats de l'écrit + convocation à l'oral → (6) épreuve orale devant un jury → (7) résultats définitifs par ordre de mérite avec liste d'attente → (8) nomination et formation initiale.",
+          "sourceUrl": "https://www.wadifapublic.ma/fr/emploi-public",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Per décret 2-11-621: final results including the waiting list must be posted on the emploi public portal, the administration's website, at its headquarters and at exam venues; the administration must appoint laureates within 60 days of publication of final results.",
+          "sourceUrl": "https://bdj.mmsp.gov.ma/Fr/Document/8321-D%c3%a9cret-n-2-11-621-du-28-hija-1432-25-novembre-20.aspx",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Teacher recruitment (concours d'accès aux CRMEF) runs through the dedicated MEN portal tawdif.men.gov.ma, separate from emploi-public.ma; candidates validate their electronic candidature there.",
+          "sourceUrl": "https://www.dreamjob.ma/alwadifa/tawdif-men-gov-ma/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "No official Moroccan government domain uses the 'alwadifa' name: all alwadifa-* sites (alwadifa-maroc.com, jadid-alwadifa.com, alwadifa-mag.com, etc.) and dreamjob.ma/ijob.ma/wadifapublic.ma are private aggregators that republish announcements sourced from emploi-public.ma; the only official channels observed are emploi-public.ma, ministry .gov.ma sites, and sector portals like tawdif.men.gov.ma.",
+          "sourceUrl": "https://www.dreamjob.ma/alwadifa/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Some .gov.ma recruitment subdomains (tawdif.men.gov.ma, refgrh.mmsp.gov.ma) fail DNS resolution from outside Morocco, so their content can only be verified from a Moroccan IP; the main emploi-public.ma, mmsp.gov.ma and men.gov.ma sites are reachable internationally.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/",
+          "confidence": "verified-official"
+        }
+      ]
+    },
+    {
+      "topic": "Sweep of all concours de recrutement open or recently announced in Morocco as of mid-July 2026",
+      "officialPortals": [
+        {
+          "name": "EMPLOI-PUBLIC (portail officiel de la fonction publique)",
+          "url": "https://www.emploi-public.ma/fr/concours-liste",
+          "accessible": true,
+          "notes": "Fetched successfully (pages 1-3 of ~130). Lists concours for Services de l'Etat, Collectivités territoriales, Etablissements & Entreprises publics. The /fr/concours/calendrier page loads but its data table is not exposed to the fetcher (login/JS)."
+        },
+        {
+          "name": "Ministère de l'Éducation nationale — page Concours",
+          "url": "https://www.men.gov.ma/fr/concours",
+          "accessible": true,
+          "notes": "Fetched successfully. Shows professeurs assistants recruitment (deadline 17 July 2026) and multiple appels à candidatures for management posts (deadlines 13-23 July 2026)."
+        },
+        {
+          "name": "DGSN — portail des concours (police)",
+          "url": "https://concours.dgsn.gov.ma/",
+          "accessible": false,
+          "notes": "Connection refused (ECONNREFUSED) — appears geo-blocked outside Morocco. Could not verify whether a 2026 police concours is currently open."
+        },
+        {
+          "name": "Gendarmerie Royale — plateforme de recrutement",
+          "url": "https://recrutement.gr.ma",
+          "accessible": false,
+          "notes": "Not fetched directly; referenced by secondary source (tawjihnet.net) as the online-only registration channel for the 2026 élèves-gendarmes intake."
+        },
+        {
+          "name": "ONCF — plateforme e-talent",
+          "url": "https://oncf.etalent.ma/",
+          "accessible": false,
+          "notes": "Not fetched directly; referenced by secondary sources as ONCF's own recruitment platform (ONCF does not recruit via emploi-public.ma)."
+        }
+      ],
+      "currentConcours": [
+        {
+          "title": "Médecins premier grade - Echelle 11 (10 postes)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "ouvert",
+          "deadline": "2026-07-23",
+          "examDate": "2026-07-26",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official",
+          "sourceQuote": "Médecins premier grade - Echelle 11",
+          "notes": "Deadline 23 July 2026 at 16:30. Listed on the official emploi-public.ma concours list (fetched directly)."
+        },
+        {
+          "title": "Médecins premier grade - Echelle 11 (30 postes)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "ouvert",
+          "deadline": "2026-07-21",
+          "examDate": "2026-07-26",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official",
+          "sourceQuote": "Médecins premier grade - Echelle 11",
+          "notes": "Separate batch from the 10-post listing; deadline 21 July 2026 at 16:30."
+        },
+        {
+          "title": "Médecins (22), Pharmaciens (4), Chirurgiens-dentistes (4) premier grade - Echelle 11",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "ouvert",
+          "deadline": "2026-07-15",
+          "examDate": "2026-07-19",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste?page=2",
+          "confidence": "verified-official",
+          "sourceQuote": "Chirurgien dentiste premier grade - Échelle 11",
+          "notes": "Closes TODAY 15 July 2026 at 16:30 (three parallel listings, 30 posts total)."
+        },
+        {
+          "title": "Techniciens 3ème grade (60) et 4ème grade (20) - santé",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "cloture",
+          "deadline": "2026-07-14",
+          "examDate": "2026-07-19",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste?page=2",
+          "confidence": "verified-official",
+          "sourceQuote": "Technicien de 3ème grade - Échelle 9",
+          "notes": "Application deadline passed 14 July 2026; written exam still upcoming 19 July 2026. 80 posts total."
+        },
+        {
+          "title": "Administrateurs 2e/3e grade (19), Techniciens 3e grade (10), Maître de conférences A (1)",
+          "organisme": "Ministère de la Solidarité, de l'Insertion sociale et de la Famille",
+          "status": "ouvert",
+          "deadline": "2026-07-21",
+          "examDate": "2026-08-02",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official",
+          "sourceQuote": "Administrateur 3ème grade - Echelle 10",
+          "notes": "30 posts total across 4 listings, deadline 21 July at 16:30. Exams 29 July (maître de conférences, INAS Tanger, spécialité communication) and 2 August 2026 (others), in Rabat."
+        },
+        {
+          "title": "Département de la Pêche maritime — 48 postes (10 ingénieurs d'État, 20 administrateurs 2e gr., 13 administrateurs 3e gr., 5 techniciens)",
+          "organisme": "Ministère de l'Agriculture, de la Pêche maritime, du Développement rural et des Eaux et Forêts",
+          "status": "ouvert",
+          "deadline": "2026-07-20",
+          "examDate": "2026-08-02",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official",
+          "sourceQuote": "Ingénieur d'Etat 1er grade - Echelle 11",
+          "notes": "Four listings on emploi-public.ma, all deadline 20 July 2026, exam 2 August 2026."
+        },
+        {
+          "title": "Ingénieurs d'État 1er grade - Echelle 11 (50 postes)",
+          "organisme": "Ministère de l'Équipement et de l'Eau",
+          "status": "ouvert",
+          "deadline": "2026-07-15",
+          "examDate": "2026-07-26",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste?page=2",
+          "confidence": "verified-official",
+          "sourceQuote": "Ingénieur d'État 1er grade - Échelle 11",
+          "notes": "Closes TODAY 15 July 2026 at 16:30."
+        },
+        {
+          "title": "Équipement et Eau — 135 postes (70 techniciens 3e gr., 30 adjoints techniques, 15 administrateurs 3e gr., 20 administrateurs 2e gr.)",
+          "organisme": "Ministère de l'Équipement et de l'Eau",
+          "status": "cloture",
+          "deadline": "2026-07-10",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste?page=2",
+          "confidence": "verified-official",
+          "sourceQuote": "Technicien de 3ème grade - Échelle 9",
+          "notes": "Deadline passed 10 July 2026; exams still upcoming: 25 July (adjoints, administrateurs 2e), 1 August (techniciens), 2 August (administrateurs 3e)."
+        },
+        {
+          "title": "Recrutement de professeurs assistants",
+          "organisme": "Ministère de l'Éducation nationale, du Préscolaire et des Sports",
+          "status": "ouvert",
+          "deadline": "2026-07-17",
+          "sourceUrl": "https://www.men.gov.ma/fr/concours",
+          "confidence": "verified-official",
+          "sourceQuote": "le recrutement de professeurs assistants au ministère chargé de l'Éducation nationale",
+          "notes": "Seen directly on men.gov.ma. Exam date not shown on the listing page."
+        },
+        {
+          "title": "Appels à candidatures — postes de responsabilité (directeurs provinciaux Tata/Taourirt, directeur du Centre national des examens, chefs de division/service, directeurs adjoints CRMEF)",
+          "organisme": "Ministère de l'Éducation nationale, du Préscolaire et des Sports",
+          "status": "ouvert",
+          "deadline": "2026-07-23",
+          "sourceUrl": "https://www.men.gov.ma/fr/concours",
+          "confidence": "verified-official",
+          "sourceQuote": "Avis d'ouverture de l'appel à candidatures",
+          "notes": "Batch of internal management appels à candidatures with staggered deadlines 13-23 July 2026 (17 July for CRMEF and Centre national des examens; 22 July Tata; 23 July Oriental posts). Mostly reserved to serving civil servants."
+        },
+        {
+          "title": "CHU Ibn Rochd Casablanca — 300 postes (238 infirmiers et techniciens de santé, 20 médecins, 12 techniciens, 30 adjoints techniques)",
+          "organisme": "Centre Hospitalier Universitaire Ibn Rochd (CHUIR)",
+          "status": "ouvert",
+          "deadline": "2026-07-24",
+          "examDate": "2026-08-01",
+          "sourceUrl": "https://www.maroconcours.com/2026/07/300-2026-24.html",
+          "confidence": "reported-secondary",
+          "sourceQuote": "au plus tard le 24 juillet 2026",
+          "notes": "Exams 1-2 August 2026. Read on maroconcours.com aggregator; CHU official site not fetched. Largest single établissement public concours found in this sweep."
+        },
+        {
+          "title": "MAP — 15-16 postes (journalistes, ingénieurs/informaticiens, juristes, cadres)",
+          "organisme": "Agence Maghreb Arabe Presse (MAP)",
+          "status": "ouvert",
+          "deadline": "2026-07-23",
+          "examDate": "2026-08-02",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/show/id/23253",
+          "confidence": "reported-secondary",
+          "sourceQuote": "آخر أجل للترشيح هو 23 يوليوز 2026",
+          "notes": "Rabat HQ + regional bureaus. Sources vary between 15 and 16 posts. Convocation lists to be published on www.map.ma and emploi-public.ma. MAP official site not fetched directly."
+        },
+        {
+          "title": "Marsa Maroc — Patron de remorqueur (1 poste)",
+          "organisme": "Marsa Maroc (Société d'Exploitation des Ports)",
+          "status": "ouvert",
+          "deadline": "2026-07-28",
+          "sourceUrl": "https://www.toutaumaroc.com/marsa-maroc-recrute-patron-de-remorqueur-2026/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "28 Juillet 2026",
+          "notes": "Secondary source states the fiche de poste is also on emploi-public.ma; not individually verified there."
+        },
+        {
+          "title": "Office du Développement de la Coopération (ODCO) — 17 administrateurs 2e grade + 1 ingénieur d'État",
+          "organisme": "Office du Développement de la Coopération",
+          "status": "ouvert",
+          "deadline": "2026-07-30",
+          "examDate": "2026-08-23",
+          "sourceUrl": "https://www.mostajadat-alwadifa.com/",
+          "confidence": "reported-secondary",
+          "notes": "Reported by mostajadat-alwadifa and alwadifa-maroc; 18 posts total, exam 23 August 2026."
+        },
+        {
+          "title": "Fonds de Financement Routier — 2 techniciens 3ème grade",
+          "organisme": "Fonds de Financement Routier (صندوق تمويل الطرق)",
+          "status": "ouvert",
+          "deadline": "2026-07-20",
+          "examDate": "2026-08-01",
+          "sourceUrl": "https://alwadifa-club.com/emploi-public/%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%B1%D9%82-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%AA%D9%88%D8%B8%D9%8A%D9%81-2-%D8%AA%D9%82%D9%86%D9%8A%D9%8A%D9%86/95256/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "آخر أجل 20 يوليوز 2026",
+          "notes": "Reported by alwadifa-club aggregator."
+        },
+        {
+          "title": "Office des Changes — 16 postes de cadres",
+          "organisme": "Office des Changes",
+          "status": "ouvert",
+          "deadline": "2026-07-28",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Listed on alwadifa-maroc public-sector board; specialties not detailed in the listing read."
+        },
+        {
+          "title": "Agence Nationale des Ports (ANP) — 7 postes (2 ingénieurs, 3 cadres, 1 technicien...)",
+          "organisme": "Agence Nationale des Ports",
+          "status": "ouvert",
+          "deadline": "2026-07-29",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Deadlines reported as 29-30 July 2026 depending on the post. Exact breakdown per profile not verified against ANP official site."
+        },
+        {
+          "title": "Société Régionale Multiservices Béni Mellal-Khénifra — 14 postes",
+          "organisme": "Société Régionale Multiservices (SRM) Béni Mellal-Khénifra",
+          "status": "ouvert",
+          "deadline": "2026-07-18",
+          "sourceUrl": "https://www.maroconcours.com/2026/07/14-2026-18.html",
+          "confidence": "reported-secondary",
+          "sourceQuote": "آخر أجل 18 يوليوز",
+          "notes": "One of the new regional water/electricity multiservice companies."
+        },
+        {
+          "title": "Société Oujda Animation et Développement — 70 conducteurs/chauffeurs",
+          "organisme": "Société de Développement Local Oujda",
+          "status": "ouvert",
+          "deadline": "2026-07-28",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "70 driver posts; local development company (SDL), reported by alwadifa-maroc and toutaumaroc."
+        },
+        {
+          "title": "MGEN — 7 postes de professionnels de santé",
+          "organisme": "Mutuelle Générale de l'Éducation Nationale (MGEN)",
+          "status": "ouvert",
+          "deadline": "2026-07-31",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Medical staff posts; details not verified against MGEN directly."
+        },
+        {
+          "title": "École Nationale d'Agriculture de Meknès — 1 administrateur 2ème grade",
+          "organisme": "ENA Meknès",
+          "status": "ouvert",
+          "deadline": "2026-07-28",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Single post listed on alwadifa-maroc board."
+        },
+        {
+          "title": "Faculté des Sciences de Rabat — 3 postes (administrateurs + technicien)",
+          "organisme": "Université Mohammed V - Faculté des Sciences Rabat",
+          "status": "ouvert",
+          "deadline": "2026-07-26",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Listed on alwadifa-maroc board; not verified against university site."
+        },
+        {
+          "title": "Commune de Tafraout (province Tiznit) — 4 techniciens 3ème grade",
+          "organisme": "Commune de Tafraout (collectivité territoriale)",
+          "status": "ouvert",
+          "deadline": "2026-07-27",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/show/id/23250",
+          "confidence": "reported-secondary",
+          "sourceQuote": "آخر أجل للترشيح هو 27 يوليوز 2026",
+          "notes": "Example of collectivités territoriales concours; many similar small communal concours run in parallel."
+        },
+        {
+          "title": "Commune Aïn Rakada — 8 techniciens de santé",
+          "organisme": "Commune Aïn Rakada (collectivité territoriale)",
+          "status": "ouvert",
+          "deadline": "2026-08-07",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "reported-secondary",
+          "notes": "Health technician grades 1/3/4."
+        },
+        {
+          "title": "Institution Dar Essanaa — 10 postes (cadres administratifs + technicien)",
+          "organisme": "Dar Essanaa",
+          "status": "ouvert",
+          "deadline": "2026-07-29",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "unverified",
+          "notes": "Only seen as a one-line entry on the alwadifa-maroc board; organisme identity and details not confirmed elsewhere."
+        },
+        {
+          "title": "Agence (Oujda) — 1 technicien paysagiste + 2 ingénieurs génie civil",
+          "organisme": "Agence de développement / société locale d'Oujda (nom exact à confirmer)",
+          "status": "ouvert",
+          "deadline": "2026-07-24",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/public",
+          "confidence": "unverified",
+          "notes": "Listed as 'Oujda Development Agency' on the aggregator board; exact legal name of the organisme not confirmed."
+        },
+        {
+          "title": "ANAPEC (intermédiation) — 14 éducateurs préscolaire FMPS province Rehamna; opérateurs de saisie Oujda; 100 postes industrie Italie (projet THAMM Plus)",
+          "organisme": "ANAPEC / FMPS / OIM",
+          "status": "ouvert",
+          "deadline": "2026-07-24",
+          "sourceUrl": "https://www.maroconcours.com/2026/07/anapec-recrute-des-operateurs-de-saisie.html",
+          "confidence": "reported-secondary",
+          "notes": "Not concours de fonction publique but ANAPEC-channelled recruitments: FMPS applications at ANAPEC agency 13-16 July; Italy THAMM Plus deadline 24 July 2026."
+        },
+        {
+          "title": "DGSN — concours de police 2026 (gardiens de la paix, inspecteurs, officiers, commissaires)",
+          "organisme": "Direction Générale de la Sûreté Nationale",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.maroconcours.com/2026/04/concours-dgsn-2026.html",
+          "confidence": "reported-secondary",
+          "notes": "As of the April 2026 article the official 2026 announcement was still expected. The official portal concours.dgsn.gov.ma is unreachable from outside Morocco (connection refused), so current status could NOT be verified. Do not publish dates."
+        },
+        {
+          "title": "Gendarmerie Royale — 1 500 élèves-gendarmes 2026",
+          "organisme": "Gendarmerie Royale",
+          "status": "cloture",
+          "deadline": "2026-04-15",
+          "sourceUrl": "https://www.tawjihnet.net/concours-gendarme-royale-maroc-2026/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "entre 25-03-2026 et 15-04-2026",
+          "notes": "Registration window closed 15 April 2026 (online-only at recrutement.gr.ma). Conditions: 18-24 ans, bac 2025/2026, célibataire, taille min 1,70m H / 1,68m F."
+        },
+        {
+          "title": "ONCF — 163 postes 2026 (150 encadrants, 25 agents police ferroviaire, chefs de projets)",
+          "organisme": "Office National des Chemins de Fer (ONCF)",
+          "status": "cloture",
+          "deadline": "2026-05-14",
+          "sourceUrl": "https://bghit-nekhdem.com/concours-de-recrutement-oncf-2026-163-postes/",
+          "confidence": "reported-secondary",
+          "notes": "Deadlines passed: 4 May 2026 (encadrants, licence, ≤30 ans) and 14 May 2026 (police ferroviaire, 21-35 ans). Applications via oncf.etalent.ma / oncf-recrutement.ma. No new July window found."
+        },
+        {
+          "title": "Ministère de l'Économie et des Finances — 503 contrôleurs des finances 2e grade",
+          "organisme": "Ministère de l'Économie et des Finances",
+          "status": "cloture",
+          "deadline": "2026-06-03",
+          "examDate": "2026-07-05",
+          "sourceUrl": "https://www.emploi-public.ma/fr/",
+          "confidence": "reported-secondary",
+          "notes": "Large recent concours: applications closed 3 June, exam held 5 July 2026 (Rabat + other cities). Reported in search-result summaries citing emploi-public.ma; the specific listing page was not individually re-fetched."
+        },
+        {
+          "title": "Ministère de la Santé — 690 infirmiers 1er grade (300 + 390)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "cloture",
+          "deadline": "2026-07-06",
+          "examDate": "2026-07-12",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste?page=3",
+          "confidence": "verified-official",
+          "sourceQuote": "Infirmier de premier grade - Echelle 10",
+          "notes": "Seen on emploi-public.ma page 3: deadline 6 July, exam 12 July 2026 — already held."
+        },
+        {
+          "title": "OCP / ONEE / Barid Al-Maghrib — aucun concours à échéance juillet 2026 trouvé",
+          "organisme": "OCP, ONEE, Barid Al-Maghrib",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "unverified",
+          "notes": "Searches in FR+AR found no open concours with July 2026 deadlines for these three. OCP recruits year-round via its own careers portal (not concours); Al Barid Bank accepts spontaneous applications. Absence of evidence, not verified closure."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "emploi-public.ma est le portail officiel qui centralise les concours de recrutement dans trois catégories: Services de l'État, Collectivités territoriales, et Établissements & Entreprises publics.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/calendrier",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les concours de la fonction publique sont organisés par grade et échelle (ex. Administrateur 2e/3e grade éch. 11/10, Technicien 3e/4e grade éch. 9/8, Ingénieur d'État 1er grade éch. 11), chaque grade correspondant à un niveau de diplôme.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les dates limites de dépôt des candidatures sur emploi-public.ma sont généralement fixées à 16h30, et l'écrit a lieu typiquement 1 à 3 semaines après la clôture.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Le Ministère de l'Éducation nationale publie ses concours et appels à candidatures aux postes de responsabilité sur men.gov.ma/fr/concours.",
+          "sourceUrl": "https://www.men.gov.ma/fr/concours",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Le recrutement de la Gendarmerie Royale se fait exclusivement en ligne sur recrutement.gr.ma; conditions type 2026: 18-24 ans, baccalauréat, célibataire, taille minimale 1,70 m (H) / 1,68 m (F), casier judiciaire vierge.",
+          "sourceUrl": "https://www.tawjihnet.net/concours-gendarme-royale-maroc-2026/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "L'inscription aux concours DGSN (police) se fait en deux étapes: préinscription en ligne sur concours.dgsn.gov.ma puis dépôt du dossier à la préfecture de police; l'inscription est gratuite. Cinq corps: gardien de la paix (bac), inspecteur (bac+1/2 semestres), officier de paix/police (DEUG/DUT), commissaire (licence), commissaire divisionnaire (ingénieur d'État/doctorat).",
+          "sourceUrl": "https://www.maroconcours.com/2026/04/concours-dgsn-2026.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "L'ONCF recrute via sa propre plateforme (oncf.etalent.ma / oncf-recrutement.ma) et non via emploi-public.ma; processus: candidature en ligne, tests en ligne, tests psychotechniques et médicaux.",
+          "sourceUrl": "https://orientation-chabab.com/emploi-public/concours-recrutement-oncf-etalent-ma",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Pour les concours des établissements publics comme la MAP, les listes des convoqués aux épreuves écrites (valant convocation officielle) sont publiées sur le site de l'organisme et sur emploi-public.ma.",
+          "sourceUrl": "https://alwadifa-maroc.com/offre/show/id/23253",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Les portails gouvernementaux marocains sensibles (ex. concours.dgsn.gov.ma) sont géo-bloqués ou inaccessibles depuis l'étranger; la vérification directe nécessite une IP marocaine.",
+          "sourceUrl": "https://concours.dgsn.gov.ma/",
+          "confidence": "unverified"
+        }
+      ]
+    },
+    {
+      "topic": "Concours des forces de sécurité au Maroc — DGSN/Police, Gendarmerie Royale, FAR, Forces Auxiliaires (état vérifié au 2026-07-15)",
+      "officialPortals": [
+        {
+          "name": "Portail concours DGSN (Sûreté Nationale)",
+          "url": "https://concours.dgsn.gov.ma/",
+          "accessible": false,
+          "notes": "ECONNREFUSED depuis l'extérieur du Maroc (geo-blocage habituel des portails .gov.ma). Portail unique d'inscription et de suivi de candidature pour tous les grades de police. URL confirmée via emploi-public.ma (officiel, accessible)."
+        },
+        {
+          "name": "Portail recrutement Gendarmerie Royale",
+          "url": "https://recrutement.gr.ma/",
+          "accessible": false,
+          "notes": "ECONNREFUSED (geo-bloqué). URL confirmée via la fiche officielle emploi-public.ma du concours Elève Gendarme (code C41333/26). Contact reporté par la presse: recrute.gendarmerie@gr.ma."
+        },
+        {
+          "name": "Portail recrutement Forces Armées Royales",
+          "url": "https://recrutement.far.ma/",
+          "accessible": false,
+          "notes": "Echec TLS 'unable to verify the first certificate' — le site existe mais n'a pas pu être lu d'ici. URL concordante dans toutes les sources (Le Matin, orientation-chabab, e-tawjihi). Sert officiers, sous-officiers, ERSSM et soldats."
+        },
+        {
+          "name": "Portail recrutement Forces Auxiliaires",
+          "url": "https://recrutement.fa.gov.ma/",
+          "accessible": false,
+          "notes": "ECONNREFUSED (geo-bloqué .gov.ma). URL concordante dans plusieurs sources secondaires (jadid-alwadifa, tawjihnet, dreamjob). Inscription en ligne avec compte + activation par email."
+        },
+        {
+          "name": "Portail des emplois publics (fonction publique)",
+          "url": "https://www.emploi-public.ma/fr/concours-liste",
+          "accessible": true,
+          "notes": "ACCESSIBLE depuis l'étranger — c'est la voie officielle vérifiable hors Maroc. Fiches détaillées consultées avec succès pour les 4 grades DGSN 2025 et l'Elève Gendarme 2026 (postes, dates, codes concours, arrêtés d'ouverture en téléchargement)."
+        }
+      ],
+      "currentConcours": [
+        {
+          "title": "Concours DGSN 2025 (au titre de l'année 2026) — Gardien de la paix (4139), Inspecteur (2100), Officier de police (250), Commissaire (80), + ~30 officiers de sécurité",
+          "organisme": "Ministère de l'Intérieur — Direction Générale de la Sûreté Nationale (DGSN)",
+          "status": "cloture",
+          "deadline": "2025-10-02",
+          "examDate": "2025-12-07",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/e1064f7c-08d1-41d2-9fb9-1f2312a4483e",
+          "sourceQuote": "Du 15 septembre 2025 au 2 octobre 2025 à 16h30",
+          "confidence": "verified-official",
+          "notes": "Vérifié sur emploi-public.ma (4 fiches officielles: codes C38382/25, C38381/25, C38379/25, C38378/25). Epreuve écrite unique le 7 déc. 2025 pour tous les grades. Inscription exclusivement en ligne sur concours.dgsn.gov.ma. Total ~6 599 postes selon sources secondaires (tawjihnet)."
+        },
+        {
+          "title": "Concours DGSN au titre de l'année 2027 (prochaine campagne annuelle)",
+          "organisme": "DGSN",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/372aa454-5180-482e-8b66-dfa095bb6a61",
+          "sourceQuote": "Du 15 septembre 2025 au 2 octobre 2025",
+          "confidence": "reported-secondary",
+          "notes": "Aucune annonce au 2026-07-15. Calendrier habituel (constaté 2024/2025): annonce mi-septembre, inscriptions ~2 semaines, concours écrit un dimanche de début décembre. Surveiller concours.dgsn.gov.ma et emploi-public.ma à partir de début septembre 2026."
+        },
+        {
+          "title": "Concours Elève Gendarme 2026 — 1 500 postes (recrutement sous contrat)",
+          "organisme": "Administration de la Défense Nationale — Gendarmerie Royale",
+          "status": "cloture",
+          "deadline": "2026-04-14",
+          "examDate": "2026-07-01",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/ca9f5d98-42c9-46dd-b1a2-14c6bccce008",
+          "sourceQuote": "Clôture des inscriptions : 14 avril 2026 à 16h00",
+          "confidence": "verified-official",
+          "notes": "Fiche officielle emploi-public.ma (code C41333/26): ouverture 24 mars 2026, clôture 14 avril 2026 16h00, examen 1er juillet 2026 — donc épreuves passées au 2026-07-15, résultats à surveiller sur recrutement.gr.ma. NB: les sources secondaires (tawjihnet, dreamjob) donnent 25 mars–15 avril; la fiche officielle fait foi."
+        },
+        {
+          "title": "Concours FAR 2026 — Elèves Officiers (Terre, Mer, Air) et Ecole Royale du Service de Santé Militaire",
+          "organisme": "Forces Armées Royales (Administration de la Défense Nationale)",
+          "status": "cloture",
+          "deadline": "2026-05-29",
+          "sourceUrl": "https://lematin.ma/enseignement/concours-far-2026-admission-eleves-officiers/338414",
+          "sourceQuote": "s'inscrire exclusivement en ligne via recrutement.far.ma avant le 29 mai 2026",
+          "confidence": "reported-secondary",
+          "notes": "Portail officiel recrutement.far.ma injoignable d'ici (erreur TLS) — dates issues du Matin.ma (presse établie) et concordantes avec orientation-chabab/e-tawjihi. Présélection sur moyenne du bac, puis tests médicaux/physiques/psychotechniques + oral (été 2026)."
+        },
+        {
+          "title": "Concours FAR 2026 — Elèves Sous-Officiers (Forces Terrestres, etc.)",
+          "organisme": "Forces Armées Royales",
+          "status": "cloture",
+          "deadline": "2026-05-29",
+          "sourceUrl": "https://orientation-chabab.com/emploi-public/concours-recrutement-far-ma",
+          "sourceQuote": "aged between 18 and 23 years old as of August 16, 2026",
+          "confidence": "reported-secondary",
+          "notes": "Même cycle et même date limite (29 mai 2026) que les élèves officiers, sur recrutement.far.ma. Choix de 3 spécialités par ordre de préférence à l'inscription. Bac 2024/2025/2026 requis."
+        },
+        {
+          "title": "Concours FAR 2026 — recrutement de techniciens spécialisés (annoncé comme « Officiers du Rang »)",
+          "organisme": "Forces Armées Royales",
+          "status": "cloture",
+          "deadline": "2026-04-15",
+          "sourceUrl": "https://orientation-chabab.com/emploi-public/concours-recrutement-far-ma",
+          "sourceQuote": "avant le 15 Avril 2026 inclus",
+          "confidence": "reported-secondary",
+          "notes": "Intitulé « Officiers du Rang » chez Dreamjob/orientation-chabab (terminologie douteuse — probablement militaires du rang à profil technicien). Conditions rapportées: 18–20 ans au 31/08/2026, diplôme de technicien spécialisé, 1,70 m (H) / 1,60 m (F). A re-vérifier sur recrutement.far.ma avant publication."
+        },
+        {
+          "title": "Recrutement FAR — Soldats / militaires du rang 2ème classe (campagne annuelle)",
+          "organisme": "Forces Armées Royales",
+          "status": "ouvert",
+          "deadline": "2026-10-22",
+          "sourceUrl": "https://www.maroconcours.com/2026/01/concours-militaires-du-rang-2-classe-inscription-maroc.html",
+          "sourceQuote": "avoir entre 18 et 22 ans... au 01 janvier 2027",
+          "confidence": "unverified",
+          "notes": "CONFLIT ENTRE SOURCES: maroconcours (publié janv. 2026) donne une date limite du 22 octobre 2026 (âge au 01/01/2027) — ce qui signifierait inscriptions ouvertes actuellement; bernejobs (oct. 2025) décrivait la campagne précédente close le 22 oct. 2025 (âge au 01/01/2026). Le portail officiel étant injoignable, impossible de trancher. NE PAS publier de date sans vérification sur recrutement.far.ma (fenêtre Maroc août-sept. 2026)."
+        },
+        {
+          "title": "Concours Forces Auxiliaires 2026 — Elèves Mokhaznis (hommes de rang), zones Nord et Sud",
+          "organisme": "Ministère de l'Intérieur — Inspections Générales des Forces Auxiliaires (zones Nord et Sud)",
+          "status": "cloture",
+          "deadline": "2025-12-09",
+          "sourceUrl": "https://www.jadid-alwadifa.com/recrutement-fa-gov-ma/",
+          "sourceQuote": "du 14 novembre au 9 décembre 2025 pour l'année 2026",
+          "confidence": "reported-secondary",
+          "notes": "Portail recrutement.fa.gov.ma geo-bloqué. Deux fenêtres d'inscription rapportées pour la campagne 2026: 01–16 octobre 2025 (tawjihnet) puis 14 nov.–9 déc. 2025 (jadid-alwadifa/dreamjob) — probablement deux vagues ou une prolongation; à clarifier. Sélection: tri sur moyenne, puis visite médicale, épreuves sportives, écrit et oral aux centres de formation (Méjara et Oullouz selon tawjihnet). Prochaine campagne attendue à l'automne 2026."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "Tous les concours DGSN (gardien de la paix, inspecteur, officier, commissaire) s'inscrivent exclusivement en ligne sur concours.dgsn.gov.ma; les avis officiels avec arrêté d'ouverture sont publiés en parallèle sur emploi-public.ma.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/e1064f7c-08d1-41d2-9fb9-1f2312a4483e",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "DGSN — Gardien de la paix (échelle 5): 21–30 ans, baccalauréat ou équivalent, taille minimale 1,73 m (hommes) / 1,67 m (femmes). Formation ~12 mois à l'Institut Royal de Police (Kénitra).",
+          "sourceUrl": "https://alwadifa-club.com/maroc-news/concours-police-maroc-2025/56753/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "DGSN — Inspecteur de police (échelle 6): 21–30 ans, au moins deux semestres universitaires validés (moyenne min. rapportée 10,50), taille 1,70 m (H) / 1,67 m (F).",
+          "sourceUrl": "https://alwadifa-club.com/maroc-news/concours-police-maroc-2025/56753/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "DGSN — Officier de police (échelle 8): 21–30 ans, licence (bac+3, moyenne min. rapportée 11,00), taille 1,70 m (H) / 1,67 m (F).",
+          "sourceUrl": "https://alwadifa-club.com/maroc-news/concours-police-maroc-2025/56753/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "DGSN — Commissaire de police (échelle 10): 21–35 ans, master (moyenne min. rapportée 12,00), taille 1,70 m (H) / 1,67 m (F).",
+          "sourceUrl": "https://alwadifa-club.com/maroc-news/concours-police-maroc-2025/56753/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "DGSN — épreuves: écrit type QCM (culture générale, actualité, spécialité selon le grade) puis entretien oral devant jury; un seul jour d'examen écrit national (dimanche de début décembre les dernières années).",
+          "sourceUrl": "https://alouadifa.ma/orientation/irp/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Gendarmerie Royale — Elève Gendarme: recrutement sous contrat via recrutement.gr.ma; conditions récentes: célibataire, nationalité marocaine, 18–24 ans, baccalauréat (sessions récentes, toutes filières), taille min. 1,70 m (H) / 1,68 m (F), casier judiciaire vierge.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/ca9f5d98-42c9-46dd-b1a2-14c6bccce008",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Gendarmerie Royale — calendrier type: annonce fin mars, inscriptions ~3 semaines (mars-avril), épreuves/sélection début juillet; sélection = examen du dossier puis convocation aux examens médicaux, tests psychotechniques et épreuves sportives.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/ca9f5d98-42c9-46dd-b1a2-14c6bccce008",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "FAR — cycles élèves officiers et élèves sous-officiers: campagne annuelle au printemps (inscriptions jusqu'à fin mai) sur recrutement.far.ma; conditions type: marocain, célibataire, sans antécédents judiciaires, 18–23 ans à la mi-août, bac des 3 dernières sessions, taille 1,70 m (H) / 1,60 m (F); présélection sur moyenne du bac puis tests médicaux, physiques, psychotechniques et oral; rentrée mi-août.",
+          "sourceUrl": "https://lematin.ma/enseignement/concours-far-2026-admission-eleves-officiers/338414",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "FAR — soldats (militaires du rang, 2ème classe): hommes 18–22 ans au 1er janvier de l'année d'incorporation, niveau minimum 3ème année du secondaire collégial (9ème année), taille min. 1,70 m, célibataire, CNIE obligatoire; inscription sur recrutement.far.ma, date limite fin octobre les dernières campagnes.",
+          "sourceUrl": "https://www.bernejobs.com/2025/10/2025-2026.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Forces Auxiliaires — Elève Mokhazni: 18–24 ans (au 1er février de l'année de recrutement), célibataire, taille min. 1,70 m, niveau secondaire qualifiant ou diplôme de formation professionnelle, acuité visuelle min. 16/20 sans correction, casier vierge; inscription en ligne sur recrutement.fa.gov.ma; campagne annuelle à l'automne (oct.-déc.) pour l'année suivante, organisée par les deux Inspections Générales (zones Nord et Sud).",
+          "sourceUrl": "https://www.tawjihnet.net/concours-forces-auxiliaires-eleves-mokhazenis-fa-2025-2026/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Les quatre portails de recrutement dédiés (concours.dgsn.gov.ma, recrutement.gr.ma, recrutement.far.ma, recrutement.fa.gov.ma) sont geo-bloqués hors du Maroc; emploi-public.ma reste accessible de l'étranger et publie les avis officiels DGSN et Gendarmerie avec arrêtés d'ouverture téléchargeables.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official"
+        }
+      ]
+    },
+    {
+      "topic": "Angle éditorial \"exemples de concours / anciens sujets\" (نماذج المباريات) pour les concours de recrutement publics au Maroc — demande de recherche, sources officielles vs officieuses, structure des épreuves, et cadre juridique de réutilisation",
+      "officialPortals": [
+        {
+          "name": "Portail de l'emploi public (emploi-public.ma)",
+          "url": "https://www.emploi-public.ma/",
+          "accessible": true,
+          "notes": "Fetch réussi. Portail interministériel officiel : annonces, calendrier des concours, postes budgétaires. AUCUNE rubrique 'anciens sujets' / 'نماذج المباريات' — il ne publie pas de sujets d'examen. Un contenu 'anciens sujets' ne peut donc pas s'appuyer sur ce portail comme source de PDFs."
+        },
+        {
+          "name": "Ministère de l'Éducation nationale (men.gov.ma / wazara.men.gov.ma)",
+          "url": "https://www.men.gov.ma/",
+          "accessible": true,
+          "notes": "Fetch réussi. Rubrique 'مباريات' (concours) + annonces/circulaires. Publie à chaque session les 'بطاقات توصيف الاختبارات' (fiches de spécification / cadres référentiels des épreuves) — ex. archive citée par la presse spécialisée : men.gov.ma/docs/POFD2025.rar. Les fiches de spécification sont le document officiel le plus proche d'un 'programme d'épreuves'."
+        },
+        {
+          "name": "Ministère de l'Économie et des Finances (finances.gov.ma)",
+          "url": "https://www.finances.gov.ma/fr/vous-orientez/Pages/eap.aspx",
+          "accessible": false,
+          "notes": "Fetch échoué (timeout/aucune sortie) — probablement géo-bloqué hors Maroc. Le MEF a historiquement publié des 'exemples des épreuves des concours' sur son portail de recrutement ; le sous-domaine recrutement.finances.gov.ma ne résout plus (ENOTFOUND). À re-vérifier depuis une IP marocaine (fenêtre août-sept 2026)."
+        },
+        {
+          "name": "Direction des Ressources Humaines — Ministère de la Justice (drh.justice.gov.ma)",
+          "url": "https://drh.justice.gov.ma/",
+          "accessible": false,
+          "notes": "Fetch échoué (ECONNREFUSED) — géo-blocage probable. Des agrégateurs (wadifa.ma, dreamjob.ma) republient des 'نماذج بعض مباريات التوظيف السابقة بوزارة العدل', ce qui suggère une publication officielle passée. À re-vérifier depuis IP marocaine."
+        },
+        {
+          "name": "Trésorerie Générale du Royaume (tgr.gov.ma)",
+          "url": "https://www.tgr.gov.ma/",
+          "accessible": false,
+          "notes": "Non fetché dans cette session (non testé). Les résultats de recherche n'indexent aucune rubrique 'exemples d'épreuves' publique ; possède une plateforme e-learning interne (formation.tgr.gov.ma)."
+        },
+        {
+          "name": "Ministère de la Transition Numérique et de la Réforme de l'Administration (mmsp.gov.ma)",
+          "url": "https://www.mmsp.gov.ma/fr/concours-et-examens-d%E2%80%99aptitude-professionnelle",
+          "accessible": false,
+          "notes": "Non fetché (non testé). Page 'Concours et examens d'aptitude professionnelle' repérée via recherche ; le référentiel RH (refgrh.mmsp.gov.ma) décrit la procédure officielle 'recrutement par concours' — utile pour les explainers de procédure."
+        }
+      ],
+      "currentConcours": [
+        {
+          "title": "Concours de recrutement des enseignants — cadres des AREF, session 2025-2026 (مباراة التعليم)",
+          "organisme": "Ministère de l'Éducation nationale, du Préscolaire et des Sports (via les AREF)",
+          "status": "cloture",
+          "sourceUrl": "https://www.taalimpress.info/2025/11/2025-2026_9.html",
+          "confidence": "reported-secondary",
+          "sourceQuote": "اعلان مباراة التعليم 2025-2026 + بطاقات توصيف الاختبارات",
+          "notes": "Session annoncée nov. 2025 avec publication simultanée des fiches de spécification officielles (بطاقات توصيف) sur men.gov.ma ; des résultats d'épreuves écrites 2025 sont rapportés par la presse (agadir24.info). Cité ici comme exemple du cycle annuel : chaque session génère un pic de recherche 'نماذج مباراة التعليم مع التصحيح'. Pas de dates listées — session passée, prochaine session attendue vers sept-nov 2026 (non annoncée)."
+        },
+        {
+          "title": "Concours de recrutement de 150 rédacteurs judiciaires 3e grade (محرر قضائي)",
+          "organisme": "Ministère de la Justice",
+          "status": "cloture",
+          "sourceUrl": "https://www.enableme.ma/ar/%D8%B4%D8%B1%D8%B7/%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%AA%D9%88%D8%B8%D9%8A%D9%81-150-%D9%85%D8%AD%D8%B1%D8%B1-%D9%82%D8%B6%D8%A7%D8%A6%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%B1%D8%AC%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D8%A8%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-13107",
+          "confidence": "unverified",
+          "notes": "Vu uniquement en titre/snippet de recherche (page non fetchée) ; des sessions d'épreuves mai-juin 2026 sont évoquées dans les résultats de recherche. Statut réel non vérifié — le portail officiel drh.justice.gov.ma est injoignable hors Maroc. Pertinent car la famille 'محرر قضائي / منتدب قضائي' est une des plus demandées en 'نماذج مباريات'."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "Le portail officiel emploi-public.ma ne publie AUCUN sujet d'examen passé : il centralise annonces, calendrier et inscriptions. Il n'existe pas d'archive nationale officielle d'anciens sujets de la fonction publique marocaine.",
+          "sourceUrl": "https://www.emploi-public.ma/",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Pour مباراة التعليم, le document officiel de référence n'est pas un ancien sujet mais les 'بطاقات توصيف الاختبارات' (cadres référentiels) publiées par le ministère sur men.gov.ma à chaque session : elles définissent les domaines, les axes et le poids de chaque axe par spécialité et par cycle. C'est la matière première légitime idéale pour des pages 'structure de l'épreuve'.",
+          "sourceUrl": "https://www.taalimpress.info/2025/11/2025-2026_9.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Structure des écrits de مباراة التعليم : primaire = didactique des matières (arabe, français, maths, sciences ; options bilingue/amazighe) + sciences de l'éducation ; secondaire (collégial et qualifiant) = contenu disciplinaire de la spécialité + didactique de la matière. Une quinzaine de spécialités sont couvertes.",
+          "sourceUrl": "https://orientation-chabab.com/%D8%AA%D9%88%D8%B5%D9%8A%D9%81-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Les anciens sujets qui circulent ne sont presque jamais hébergés sur des domaines officiels : l'écosystème réel est constitué d'agrégateurs (alwadifa-maroc.com/namadij ~92 documents filtrables par administration, dreamjob.ma, dimajadid.com, moutamadris.ma, toutaumaroc.com, wadifa.ma), de Scribd, de groupes Facebook et de chaînes YouTube. Les PDFs sont typiquement sur Mediafire ou le CDN Facebook, sans mention de provenance ni d'autorisation.",
+          "sourceUrl": "https://alwadifa-maroc.com/namadij",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Familles d'épreuves types : (a) concours administratifs/finances (MEF, techniciens, inspecteurs) = culture générale (ex. sujet 2014 : liens Maroc-Afrique) + épreuve de spécialité (comptabilité, fiscalité, analyse financière, économie/gestion, droit) + langue, avec bascule vers le format QCM pour les grades techniciens ; (b) justice (محرر/منتدب قضائي) = droit constitutionnel, civil, famille, procédure pénale + sujet général sur l'administration ; (c) sûreté nationale (DGSN : gardiens de la paix, inspecteurs) = QCM culture générale + langues + tests psychotechniques, sans archive officielle — tout circule via Scribd/apps/YouTube.",
+          "sourceUrl": "https://qcmfy.com/40-qcm-concours-techniciens-3eme-grade-finance/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Comportement de recherche des candidats : requêtes arabes dominantes du type 'نماذج مباريات + [administration]' presque toujours suffixées 'مع التصحيح' (avec correction) ou 'PDF' ; variantes 'نماذج الاختبارات الكتابية', 'أسئلة الثقافة العامة', 'QCM', 'توصيف مباراة / الأطر المرجعية' ; en français 'exemples concours [ministère] pdf' et 'anciens sujets'. Les plus gros volumes apparents : مباراة التعليم, الأمن الوطني (police), وزارة العدل, المالية.",
+          "sourceUrl": "https://alwadifa-maroc.com/namadij",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Droit d'auteur — loi n° 2-00, article 8 : la protection ne s'étend pas 'aux textes officiels de nature législative, administrative ou judiciaire, ni à leurs traductions officielles'. Un sujet d'examen rédigé par l'administration est défendablement un texte administratif non protégé, MAIS ce point n'est pas tranché explicitement, et les sujets de langues/culture générale incorporent souvent des extraits de presse ou d'œuvres littéraires qui, eux, restent protégés — republier le PDF scanné republie aussi ces extraits.",
+          "sourceUrl": "https://www.wipo.int/wipolex/fr/legislation/details/19766",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Droit d'auteur — loi n° 2-00, article 14 : citation licite sans autorisation 'à la condition d'indiquer la source et le nom de l'auteur' (+ art. 15 usage pédagogique). Stratégie de contenu sûre : analyses de structure d'épreuves, méthodologie, barèmes, QCM originaux inspirés des thèmes récurrents, courtes citations attribuées d'énoncés — en liant vers les fiches officielles (men.gov.ma) et les annonces (emploi-public.ma) — plutôt que d'héberger des PDFs scannés de provenance inconnue.",
+          "sourceUrl": "https://www.wipo.int/wipolex/fr/legislation/details/19766",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Exceptions officielles au 'pas d'archive officielle' : le MEF a historiquement publié des 'exemples des épreuves' de ses propres concours sur son portail de recrutement (copies 2010-2014 encore recirculées par les agrégateurs), et la DRH du ministère de la Justice a publié des نماذج de ses concours passés. Les deux portails sont injoignables hors Maroc dans cette session (recrutement.finances.gov.ma ne résout plus ; drh.justice.gov.ma refuse la connexion) — vérification à refaire depuis une IP marocaine avant de sourcer ces claims sur le site.",
+          "sourceUrl": "https://www.toutaumaroc.com/exemples-des-concours-du-ministere-des-finances-maroc-2010-2011-2012-2014-epreuves/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Le référentiel officiel des procédures RH de l'État (refgrh.mmsp.gov.ma, ministère chargé de la réforme de l'administration) documente la procédure type 'recrutement par concours' (annonce >= 15 jours avant, épreuves écrites puis orales, jury) — base légitime pour des explainers 'comment se déroule un concours' sans toucher aux sujets eux-mêmes.",
+          "sourceUrl": "http://refgrh.mmsp.gov.ma/fiche_de_procedure.php?IdProcedure=6&NumProcessus=2&lang=ar",
+          "confidence": "unverified"
+        }
+      ]
+    },
+    {
+      "topic": "Concours éducation & santé Maroc — enseignants (CRMEF/cadres AREF) + santé (ISPITS, infirmiers, techniciens) — état au 2026-07-15",
+      "officialPortals": [
+        {
+          "name": "Ministère de l'Éducation nationale — page Concours",
+          "url": "https://www.men.gov.ma/fr/concours",
+          "accessible": true,
+          "notes": "Fetch réussi le 2026-07-15. Liste les avis en cours (postes de responsabilité, maîtres assistants CRMEF). Le grand concours enseignants n'y figure pas actuellement — il est annoncé par communiqué + wolouj en octobre-novembre."
+        },
+        {
+          "name": "Wolouj — plateforme de candidature concours enseignants",
+          "url": "https://wolouj.men.gov.ma",
+          "accessible": false,
+          "notes": "ECONNREFUSED le 2026-07-15. Plateforme exclusive de dépôt des candidatures au cycle de qualification (CRMEF). Probablement géo-bloquée hors Maroc et/ou active seulement pendant la campagne (oct-nov)."
+        },
+        {
+          "name": "Tawdif — portail résultats/listes concours académies",
+          "url": "https://tawdif.men.gov.ma",
+          "accessible": false,
+          "notes": "DNS introuvable (ENOTFOUND) le 2026-07-15 — le portail semble hors ligne entre les sessions. Sert à publier les listes de candidats retenus et les résultats."
+        },
+        {
+          "name": "Emploi-public.ma — portail central des concours de la fonction publique",
+          "url": "https://www.emploi-public.ma/fr/",
+          "accessible": true,
+          "notes": "Fetch réussi le 2026-07-15 (1 163 annonces au total). Source fiable pour tous les concours du Ministère de la Santé (infirmiers, techniciens, médecins) avec dates limites et dates d'épreuves."
+        },
+        {
+          "name": "Ministère de la Santé et de la Protection sociale",
+          "url": "https://www.sante.gov.ma",
+          "accessible": false,
+          "notes": "ECONNREFUSED le 2026-07-15 — géo-bloqué hors Maroc (constat récurrent sur toute la famille sante.gov.ma)."
+        },
+        {
+          "name": "ISPITS — plateforme d'inscription au concours d'accès",
+          "url": "http://ispits.sante.gov.ma",
+          "accessible": false,
+          "notes": "ECONNREFUSED le 2026-07-15 (idem pour ispitsic.sante.gov.ma, l'URL du formulaire citée par la presse). Géo-bloqué hors Maroc; à vérifier depuis une IP marocaine."
+        },
+        {
+          "name": "DRH Santé — dépôt en ligne des candidatures concours santé",
+          "url": "https://drh.sante.gov.ma",
+          "accessible": false,
+          "notes": "ECONNREFUSED le 2026-07-15. C'est pourtant l'URL de dépôt en ligne indiquée par emploi-public.ma pour les concours du Ministère de la Santé."
+        },
+        {
+          "name": "Maroc.ma — portail national officiel (communiqués)",
+          "url": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "accessible": true,
+          "notes": "Fetch réussi. A publié le communiqué officiel de la session novembre 2025 du concours enseignants (calendrier, 19 000 postes, conditions)."
+        }
+      ],
+      "currentConcours": [
+        {
+          "title": "Concours d'accès aux ISPITS 2026-2027 (cycle licence, professions infirmières et techniques de santé)",
+          "organisme": "Ministère de la Santé et de la Protection sociale — ISPITS",
+          "status": "cloture",
+          "deadline": "2026-07-13",
+          "examDate": "2026-07-25",
+          "sourceUrl": "https://www.jadid-alwadifa.com/inscription-concours-ispits-2026/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "Déposer sa candidature entre le 06 juillet 2026 et le 13 juillet 2026 à 16h30",
+          "notes": "Inscriptions en ligne closes le 13/07/2026 à 16h30; épreuves écrites les 25 ET 26 juillet 2026 dès 8h30 dans les instituts et annexes. 4 985 places au titre de 2026-2027. Inscription via ispits.sante.gov.ma (formulaire ispitsic.sante.gov.ma). Plateforme officielle géo-bloquée hors Maroc — dates concordantes sur 3 sources secondaires (jadid-alwadifa, orientation-chabab, tawjihplus)."
+        },
+        {
+          "title": "Concours de recrutement des enseignants — cadres des AREF / cycle de qualification CRMEF, session 2026-2027",
+          "organisme": "Ministère de l'Éducation nationale, du Préscolaire et des Sports / AREF",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.men.gov.ma/fr/concours",
+          "confidence": "verified-official",
+          "sourceQuote": "",
+          "notes": "Aucune annonce sur men.gov.ma/fr/concours au 15/07/2026 (page officielle consultée). Schéma des dernières sessions: annonce fin octobre, inscriptions ~2 semaines sur wolouj.men.gov.ma, écrit fin novembre, oral début décembre, entrée en formation fin décembre. Annonce 2026-2027 attendue vers octobre 2026."
+        },
+        {
+          "title": "Concours enseignants session novembre 2025 (session précédente, référence)",
+          "organisme": "Ministère de l'Éducation nationale / AREF — CRMEF",
+          "status": "cloture",
+          "deadline": "2025-11-13",
+          "examDate": "2025-11-22",
+          "sourceUrl": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "confidence": "verified-official",
+          "sourceQuote": "durant la période allant du 30 octobre au 13 novembre à 16H30",
+          "notes": "19 000 postes (primaire, collège, lycée). Inscriptions 30/10–13/11/2025 via wolouj.men.gov.ma; écrit 22/11/2025; oral 02–11/12/2025; résultats définitifs et inscription aux CRMEF mi-décembre (la presse rapporte des résultats définitifs publiés le 04/01/2026 et inscriptions aux CRMEF du 06 au 09/01/2026)."
+        },
+        {
+          "title": "Concours de recrutement des maîtres assistants des CRMEF 2026",
+          "organisme": "Ministère de l'Éducation nationale — CRMEF (par AREF)",
+          "status": "ouvert",
+          "deadline": "2026-07-17",
+          "sourceUrl": "https://www.men.gov.ma/fr/annonces/concours-de-recrutement-des-maitres-assistants-des-crmef-1",
+          "confidence": "verified-official",
+          "sourceQuote": "Concours de recrutement des Maitres assistants des CRMEF",
+          "notes": "Ouvert au 15/07/2026, clôture 17/07/2026 (vu sur men.gov.ma/fr/concours). Postes de formateurs répartis par région/spécialité (éducation islamique, physique-chimie, français, arabe, amazighe, sciences de l'éducation, éducation inclusive...); détail des postes dans les PDF par AREF; la presse évoque ~135 postes (non vérifié sur l'avis officiel)."
+        },
+        {
+          "title": "Concours de recrutement — Infirmiers de premier grade échelle 10 (800 postes, toutes spécialités)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "cloture",
+          "deadline": "2026-01-05",
+          "examDate": "2026-01-18",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/b8b8e375-5393-451b-ba20-aacd60c8c797",
+          "confidence": "verified-official",
+          "sourceQuote": "dépôt en ligne sur le site de l'administration",
+          "notes": "Code C40270/25 — 800 postes (infirmier polyvalent, sage-femme, technicien, rééducation, assistant social). Dépôt en ligne via drh.sante.gov.ma. Épreuves le 18/01/2026; résultats définitifs déjà publiés selon la presse. Illustre le cycle annuel: grand concours santé en décembre-janvier."
+        },
+        {
+          "title": "Concours de recrutement — Technicien 3ème grade échelle 9 (60 postes)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "cloture",
+          "deadline": "2026-07-14",
+          "examDate": "2026-07-19",
+          "sourceUrl": "https://www.emploi-public.ma/fr/",
+          "confidence": "verified-official",
+          "sourceQuote": "Convocation",
+          "notes": "Vu sur la page d'accueil emploi-public.ma le 15/07/2026: dépôt clos le 14/07/2026 à 16h30, épreuve le 19/07/2026, statut « Convocation »."
+        },
+        {
+          "title": "Concours de recrutement — Médecins premier grade échelle 11 (2 avis, 10 + 30 postes)",
+          "organisme": "Ministère de la Santé et de la Protection sociale",
+          "status": "ouvert",
+          "examDate": "2026-07-26",
+          "sourceUrl": "https://www.emploi-public.ma/fr/",
+          "confidence": "verified-official",
+          "sourceQuote": "Médecins premier grade - Échelle 11",
+          "notes": "Vu sur emploi-public.ma le 15/07/2026: deux avis (10 et 30 postes), clôtures des dépôts entre le 21 et le 23 juillet 2026 selon l'avis, épreuve le 26/07/2026. Vérifier la date limite exacte de chaque avis sur la fiche emploi-public correspondante."
+        },
+        {
+          "title": "Concours régional — 600 postes infirmiers polyvalents et techniciens de santé, région Drâa-Tafilalet",
+          "organisme": "Direction régionale de la Santé Drâa-Tafilalet (Ministère de la Santé)",
+          "status": "cloture",
+          "deadline": "2026-06-23",
+          "examDate": "2026-06-28",
+          "sourceUrl": "https://wadifapro.com/concours-ministere-sante-maroc-2026-600-postes-infirmiers/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "La date limite de dépôt est fixée au 23 juin 2026 à 16h30",
+          "notes": "Épreuve le dimanche 28/06/2026 à Errachidia. Montre que les recrutements santé passent aussi par des concours régionaux ponctuels en plus des grands concours nationaux. Non retrouvé directement sur emploi-public.ma lors de cette session."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "Concours enseignants (cadres AREF): candidatures déposées exclusivement en ligne via le portail wolouj.men.gov.ma pendant la fenêtre annoncée (~2 semaines).",
+          "sourceUrl": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Concours enseignants: limite d'âge relevée à 35 ans (moins de 35 ans à la date de l'épreuve) depuis la session novembre 2025 — elle était de 30 ans pour les sessions 2023-2024.",
+          "sourceUrl": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Concours enseignants: diplôme requis = licence en éducation, licence dans une filière universitaire de formation en éducation, ou licence d'études fondamentales/professionnelles (ou équivalent); nationalité marocaine requise.",
+          "sourceUrl": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Concours enseignants: calendrier type observé (session 2025) = inscriptions fin octobre à mi-novembre, écrit fin novembre, résultats de l'écrit ~5 jours après, oral début décembre, résultats définitifs et inscription aux CRMEF mi-décembre à début janvier, entrée en formation fin décembre.",
+          "sourceUrl": "https://www.maroc.ma/fr/actualites/acces-au-cycle-de-qualification-des-cadres-enseignants-ouverture-des-candidatures-pour-la-session-de",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Concours enseignants: les listes des candidats admis à concourir et les résultats sont publiés sur tawdif.men.gov.ma et sur les sites des AREF; une seule candidature par cycle (primaire/collège/lycée), sauf maths et français qui peuvent postuler aux deux cycles secondaires.",
+          "sourceUrl": "https://orientation-chabab.com/tawdif-men-gov-ma",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "ISPITS (admission): concours ouvert aux titulaires du baccalauréat des sessions de l'année en cours ou de l'année précédente (2025 ou 2026 pour la session 2026-2027), résultats définitifs obligatoires; pas de limite d'âge mentionnée dans l'avis.",
+          "sourceUrl": "https://tawjihplus.net/ISPITS?lang=fr",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "ISPITS (admission): présélection calculée sur la moyenne du bac = 75% note de l'examen national + 25% note de l'examen régional.",
+          "sourceUrl": "https://tawjihplus.net/ISPITS?lang=fr",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "ISPITS (admission): bac scientifique exigé pour la plupart des filières (SVT, PC, sciences maths, bac agricole selon filière); les options orthophonie, psychomotricité et assistant social sont aussi ouvertes au bac lettres modernes; sage-femme limité à SVT/PC.",
+          "sourceUrl": "https://orientation-chabab.com/actualite/inscription-concours-ispits",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "ISPITS (admission): candidature en ligne obligatoire sur ispits.sante.gov.ma (formulaire ispitsic.sante.gov.ma); un seul choix de candidature — erreur ou candidature multiple = candidature invalide; imprimer le formulaire et le présenter le jour du concours.",
+          "sourceUrl": "https://orientation-chabab.com/actualite/inscription-concours-ispits",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Recrutement infirmiers/techniciens de santé (post-diplôme): conditions types = nationalité marocaine, 18 à 45 ans au 1er janvier de l'année du concours, licence ISPITS ou diplôme d'État du premier cycle des études paramédicales ou équivalent; note ≤ 5/20 éliminatoire; admission par ordre de mérite avec moyenne ≥ 10/20.",
+          "sourceUrl": "https://wadifapro.com/concours-ministere-sante-maroc-2026-600-postes-infirmiers/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Les concours du Ministère de la Santé sont publiés sur emploi-public.ma avec dépôt des candidatures en ligne sur drh.sante.gov.ma.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/b8b8e375-5393-451b-ba20-aacd60c8c797",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "emploi-public.ma est le portail central officiel de tous les concours de la fonction publique marocaine (plus de 1 100 annonces listées), avec organisme, grade, nombre de postes, date limite et date d'épreuve.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les portails de la famille sante.gov.ma (sante.gov.ma, ispits.sante.gov.ma, ispitsic.sante.gov.ma, drh.sante.gov.ma) sont inaccessibles depuis l'étranger (géo-blocage constaté le 2026-07-15); toute vérification directe nécessite une IP marocaine.",
+          "sourceUrl": "http://ispits.sante.gov.ma",
+          "confidence": "unverified"
+        }
+      ]
+    },
+    {
+      "currentConcours": [
+        {
+          "title": "Concours de recrutement : 200 Inspecteurs des Douanes de 1er grade (échelle 11)",
+          "organisme": "Ministère de l'Économie et des Finances — Administration des Douanes et Impôts Indirects (ADII)",
+          "status": "cloture",
+          "deadline": "2026-06-03",
+          "examDate": "2026-07-05",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/95215987-6c01-46ed-861f-ec26b794afed",
+          "confidence": "verified-official",
+          "sourceQuote": "Concours de recrutement : Inspecteur des Douanes de 1er grade",
+          "notes": "Code C42140/26. Dépôt en ligne sur e-recrutement.finances.gov.ma. Spécialités: gestion/finance/comptabilité, droit, RH, administration. Sources secondaires: Master requis, âge 21–30 ans au 1er janvier. Écrit passé le 5 juillet 2026; phase résultats en cours."
+        },
+        {
+          "title": "Concours de recrutement : 26 Inspecteurs des Douanes de 1er grade (session 17 mai 2026)",
+          "organisme": "Ministère de l'Économie et des Finances — ADII",
+          "status": "cloture",
+          "deadline": "2026-05-01",
+          "examDate": "2026-05-17",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/023905fa-cb30-43dd-8be0-fe796edf20b1",
+          "confidence": "verified-official",
+          "sourceQuote": "Inspecteur des Douanes de 1er grade",
+          "notes": "Code C41669/26. Écrit + entretien oral. Résultats finaux publiés (rapportés par alwadifa-club.com). Distinct du concours de 200 postes."
+        },
+        {
+          "title": "Concours de recrutement : 900 Gardiens des Douanes 2ème grade (échelle 6)",
+          "organisme": "Ministère de l'Économie et des Finances — ADII",
+          "status": "cloture",
+          "deadline": "2026-03-13",
+          "examDate": "2026-03-29",
+          "sourceUrl": "https://jobma.ma/concours-de-recrutement-gardien-des-douanes-2026-900-postes/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "Gardien des douanes de deuxième grade (Échelle 6)",
+          "notes": "Bac requis (filières éco/sciences/techniques listées). Âge 18–25 ans (extensible à 30 selon services antérieurs). Taille min 1,70 m (H) / 1,65 m (F), acuité visuelle 15/10 sans correction. Dépôt via e-recrutement.finances.gov.ma. douane.gov.ma inaccessible pour vérification (WAF)."
+        },
+        {
+          "title": "Concours de recrutement : 503 Administrateurs des finances 2ème grade (échelle 11)",
+          "organisme": "Ministère de l'Économie et des Finances (couvre ses directions : DGI, TGR, ADII, etc.)",
+          "status": "cloture",
+          "deadline": "2026-06-03",
+          "examDate": "2026-07-05",
+          "sourceUrl": "https://www.mostajadat-alwadifa.com/2026/05/503-3-2026.html",
+          "confidence": "reported-secondary",
+          "sourceQuote": "مباراة توظيف 503 متصرفي المالية من الدرجة الثانية",
+          "notes": "Code C42139/26 (miroir wadifapublic.ma). Répartition: 358 sciences éco/gestion, 130 sciences juridiques, 9 GRH, 1 qualité. Master/Master spécialisé/DESA requis, âge max 45 ans. QCM écrit 3h puis oral (seuil 12/20). 25% réservés résistants/anciens militaires, 7% handicapés. Dépôt via e-recrutement.finances.gov.ma. Écrit passé le 5 juillet 2026. C'est LE grand concours finances 2026 — pas de concours séparé au nom de la DGI ou de la TGR."
+        },
+        {
+          "title": "Concours Ministère de l'Intérieur 2026 : 600 postes (440 Administrateurs 2e grade + 160 Techniciens 3e grade)",
+          "organisme": "Ministère de l'Intérieur",
+          "status": "cloture",
+          "deadline": "2026-04-28",
+          "examDate": "2026-06-21",
+          "sourceUrl": "https://www.wadifapublic.ma/fr/services-etat/c41638-26/ministere-de-linterieur-administrateur-2eme-concours-recrutement",
+          "confidence": "reported-secondary",
+          "sourceQuote": "440 Administrateurs 2ème grade... 160 Techniciens 3ème grade",
+          "notes": "Codes C41638/26 et C41639/26. Épreuves écrites: 07/06/2026 (techniciens) et 21/06/2026 (administrateurs), à la Faculté Souissi Rabat. Administrateurs: 200 gestion financière/comptabilité/audit, 160 droit administratif/gestion, 80 droit en langue française (Master requis). Techniciens: 130 génie civil, 30 génie électrique. Candidature via emploi-public.ma. Résultats des 160 techniciens publiés début juillet 2026 (mostajadat-alwadifa). interieur.gov.ma non résolvable depuis l'étranger — vérification officielle impossible."
+        },
+        {
+          "title": "Concours d'accès aux instituts de formation des techniciens spécialisés du Ministère de l'Intérieur (informatique/digitalisation, 160 places sur ~330)",
+          "organisme": "Ministère de l'Intérieur — Direction du Développement des Compétences et de la Transformation Numérique",
+          "status": "cloture",
+          "deadline": "2026-05-28",
+          "examDate": "2026-06-14",
+          "sourceUrl": "https://www.wadifapublic.ma/ar/services-etat/c42025-26/وزارة-الداخلية-مديرية-تقني-من-مباراة-توظيف",
+          "confidence": "reported-secondary",
+          "sourceQuote": "مباراة لتوظيف 160 مناصب في درجة تقني من الدرجة الثالثة",
+          "notes": "Attention: il s'agit d'un accès à la formation (places pédagogiques) débouchant sur le grade Technicien 3e grade échelle 9 — bac scientifique/technique requis, âge max 35 ans. Ne pas confondre avec les 160 techniciens du concours 600 postes."
+        },
+        {
+          "title": "Concours de recrutement : 190 Rédacteurs Judiciaires 4ème grade (échelle 8)",
+          "organisme": "Ministère de la Justice",
+          "status": "cloture",
+          "deadline": "2026-04-24",
+          "examDate": "2026-06-14",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/4073381d-fe3f-4f0d-8613-f4f14be6f558",
+          "confidence": "verified-official",
+          "sourceQuote": "Rédacteur Judiciaire 4ème grade - echelle 8",
+          "notes": "Code C41539/26. Spécialités: secrétariat de direction, gestion informatique, sciences économiques. Dépôt en ligne sur drh.justice.gov.ma/cncr2026_v1. Fait partie du lot 450 postes Justice 2026."
+        },
+        {
+          "title": "Concours de recrutement : 150 Rédacteurs Judiciaires 3ème grade (échelle 9)",
+          "organisme": "Ministère de la Justice",
+          "status": "cloture",
+          "deadline": "2026-04-24",
+          "examDate": "2026-05-24",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/149dd0f3-f81e-4cd8-9589-3635630802a8",
+          "confidence": "verified-official",
+          "sourceQuote": "Rédacteur Judiciaire 3ème grade - echelle 9",
+          "notes": "Code C41538/26. Spécialités techniques: développement informatique, réseaux, gestion des entreprises, imprimerie, électromécanique. Dépôt via drh.justice.gov.ma. Phase orale en cours selon sources secondaires (listes des convoqués oral publiées)."
+        },
+        {
+          "title": "Concours Ministère de la Justice 2026 : 100 Délégués judiciaires 2e grade + 10 Ingénieurs d'État 1er grade (complément du lot 450 postes)",
+          "organisme": "Ministère de la Justice",
+          "status": "cloture",
+          "deadline": "2026-04-24",
+          "examDate": "2026-05-24",
+          "sourceUrl": "https://www.dreamjob.ma/emploi-public/concours-de-recrutement-ministere-de-la-justice-2026-450-postes/",
+          "confidence": "reported-secondary",
+          "sourceQuote": "450 positions... Judicial Commissioners 2nd grade, and State Engineers 1st grade",
+          "notes": "Lot total 450 postes (avec les 190 + 150 rédacteurs vérifiés ci-dessus). Écrit le 24 mai 2026 pour ingénieurs/délégués. Convocations à l'oral publiées — concours en phase finale. Terminologie variable dans les sources (commissaires vs délégués judiciaires) — à re-vérifier sur l'arrêté officiel."
+        },
+        {
+          "title": "Concours de recrutement : 74 Commissaires Judiciaires 2ème grade (échelle 11)",
+          "organisme": "Ministère de la Justice",
+          "status": "cloture",
+          "deadline": "2026-02-09",
+          "examDate": "2026-03-29",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/262dd4e3-9e53-405c-a4f2-8f886a0b3272",
+          "confidence": "verified-official",
+          "sourceQuote": "Commissaire Judiciaire 2ème grade - echelle 11",
+          "notes": "Code C40684/26, publié le 20 janvier 2026. Spécialités: audit/contrôle de gestion, finance, ingénierie financière et fiscale, commerce/marketing, administration des affaires, assistance sociale. Dépôt via drh.justice.gov.ma."
+        },
+        {
+          "title": "Concours TGR (Trésorerie Générale du Royaume) — aucun concours propre identifié en 2026",
+          "organisme": "Trésorerie Générale du Royaume (MEF)",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.tgr.gov.ma/",
+          "confidence": "unverified",
+          "sourceQuote": "aucune annonce de recrutement (concours de recrutement) pour 2026",
+          "notes": "Homepage tgr.gov.ma accessible mais sans section recrutement visible; aucun concours 2026 au nom de la TGR trouvé sur emploi-public.ma ni dans la presse emploi. La TGR recrute historiquement via des concours propres (ex. 239 administrateurs 2e grade en 2015) et via les concours MEF transverses (503 administrateurs des finances 2026)."
+        },
+        {
+          "title": "Concours DGI (Direction Générale des Impôts) — aucun concours propre actif en 2026",
+          "organisme": "Direction Générale des Impôts (MEF)",
+          "status": "annonce-attendue",
+          "sourceUrl": "https://www.wadifapublic.ma/fr/recruteur/ministere-de-leconomie-et-des-finances-direction-generale-de-40",
+          "confidence": "reported-secondary",
+          "sourceQuote": "0 concours actifs · 0 au total",
+          "notes": "tax.gov.ma (site officiel DGI) accessible mais sans section recrutement ni annonce 2026 sur la page d'accueil. La DGI recrute via les concours MEF: Inspecteurs des Finances (dernier vérifié: 16 postes, écrit 23/02/2025, code C5139/24, emploi-public.ma) et administrateurs des finances."
+        }
+      ],
+      "evergreenFacts": [
+        {
+          "claim": "emploi-public.ma est le portail officiel qui publie tous les concours de recrutement de l'État marocain (arrêtés d'ouverture, convocations, résultats), avec plus de 1 100 annonces référencées.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours-liste",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les candidatures aux concours du Ministère de l'Économie et des Finances (ADII, DGI, TGR) se déposent obligatoirement en ligne sur e-recrutement.finances.gov.ma.",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/95215987-6c01-46ed-861f-ec26b794afed",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Les candidatures aux concours du Ministère de la Justice se déposent en ligne sur drh.justice.gov.ma (plateforme cncr2026).",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/4073381d-fe3f-4f0d-8613-f4f14be6f558",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Le grade Inspecteur des Douanes de 1er grade (échelle 11) exige un Master ou équivalent et un âge de 21 à 30 ans au 1er janvier de l'année du concours.",
+          "sourceUrl": "https://www.mostajadat-alwadifa.com/2026/05/200-3-2026.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Le grade Gardien des Douanes 2e grade (échelle 6) exige le baccalauréat (filières définies), 18–25 ans, une taille minimale (1,70 m hommes / 1,65 m femmes) et une acuité visuelle de 15/10 sans correction.",
+          "sourceUrl": "https://jobma.ma/concours-de-recrutement-gardien-des-douanes-2026-900-postes/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Le grade Administrateur (des finances) 2e grade (échelle 11) exige un Master, Master spécialisé ou DESA ou diplôme équivalent; pour le concours MEF 2026, âge maximum 45 ans.",
+          "sourceUrl": "https://www.mostajadat-alwadifa.com/2026/05/503-3-2026.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Les concours MEF (administrateurs/inspecteurs) comportent un écrit (QCM, 3h, coefficient 2) puis un oral (15–30 min, coefficient 2), avec seuil de 12/20 à l'écrit pour accéder à l'oral; 25% des postes sont réservés aux résistants/pupilles de la nation/anciens militaires et 7% aux personnes en situation de handicap.",
+          "sourceUrl": "https://www.mostajadat-alwadifa.com/2026/05/503-3-2026.html",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Le MEF recrute aussi des Techniciens de 3e grade (échelle 9) par grands concours transverses (ex. 473 postes, écrit du 06/07/2025, code C36519/25, spécialités: informatique, topographie, génie civil, génie électrique, imprimerie).",
+          "sourceUrl": "https://www.emploi-public.ma/ar/تفاصيل/المباريات/329c3724-bcf4-4a2b-aa9d-25283debc199",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Au Ministère de la Justice, la filière greffe recrute aux grades Rédacteur Judiciaire 4e grade (échelle 8) et 3e grade (échelle 9), plus Commissaire Judiciaire 2e grade (échelle 11) — ce dernier avec des spécialités bac+5 (audit, finance, droit des affaires).",
+          "sourceUrl": "https://www.emploi-public.ma/fr/concours/details/262dd4e3-9e53-405c-a4f2-8f886a0b3272",
+          "confidence": "verified-official"
+        },
+        {
+          "claim": "Le Ministère de l'Intérieur recrute à la fois par grands concours nationaux (administrateurs 2e grade — Master; techniciens 3e grade) et par concours provinciaux au fil de l'année (dépôt via emploi-public.ma), ainsi que par accès à ses instituts de formation des techniciens spécialisés (niveau bac).",
+          "sourceUrl": "https://www.jadid-alwadifa.com/concours-de-recrutement-ministere-de-linterieur-maroc-2026/",
+          "confidence": "reported-secondary"
+        },
+        {
+          "claim": "Condition générale des concours de la fonction publique marocaine : nationalité marocaine et âge de 18 à 45 ans (sauf statuts particuliers plus restrictifs, ex. douanes en uniforme).",
+          "sourceUrl": "https://www.jadid-alwadifa.com/concours-de-recrutement-ministere-de-linterieur-maroc-2026/",
+          "confidence": "reported-secondary"
+        }
+      ],
+      "officialPortals": [
+        {
+          "name": "Portail Emploi Public (fonction publique marocaine)",
+          "url": "https://www.emploi-public.ma",
+          "accessible": true,
+          "notes": "Source officielle centrale — pages de détail des concours fetchées avec succès (Douanes, Justice, MEF). Liste FR: /fr/concours-liste ; AR: /ar/قائمة-المباريات. C'est la meilleure ancre officielle vérifiable depuis l'étranger."
+        },
+        {
+          "name": "ADII — Administration des Douanes et Impôts Indirects",
+          "url": "https://www.douane.gov.ma",
+          "accessible": false,
+          "notes": "Bloqué par WAF depuis l'extérieur ('The requested URL was rejected'). Recrutement ADII publié via emploi-public.ma et e-recrutement.finances.gov.ma."
+        },
+        {
+          "name": "TGR — Trésorerie Générale du Royaume",
+          "url": "https://www.tgr.gov.ma",
+          "accessible": true,
+          "notes": "Homepage accessible; aucune section recrutement/carrières visible sur la page d'accueil. Concours TGR passent par emploi-public.ma / e-recrutement.finances.gov.ma."
+        },
+        {
+          "name": "DGI — Direction Générale des Impôts",
+          "url": "https://www.tax.gov.ma/wps/portal/DGI/Accueil?classic=1",
+          "accessible": true,
+          "notes": "Site officiel accessible (portail WebSphere); pas de section recrutement ni d'annonce 2026 sur la page d'accueil."
+        },
+        {
+          "name": "Ministère de l'Économie et des Finances — Appels à candidatures",
+          "url": "https://www.finances.gov.ma/fr/vous-orientez/Pages/appels-candidatures.aspx",
+          "accessible": false,
+          "notes": "Fetch échoué (aucune réponse) — probablement geo-bloqué hors Maroc. Page de référence pour les avis de concours MEF."
+        },
+        {
+          "name": "Plateforme e-recrutement du MEF (candidatures ADII/DGI/TGR)",
+          "url": "https://e-recrutement.finances.gov.ma",
+          "accessible": false,
+          "notes": "Fetch échoué (probablement geo-bloqué). URL confirmée comme canal officiel de dépôt sur les pages emploi-public.ma vérifiées."
+        },
+        {
+          "name": "Ministère de l'Intérieur",
+          "url": "https://www.interieur.gov.ma",
+          "accessible": false,
+          "notes": "DNS non résolu depuis l'extérieur (www et apex) — probablement restreint géographiquement. Les concours Intérieur se déposent via emploi-public.ma."
+        },
+        {
+          "name": "Ministère de la Justice",
+          "url": "https://www.justice.gov.ma",
+          "accessible": false,
+          "notes": "Connexion refusée (probable geo-blocage). Le portail de candidature drh.justice.gov.ma (cncr2026) est cité comme canal officiel sur les pages emploi-public.ma vérifiées, mais n'a pas pu être testé directement."
+        }
+      ],
+      "topic": "Concours des corps finances & administration au Maroc 2026 — Douane (ADII), TGR, DGI, Ministère de l'Intérieur, Ministère de la Justice"
+    }
+  ]
+}
