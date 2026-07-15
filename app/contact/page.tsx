@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-const CONTACT_EMAIL = "contact@khedma.pro";
+const CONTACT_EMAIL = "khedmapro.help@gmail.com";
 
 export default function ContactPage() {
   return (

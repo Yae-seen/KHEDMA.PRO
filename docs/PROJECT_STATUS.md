@@ -48,8 +48,7 @@ parchment), root layout, homepage, and the three pillar landing pages
 - `/a-propos`, `/contact`, `/confidentialite`, `/mentions-legales` — independence
   notice (not affiliated with any administration), no-data-collection statement,
   editorial method, and AdSense-readiness basics. Linked from the footer.
-- Contact uses `contact@khedma.pro` (site-domain address) — owner must set up the
-  mailbox/forwarding.
+- Contact uses `khedmapro.help@gmail.com` (owner-provided support address).
 
 ## Verification (2026-07-15)
 - `npm run type-check` ✅ · `npm run lint` ✅ · `npm run build` ✅
