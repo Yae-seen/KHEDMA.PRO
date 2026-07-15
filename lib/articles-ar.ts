@@ -1,0 +1,93 @@
+/** Arabic metadata for the /ar/blog surface (titles/descriptions per slug). */
+
+export type ArCategory = "المباريات" | "الشغل" | "ألمانيا";
+
+export interface ArticleMetaAr {
+  slug: string;
+  title: string;
+  description: string;
+  category: ArCategory;
+}
+
+export const ARTICLES_AR: ArticleMetaAr[] = [
+  {
+    slug: "comment-postuler-concours-fonction-publique",
+    title: "كيف تترشح لمباراة الوظيفة العمومية بالمغرب",
+    description:
+      "الدليل خطوة بخطوة: أين تجد الإعلانات الرسمية، تحضير الملف، الترشح عبر emploi-public.ma، وتتبع الاستدعاء — بدون وسيط.",
+    category: "المباريات",
+  },
+  {
+    slug: "concours-arnaques-comment-les-eviter",
+    title: "عمليات النصب في المباريات: لا تطلب أي مباراة رسمية أداءً",
+    description:
+      "مباريات وهمية، «رسوم ملف»، صفحات فيسبوك مزيفة: كيف تميّز الإعلان الرسمي وتحمي مالك وبياناتك.",
+    category: "المباريات",
+  },
+  {
+    slug: "exemples-concours-anciens-sujets",
+    title: "نماذج المباريات والمواضيع السابقة: كيف تتدرّب بفعالية",
+    description:
+      "أين تجد نماذج المباريات المغربية، كيف تُبنى الاختبارات (الثقافة العامة، التخصص، اللغات)، وكيف تتدرّب.",
+    category: "المباريات",
+  },
+  {
+    slug: "calendrier-concours-maroc",
+    title: "روزنامة المباريات بالمغرب: من يوظّف وفي أي فترة",
+    description:
+      "الشرطة، الدرك، الجمارك، التعليم، الصحة: الفترات المعتادة للإعلان عن كبرى المباريات المغربية لتحضير سنتك.",
+    category: "المباريات",
+  },
+  {
+    slug: "concours-par-niveau-diplome",
+    title: "أي مباراة حسب شهادتك؟ بدون باك، باك، باك+2، إجازة، ماستر",
+    description:
+      "خريطة كاملة للمباريات المغربية حسب المستوى الدراسي: ما يمكنك استهدافه بدون باك، بالباك، بباك+2، بإجازة أو ماستر.",
+    category: "المباريات",
+  },
+  {
+    slug: "trouver-emploi-public-maroc",
+    title: "الشغل العمومي بالمغرب: كيف تحصل عليه (دليل كامل)",
+    description:
+      "الوظيفة العمومية، المتعاقدون، الوكالة الوطنية: أين تبحث عن شغل عمومي، كيف تترشح عبر المباريات، وكيف تتجنب النصب.",
+    category: "الشغل",
+  },
+  {
+    slug: "modele-cv-maroc",
+    title: "نموذج سيرة ذاتية بالمغرب: البنية والنصائح والأخطاء",
+    description:
+      "كيف تكتب سيرة ذاتية جيدة بالصيغة المغربية: الأقسام المطلوبة، الإخراج، الأخطاء المُقصية، وأداة مجانية لإنشائها PDF.",
+    category: "الشغل",
+  },
+  {
+    slug: "chancenkarte-carte-opportunite-guide",
+    title: "بطاقة الفرص (Chancenkarte): الدليل للمغاربة",
+    description:
+      "تتيح بطاقة الفرص القدوم إلى ألمانيا للبحث عن عمل مؤهَّل. الشروط، نظام النقط، المدة والإجراءات — بمصادر رسمية.",
+    category: "ألمانيا",
+  },
+  {
+    slug: "trouver-employeur-allemagne-metier-ville",
+    title: "إيجاد مشغّل في ألمانيا: استراتيجية المهنة × المدينة",
+    description:
+      "المغاربة لا يبحثون عن «Ausbildung» بل عن مهنة في مدينة ألمانية تُوظّف. الطريقة العملية لإيجاد مشغّل يكفل.",
+    category: "ألمانيا",
+  },
+];
+
+export const AR_BLOG_LABELS = {
+  homeCrumb: "الرئيسية",
+  crumb: "المدونة",
+  h1: "أدلة المسار المهني",
+  lead: "أدلة عملية وموثوقة وبدون حشو: المباريات، الشغل، وطريقك إلى ألمانيا.",
+  readCta: "اقرأ الدليل ←",
+  publishedOn: "نُشر في",
+  updatedOn: "آخر تحديث",
+  faqTitle: "أسئلة شائعة",
+  sourcesTitle: "المصادر",
+  relatedTitle: "اقرأ أيضاً",
+};
+
+export function getArticleMetaAr(slug: string): ArticleMetaAr | undefined {
+  return ARTICLES_AR.find((a) => a.slug === slug);
+}

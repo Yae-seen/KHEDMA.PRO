@@ -19,7 +19,7 @@ export function dir(locale: Locale): "ltr" | "rtl" {
  * falls back to the French URL (graceful, no 404s). Extend AR_SECTIONS as more
  * of the site is translated.
  */
-const AR_SECTIONS = ["/concours"]; // has an Arabic version (hub + detail)
+const AR_SECTIONS = ["/concours", "/blog"]; // have an Arabic version (hub + detail)
 
 export function localePath(locale: Locale, path: string): string {
   if (locale === "fr") return path;
