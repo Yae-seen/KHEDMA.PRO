@@ -65,7 +65,10 @@ weekly and re-check statuses against the official portals.
 - **Phase 4 (done):** Allemagne — Chancenkarte points calculator, occupation×city employer
   finder (deep-links official job portals), cost estimator + 2 guides. YMYL: figures from
   official German sources, adversarially verified.
-- **Phase 5 (next):** Arabic (AR/RTL) localization.
+- **Phase 5 (foundation):** Arabic (AR/RTL) — locale-aware chrome, `/ar` RTL homepage
+  (Cairo font), language toggle, hreflang. Route-group split (`(fr)` / `ar`) keeps both
+  locales statically generated with unchanged FR URLs. Deep per-page AR translation is
+  incremental from here.
 
 See `docs/BUILD_BRIEF.md` for the keyword-informed roadmap and `docs/PROJECT_STATUS.md`
 for the detailed state.

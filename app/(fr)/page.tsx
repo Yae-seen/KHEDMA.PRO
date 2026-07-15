@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PILLARS } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+    languages: { fr: "/", ar: "/ar" },
+  },
+};
 
 const TRUST = ["100% Gratuit", "Offres vérifiées", "Sans arnaque"];
 

@@ -76,9 +76,21 @@ parchment), root layout, homepage, and the three pillar landing pages
   Tools are labelled indicative, never legal advice. Re-verify figures annually
   (Foreign-Office funds figure is reset each January).
 
+### Phase 5 — Arabic (AR/RTL) foundation (this batch)
+- **i18n** (`lib/i18n.ts`): fr/ar dictionary for the chrome; `localePath()` helper.
+- **Route-group split**: French routes moved under `app/(fr)/` (URLs unchanged),
+  Arabic under `app/ar/`. Root layout owns the single `<html>/<body>`; each group
+  layout renders locale-aware chrome and sets `dir` on its wrapper — both locales
+  stay statically generated.
+- **`/ar` RTL homepage** (Cairo font), Arabic header/footer, WebSite + FAQ JSON-LD.
+- **Language toggle** (FR ↔ العربية) in the header + **hreflang** alternates on `/`↔`/ar`.
+- **Scope**: this is the Arabic entry surface + RTL foundation. Translating the deep
+  content pages (concours/emploi/allemagne hubs, guides) into Arabic is the incremental
+  next step; the infrastructure (dict, RTL chrome, routing) is in place for it.
+
 ## Not built yet
+- **Arabic deep content:** AR versions of the pillar hubs and guides (infra ready).
 - **Phase 3 remainder (needs backend):** live job board, accounts, application tracking.
-- **Phase 5 — Arabic**: AR/RTL localization of the content pages.
 - **Phase 4 nice-to-have:** Ausbildung-specific blocked-account figure (€959/mo),
   live Mangelberufe list link, more small-city landing pages.
 
