@@ -9,12 +9,12 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 ---
 
 ## ⏰ Time-sensitive
-- ☐ **SEMrush Pro trial — 4 days left (from 2026-07-15).** Scrape everything we'll need
-  via Chrome (logged-in Pro) and store it in `docs/research/`: full keyword lists for
-  each pillar (FR + AR), competitor domains (organic + backlinks + top pages), keyword
-  gap vs competitors, position tracking baseline, and the Ausbildung/Germany corridor.
-  → own its own focused session; the MCP free tier already gave the headline numbers
-  (`docs/research/semrush-khedma-2026-07-15.md`).
+- ☑ **SEMrush Pro deep-scrape — DONE 2026-07-16** (22-agent workflow via the Pro MCP).
+  Full intel in `docs/research/semrush-khedma-2026-07-16.md`. Headlines: khedma.pro is a
+  cold start (rank 561K, AS 2, 1 keyword); winnable core = **ANAPEC + emploi public +
+  city×emploi + مباراة التعليم long-tails** (KD 12–31); **Germany is a demand desert** in
+  Morocco (only `visa allemagne maroc` 1.3K/KD27 has real volume); CPC ≈ 0 everywhere →
+  volume game. Re-pull after the Sept rentrée spike.
 
 ## ✅ Decisions made (2026-07-15)
 - **Org/official logos: NO.** Keep text-based source attribution (protects independence
@@ -37,18 +37,35 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 - ☐ **AdSense**: once traffic + all trust pages + original content confirmed, (re)submit.
   Strategy = earn via traffic → high-quality original content is the lever.
 
-## ◐ / ☐ Build work (me — unblocked)
-- ☑ **Arabic deep content — guides done**: all 21 guides LIVE in Arabic — `/ar/concours`
-  (hub + 12) and `/ar/blog` (hub + 9), RTL, hreflang, sitemap. Remaining: `/ar/emploi`
-  and `/ar/allemagne` HUBS (the interactive tools need Arabic labels — bigger, lower priority).
-- ☐ **Logo + animated wordmark**: work-suitcase mark + "Khedma Pro" in a distinctive
-  animated wordmark, wired into header/footer/OG. (Unblocked — the site's OWN brand,
-  no trademark issue.)
-- ☐ **`visa allemagne maroc` surface** on `/allemagne` (SEMrush: 1.3K vol, KD 27 — a
-  clean win directly on strategy).
-- ☐ **Content-quality pass for AdSense**: audit every page for depth/originality/EEAT;
-  strengthen thin spots; ensure no page reads templated.
+## ◐ / ☐ Build work (me — unblocked) — reprioritized by the 2026-07-16 SEMrush scrape
+
+**Content priority order (volume ÷ difficulty, on khedma.pro's own turf):**
+- ☐ **①  ANAPEC hub** — `anapec` 246K, `anapec postuler` 14.8K/KD18, `anapec login`
+  3.6K/KD12. "How to register, search, apply on ANAPEC." Highest ratio win.
+- ☐ **②  Public-employment pillar** — `emploi public` 110K/KD31, `emploi public ma`
+  22.2K/KD22, `emploi public maroc` 12.1K/KD25, `بوابة التشغيل العمومي` 33.1K/KD31.
+- ☐ **③  `city × emploi` programmatic cluster** — Rabat/Casa/Fès/Agadir/Tanger (KD 14–21);
+  template + deduped real listings (ties into the Supabase job board when live).
+- ☐ **④  Concours `مباراة التعليم` seasonal cluster** — year + `التسجيل` long-tails
+  (KD 14–27), timed to the Sept rentrée. Concours engine scaffold already exists.
+- ☐ **⑤  `visa allemagne maroc` surface** on `/allemagne` — 1.3K/KD27, the ONE Germany
+  page with real demand. Build this; do NOT expand Germany further for SEO (demand desert).
+- ☐ **⑥  CV/stage exactness** — ensure `/cv` targets `cv maroc` (480/KD12) & `stage maroc`
+  (1.3K/KD14) exactly.
+- ☐ **Content-quality pass for AdSense**: depth/originality/EEAT; no page reads templated.
+
+**Other build work:**
+- ☑ **Arabic deep content — guides done**: all 21 guides LIVE — `/ar/concours` (hub + 12)
+  and `/ar/blog` (hub + 9), RTL, hreflang, sitemap. Remaining: `/ar/emploi` + `/ar/allemagne`
+  HUBS (interactive tools need Arabic labels — lower priority than the content above).
+- ☐ **Logo + animated wordmark**: work-suitcase mark + "Khedma Pro" animated wordmark,
+  wired into header/footer/OG. (Unblocked — our OWN brand, no trademark issue.)
 - ☐ **FR↔AR hreflang** completion as more AR pages go live.
+
+> **Ecosystem note (blind spot from the scrape):** the giant untapped gap vs
+> massarservic.net (massar/moutamadris/login, 5M+ vol) belongs to the **sibling
+> massar-service.net**, NOT khedma.pro. Don't clone Massar-login intent on a careers
+> domain — instead cross-link massar-service.net (education traffic) → khedma.pro (careers).
 
 ## ☑ Deploy fixed — site is LIVE (2026-07-16)
 Production was 404ing on every route. Three stacked causes, all fixed & verified
