@@ -9,9 +9,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE.baseUrl, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE.baseUrl}/concours`, lastModified, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE.baseUrl}/emploi`, lastModified, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE.baseUrl}/emploi`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE.baseUrl}/cv`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/allemagne`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE.baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE.baseUrl}/a-propos`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE.baseUrl}/contact`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE.baseUrl}/confidentialite`, lastModified, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${SITE.baseUrl}/mentions-legales`, lastModified, changeFrequency: "yearly", priority: 0.2 },
   ];
 
   const concoursRoutes: MetadataRoute.Sitemap = CONCOURS.map((c) => ({

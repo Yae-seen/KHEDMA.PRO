@@ -123,7 +123,7 @@ export const guide: ConcoursGuide = {
     {
       question: "Le concours du Ministère de la Justice 2026 est-il encore ouvert ?",
       answer:
-        "Non. Les candidatures du lot 2026 (rédacteurs judiciaires, délégués judiciaires, ingénieurs) se sont clôturées le 24 avril 2026. Les épreuves écrites ont eu lieu en mai et juin, et la phase orale est en cours. Il n'est plus possible de postuler à cette session.",
+        "Non. Les candidatures du lot 2026 (rédacteurs judiciaires, délégués judiciaires, ingénieurs) se sont clôturées le 24 avril 2026. Les épreuves écrites ont eu lieu en mai et juin, et la phase orale est en cours d'après les sources qui suivent ces concours. Il n'est plus possible de postuler à cette session.",
     },
     {
       question: "Quel diplôme faut-il pour devenir rédacteur judiciaire ?",

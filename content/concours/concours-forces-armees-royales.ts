@@ -105,7 +105,7 @@ export const guide: ConcoursGuide = {
     },
     {
       type: "note",
-      text: "Les dates exactes de la campagne soldats en cours n'ont pas pu être confirmées de source officielle à la date de mise à jour de ce guide, et des dates contradictoires circulent en ligne. Ne vous fiez pas aux publications des réseaux sociaux : vérifiez l'avis directement sur [recrutement.far.ma](https://recrutement.far.ma/).",
+      text: "Les dates exactes de la campagne soldats n'ont pas pu être confirmées de source officielle à la date de mise à jour de ce guide, et des dates contradictoires circulent en ligne. Ne vous fiez pas aux publications des réseaux sociaux : vérifiez l'avis directement sur [recrutement.far.ma](https://recrutement.far.ma/).",
     },
     { type: "h2", text: "De la présélection à la rentrée : les étapes de la sélection" },
     {

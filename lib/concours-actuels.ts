@@ -1,9 +1,15 @@
 /**
  * Concours currently open — a hand-verified snapshot, NOT a live feed.
  *
- * Every entry here was seen directly on an official source (emploi-public.ma
- * or a ministry .gov.ma site) on ACTUELS_LAST_VERIFIED. Entries whose deadline
- * has passed are filtered out at render time. Refresh this file weekly.
+ * DATA DISCIPLINE:
+ * - Every entry was seen directly on an official source (emploi-public.ma or a
+ *   ministry .gov.ma site) on ACTUELS_LAST_VERIFIED. Refresh weekly.
+ * - The UI filters by the REAL current date (the page uses ISR — see
+ *   `app/concours/page.tsx` `revalidate`), so entries disappear the day their
+ *   deadline passes even without a redeploy.
+ * - If the snapshot itself goes stale (older than SNAPSHOT_STALE_AFTER_DAYS),
+ *   the page stops presenting it as current and points users to the official
+ *   portal instead. This bounds the blast radius of a missed weekly refresh.
  */
 
 export interface ConcoursActuel {
@@ -18,6 +24,9 @@ export interface ConcoursActuel {
 }
 
 export const ACTUELS_LAST_VERIFIED = "2026-07-15";
+
+/** Beyond this many days without a refresh, treat the snapshot as unreliable. */
+export const SNAPSHOT_STALE_AFTER_DAYS = 12;
 
 export const CONCOURS_ACTUELS: ConcoursActuel[] = [
   {
@@ -65,9 +74,44 @@ export const CONCOURS_ACTUELS: ConcoursActuel[] = [
   },
 ];
 
-/** Entries still open on the given date (deadline not passed). */
-export function concoursOuverts(onDate: string): ConcoursActuel[] {
-  return CONCOURS_ACTUELS.filter((c) => c.deadline >= onDate).sort((a, b) =>
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+function isoToday(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function daysBetween(fromIso: string, toIso: string): number {
+  const from = Date.parse(`${fromIso}T00:00:00Z`);
+  const to = Date.parse(`${toIso}T00:00:00Z`);
+  return Math.round((to - from) / MS_PER_DAY);
+}
+
+export interface SnapshotStatus {
+  /** Entries whose deadline is today or later, soonest first. */
+  ouverts: ConcoursActuel[];
+  /** Snapshot age in days (relative to today). */
+  ageDays: number;
+  /** True once the snapshot is older than the staleness threshold. */
+  stale: boolean;
+  /** The reference date used ("today"). */
+  today: string;
+  lastVerified: string;
+}
+
+/**
+ * Resolve the live state of the snapshot. Pass a fixed date for tests; defaults
+ * to the real current date so ISR re-renders keep it honest.
+ */
+export function snapshotStatus(today: string = isoToday()): SnapshotStatus {
+  const ageDays = daysBetween(ACTUELS_LAST_VERIFIED, today);
+  const ouverts = CONCOURS_ACTUELS.filter((c) => c.deadline >= today).sort((a, b) =>
     a.deadline.localeCompare(b.deadline),
   );
+  return {
+    ouverts,
+    ageDays,
+    stale: ageDays > SNAPSHOT_STALE_AFTER_DAYS,
+    today,
+    lastVerified: ACTUELS_LAST_VERIFIED,
+  };
 }

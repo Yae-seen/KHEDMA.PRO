@@ -3,7 +3,7 @@ import type { ArticleContent } from "@/lib/content-types";
 export const article: ArticleContent = {
   slug: "comment-postuler-concours-fonction-publique",
   intro: [
-    "Chaque année, des milliers de postes sont ouverts dans la fonction publique marocaine par voie de concours. La procédure est **gratuite**, encadrée par la loi, et passe par un portail officiel unique : [emploi-public.ma](https://www.emploi-public.ma/fr/). Pourtant, beaucoup de candidats passent par des sites intermédiaires, ratent la date limite ou envoient un dossier incomplet.",
+    "Chaque année, des milliers de postes sont ouverts dans la fonction publique marocaine par voie de concours (مباراة توظيف). La procédure est **gratuite**, encadrée par la loi, et s'appuie sur le portail officiel de référence : [emploi-public.ma](https://www.emploi-public.ma/fr/). Pourtant, beaucoup de candidats passent par des sites intermédiaires, ratent la date limite ou envoient un dossier incomplet.",
     "Voici la procédure complète, étape par étape, telle qu'elle fonctionne réellement sur le portail officiel — de la création du compte candidat jusqu'aux résultats.",
   ],
   body: [
@@ -70,7 +70,7 @@ export const article: ArticleContent = {
     },
     {
       type: "p",
-      text: "Le décret prévoit que l'administration nomme les lauréats dans les **60 jours** suivant la publication des résultats définitifs. Suivez l'état de vos candidatures dans la rubrique « Mes Candidatures » de votre compte.",
+      text: "D'après la réglementation des concours, l'administration doit en principe nommer les lauréats dans un délai de **60 jours** suivant la publication des résultats définitifs. Suivez l'état de vos candidatures dans la rubrique « Mes Candidatures » de votre compte.",
     },
     {
       type: "p",

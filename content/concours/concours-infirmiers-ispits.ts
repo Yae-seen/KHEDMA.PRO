@@ -28,7 +28,7 @@ export const guide: ConcoursGuide = {
       rows: [
         ["Places ouvertes", "4 985 places (cycle licence)"],
         ["Inscriptions en ligne", "Du 6 au 13 juillet 2026 à 16h30 — clôturées"],
-        ["Épreuves écrites", "25 et 26 juillet 2026, à partir de 8h30, dans les instituts et annexes"],
+        ["Épreuves écrites", "Dans les instituts et leurs annexes, aux dates fixées par l'avis officiel de la session"],
         ["Candidature", "Un seul choix, uniquement sur ispits.sante.gov.ma"],
         ["Présélection", "Moyenne du bac : 75 % examen national + 25 % examen régional"],
       ],
@@ -59,7 +59,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "La présélection : tout se joue sur votre moyenne du bac" },
     {
       type: "p",
-      text: "Il n'y a pas de dossier à défendre ni de lettre de motivation : selon les annonces des sessions récentes, la présélection se calcule sur une moyenne pondérée du bac — **75 % pour la note de l'examen national et 25 % pour la note de l'examen régional**. Ce sont les notes qui figurent sur votre relevé officiel ; si vous ne les avez plus sous la main, voici [comment consulter vos résultats du bac sur Massar](https://massar-service.net/resultats-bac).",
+      text: "Il n'y a pas de dossier à défendre ni de lettre de motivation : selon les annonces des sessions récentes, la présélection se calcule sur une moyenne pondérée du bac — **75 % pour la note de l'examen national et 25 % pour la note de l'examen régional**. Ce sont les notes qui figurent sur votre relevé officiel du bac ; si vous ne les avez plus sous la main, vous pouvez les reconsulter via le portail Massar.",
     },
     {
       type: "p",
@@ -93,7 +93,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "Vous avez raté la session 2026-2027 ?" },
     {
       type: "p",
-      text: "Les inscriptions de cette session sont closes depuis le 13 juillet 2026. Le concours ISPITS est annuel, avec une inscription qui revient chaque été sur la même plateforme officielle. Deux réflexes d'ici là : surveillez [ispits.sante.gov.ma](http://ispits.sante.gov.ma) dès la fin de l'année scolaire, et gardez un œil sur notre [hub des concours au Maroc](/concours), où les statuts sont mis à jour au fil des annonces officielles. Rappel important : seuls les titulaires du bac de l'année en cours ou de l'année précédente peuvent candidater — si vous avez eu votre bac en 2026, la session de l'été 2027 sera votre dernière fenêtre.",
+      text: "Les inscriptions de cette session sont closes depuis le 13 juillet 2026. Le concours ISPITS est annuel, avec une inscription qui revient chaque été sur la même plateforme officielle. Deux réflexes d'ici là : surveillez [ispits.sante.gov.ma](http://ispits.sante.gov.ma) dès la fin de l'année scolaire, et gardez un œil sur notre [hub des concours au Maroc](/concours), où les statuts sont mis à jour au fil des annonces officielles. Rappel important : seuls les titulaires du bac de l'année en cours ou de l'année précédente peuvent candidater — si vous avez eu votre bac en 2026, la prochaine session estivale sera votre dernière fenêtre pour candidater.",
     },
   ],
   howTo: {
@@ -123,7 +123,7 @@ export const guide: ConcoursGuide = {
       },
       {
         name: "Présentez-vous à l'épreuve écrite",
-        text: "Les épreuves se déroulent dans les instituts et leurs annexes (les 25 et 26 juillet 2026 à partir de 8h30 pour cette session, selon les annonces relayées). Apportez votre formulaire imprimé ; les autres pièces exigées sont précisées dans chaque avis officiel.",
+        text: "Les épreuves se déroulent dans les instituts et leurs annexes, aux dates et horaires précisés dans l'avis officiel de la session. Apportez votre formulaire imprimé ; les autres pièces exigées sont précisées dans chaque avis officiel.",
       },
     ],
   },

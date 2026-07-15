@@ -57,7 +57,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "Les étapes de sélection" },
     {
       type: "p",
-      text: "Le concours ne se limite pas à un examen écrit. Selon les annonces des sessions récentes, la sélection se déroule en plusieurs étapes successives, chacune éliminatoire :",
+      text: "Le concours ne se limite pas à un examen écrit. Selon les annonces des sessions récentes, la sélection se déroule en plusieurs étapes successives :",
     },
     {
       type: "ol",

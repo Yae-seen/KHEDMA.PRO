@@ -4,7 +4,7 @@ export const guide: ConcoursGuide = {
   slug: "concours-enseignement",
   intro: [
     "Le concours de recrutement des enseignants — **مباراة التعليم**, officiellement le concours d'accès au cycle de qualification des cadres des Académies Régionales d'Éducation et de Formation (AREF) — est l'un des plus gros recrutements publics de l'année au Maroc : **19 000 postes** du primaire au lycée lors de la session de novembre 2025. Les lauréats s'inscrivent dans les Centres Régionaux des Métiers de l'Éducation et de la Formation (CRMEF) et entrent en formation.",
-    "La session 2026-2027 n'était pas encore annoncée au 15 juillet 2026 — rien sur la page concours du ministère à cette date. Si le calendrier des dernières sessions se répète, l'annonce devrait tomber vers octobre 2026, avec une fenêtre d'inscription d'environ deux semaines, **exclusivement en ligne** sur [wolouj.men.gov.ma](https://wolouj.men.gov.ma). Voici les conditions, le déroulement type et la préparation, d'après les annonces officielles de la dernière session.",
+    "La session 2026-2027 n'était pas encore annoncée au 15 juillet 2026 — rien sur la page concours du ministère à cette date. Lors des dernières sessions, l'annonce tombait vers la fin octobre, avec une fenêtre d'inscription d'environ deux semaines, **exclusivement en ligne** sur [wolouj.men.gov.ma](https://wolouj.men.gov.ma). Voici les conditions, le déroulement type et la préparation, d'après les annonces officielles de la dernière session.",
   ],
   body: [
     { type: "h2", text: "Un concours à part : ni emploi-public.ma, ni dossier papier" },
@@ -106,7 +106,7 @@ export const guide: ConcoursGuide = {
     },
     {
       type: "p",
-      text: "Une fois en poste, vous passerez du statut de candidat à celui d'utilisateur quotidien des services numériques de l'école marocaine — Massar en tête. Les guides indépendants de [massar-service.net](https://massar-service.net) couvrent ce versant éducation. Et pour suivre l'état de ce concours et des autres grands recrutements, notre [hub Concours](/concours) est mis à jour au fil des annonces.",
+      text: "Une fois en poste, vous passerez du statut de candidat à celui d'utilisateur quotidien des services numériques de l'école marocaine, comme Massar. Pour suivre l'état de ce concours et des autres grands recrutements, notre [hub Concours](/concours) est mis à jour au fil des annonces.",
     },
   ],
   howTo: {

@@ -34,6 +34,8 @@ Arabic. It covers three areas:
 
 - ${SITE.baseUrl}/concours — concours hub
 ${CONCOURS.map((c) => `- ${SITE.baseUrl}/concours/${c.slug} — ${c.title}`).join("\n")}
+- ${SITE.baseUrl}/emploi — jobs hub (public employment, sectors, cities)
+- ${SITE.baseUrl}/cv — free client-side CV builder (Moroccan format, PDF; no account, no data collection)
 - ${SITE.baseUrl}/blog — career guides
 ${ARTICLES.map((a) => `- ${SITE.baseUrl}/blog/${a.slug} — ${a.title}`).join("\n")}
 

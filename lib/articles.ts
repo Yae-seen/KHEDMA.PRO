@@ -55,6 +55,24 @@ export const ARTICLES: ArticleMeta[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
   },
+  {
+    slug: "trouver-emploi-public-maroc",
+    title: "Emploi public au Maroc : comment le décrocher (guide complet)",
+    description:
+      "Fonction publique, contractuels, ANAPEC : où chercher un emploi public au Maroc, comment postuler par concours, et comment éviter les arnaques. Le guide pas-à-pas.",
+    category: "Emploi",
+    publishedAt: "2026-07-15",
+    updatedAt: "2026-07-15",
+  },
+  {
+    slug: "modele-cv-maroc",
+    title: "Modèle de CV au Maroc : structure, conseils et erreurs à éviter",
+    description:
+      "Comment faire un bon CV au format marocain : les rubriques attendues, la mise en page, les erreurs qui éliminent, et un outil gratuit pour le créer en PDF.",
+    category: "Emploi",
+    publishedAt: "2026-07-15",
+    updatedAt: "2026-07-15",
+  },
 ];
 
 export function getArticleMeta(slug: string): ArticleMeta | undefined {

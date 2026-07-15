@@ -43,7 +43,7 @@ export const guide: ConcoursGuide = {
       items: [
         "**Nationalité marocaine**.",
         "**Âge : 18 à 24 ans**.",
-        "**Diplôme : le baccalauréat** — pour la session 2026, les annonces visaient les bacheliers 2025 et 2026, toutes filières.",
+        "**Diplôme : le baccalauréat** — pour la session 2026, les annonces visaient les bacheliers 2025 et 2026 ; les filières et séries admises sont précisées dans chaque avis officiel.",
         "**Situation familiale : célibataire**.",
         "**Taille minimale : 1,70 m** pour les hommes, **1,68 m** pour les femmes.",
         "**Casier judiciaire vierge**.",
@@ -56,7 +56,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "Comment se déroule la sélection" },
     {
       type: "p",
-      text: "La fiche officielle 2026 mentionne une épreuve le 1er juillet. Selon le schéma des dernières sessions, la sélection s'organise en plusieurs étapes après la clôture des inscriptions :",
+      text: "La fiche officielle 2026 mentionne une épreuve le 1er juillet, mais ne détaille pas publiquement tout le déroulé de la sélection. Comme dans les autres recrutements des forces de sécurité, la sélection comporte généralement plusieurs étapes après la clôture des inscriptions — chacune étant précisée dans l'avis officiel et dans les convocations :",
     },
     {
       type: "ol",
@@ -114,7 +114,7 @@ export const guide: ConcoursGuide = {
       },
       {
         name: "Répondez à la convocation",
-        text: "Après examen du dossier, les candidats retenus sont convoqués aux examens médicaux, aux tests psychotechniques et aux épreuves sportives, selon le schéma des dernières sessions.",
+        text: "Après examen du dossier, les candidats retenus sont convoqués aux épreuves de sélection (examens médicaux, tests psychotechniques, épreuves sportives), comme dans les autres recrutements des forces de sécurité ; les étapes exactes figurent dans l'avis officiel et dans la convocation.",
       },
       {
         name: "Suivez les résultats",
@@ -126,7 +126,7 @@ export const guide: ConcoursGuide = {
     {
       question: "Quel diplôme faut-il pour devenir élève gendarme ?",
       answer:
-        "Le baccalauréat. Lors de la session 2026, les annonces visaient les bacheliers 2025 et 2026, toutes filières. C'est l'un des grands concours de sécurité accessibles avec le bac seul — l'avis officiel de chaque session précise les sessions de bac acceptées.",
+        "Le baccalauréat. Lors de la session 2026, les annonces visaient les bacheliers 2025 et 2026. C'est l'un des grands concours de sécurité accessibles avec le bac seul — l'avis officiel de chaque session précise les sessions de bac et les filières acceptées.",
     },
     {
       question: "Quelle est la limite d'âge du concours de la Gendarmerie Royale ?",

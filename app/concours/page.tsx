@@ -6,7 +6,7 @@ import {
   CONCOURS,
   concoursByCategory,
 } from "@/lib/concours-data";
-import { ACTUELS_LAST_VERIFIED, concoursOuverts } from "@/lib/concours-actuels";
+import { snapshotStatus } from "@/lib/concours-actuels";
 import { buildItemListJsonLd } from "@/lib/structured-data";
 import { AntiScamBanner } from "@/components/anti-scam-banner";
 import { Breadcrumb } from "@/components/breadcrumb";
@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "Tous les concours de la fonction publique au Maroc : police, gendarmerie, douane, impôts, enseignement, santé. Conditions, épreuves et candidature officielle — sans arnaque.",
   alternates: { canonical: "/concours" },
 };
+
+// Re-render twice a day so the "open now" list filters against the real current
+// date (entries drop off the day their deadline passes) and the staleness guard
+// stays honest even between deploys.
+export const revalidate = 43200;
 
 const HUB_FAQ = [
   {
@@ -59,7 +64,8 @@ const HUB_FAQ = [
 export default function ConcoursHubPage() {
   const grouped = concoursByCategory();
   const guides = ARTICLES.filter((a) => a.category === "Concours");
-  const ouverts = concoursOuverts(ACTUELS_LAST_VERIFIED);
+  const snapshot = snapshotStatus();
+  const ouverts = snapshot.stale ? [] : snapshot.ouverts;
 
   return (
     <>
@@ -89,7 +95,7 @@ export default function ConcoursHubPage() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
-        {ouverts.length > 0 && (
+        {ouverts.length > 0 ? (
           <div className="mb-14">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-xl font-bold tracking-tight text-ink">
@@ -97,7 +103,7 @@ export default function ConcoursHubPage() {
                 Candidatures ouvertes en ce moment
               </h2>
               <span className="text-xs font-medium text-muted">
-                Vérifié sur les sources officielles le {ACTUELS_LAST_VERIFIED}
+                Vérifié sur les sources officielles le {snapshot.lastVerified}
               </span>
             </div>
             <ul className="mt-5 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
@@ -142,6 +148,27 @@ export default function ConcoursHubPage() {
               </a>
               .
             </p>
+          </div>
+        ) : (
+          <div className="mb-14 rounded-2xl border border-border bg-surface p-6 sm:p-8">
+            <h2 className="text-xl font-bold tracking-tight text-ink">
+              Consultez les concours ouverts en temps réel
+            </h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted">
+              Pour la liste à jour des candidatures ouvertes, consultez le portail officiel — il
+              recense en continu les avis de l&apos;État, des collectivités territoriales et des
+              établissements publics. En attendant, nos guides ci-dessous détaillent chaque grand
+              concours, ses conditions et son calendrier habituel.
+            </p>
+            <a
+              href="https://www.emploi-public.ma/fr/concours-liste"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary-dark"
+            >
+              Voir les concours ouverts sur emploi-public.ma
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         )}
 

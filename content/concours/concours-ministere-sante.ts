@@ -39,7 +39,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "Le grand concours infirmiers : le rendez-vous de décembre-janvier" },
     {
       type: "p",
-      text: "Le recrutement le plus attendu est le grand concours annuel des **infirmiers de premier grade** (échelle 10), qui se tient habituellement en décembre-janvier. La dernière édition a ouvert **800 postes** toutes spécialités confondues — infirmier polyvalent, sage-femme, technicien, rééducation, assistant social — avec une clôture des candidatures le 5 janvier 2026, une épreuve écrite le 18 janvier 2026 et un dépôt en ligne via drh.sante.gov.ma. Les résultats définitifs de cette session ont été publiés.",
+      text: "Le recrutement le plus attendu est le grand concours annuel des **infirmiers de premier grade** (échelle 10), qui se tient habituellement en décembre-janvier. La dernière édition a ouvert **800 postes** toutes spécialités confondues — infirmier polyvalent, sage-femme, technicien, rééducation, assistant social — avec une clôture des candidatures le 5 janvier 2026, une épreuve écrite le 18 janvier 2026 et un dépôt en ligne via drh.sante.gov.ma. Selon la presse spécialisée, les résultats définitifs de cette session ont déjà été publiés.",
     },
     {
       type: "p",

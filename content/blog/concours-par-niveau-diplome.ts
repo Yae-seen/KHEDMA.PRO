@@ -17,11 +17,11 @@ export const article: ArticleContent = {
       caption: "Correspondance générale grade / échelle / diplôme",
       headers: ["Niveau de diplôme", "Grade type", "Échelle"],
       rows: [
-        ["Niveau collège / lycée", "Adjoint, agent, militaire du rang", "6 et moins"],
+        ["Niveau collège / lycée", "Adjoint, agent, militaire du rang", "Les plus basses"],
         ["Baccalauréat", "Gardien de la paix, gendarme, gardien des douanes", "5–6"],
         ["Bac+2 (DUT, BTS, technicien spécialisé)", "Technicien 3ème grade", "9"],
         ["Licence (bac+3)", "Administrateur 3ème grade, enseignant AREF", "10"],
-        ["Master / ingénieur (bac+5)", "Administrateur 2ème grade, ingénieur d'État, commissaire", "11"],
+        ["Master / ingénieur (bac+5)", "Administrateur 2ème grade, ingénieur d'État, commissaire judiciaire", "11"],
       ],
     },
     {

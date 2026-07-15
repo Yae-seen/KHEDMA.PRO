@@ -13,6 +13,7 @@
   --color-accent: #f59e0b;
   --color-accent-dark: #b45309;
   --color-success: #047857;
+  --color-status: #b91c1c;
   --color-border: #e2e8f0;
   --color-night: #0b1120;
   --color-night-soft: #131c33;
@@ -28,6 +29,7 @@
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
   --color-success: var(--color-success);
+  --color-status: var(--color-status);
   --color-border: var(--color-border);
   --color-night: var(--color-night);
   --color-night-soft: var(--color-night-soft);
@@ -59,4 +61,37 @@ textarea:focus-visible,
 ::selection {
   background: var(--color-primary);
   color: #fff;
+}
+
+/* CV builder — print only the CV sheet, at A4, dropping the app chrome and the
+   form. The preview is rendered on screen inside .cv-sheet. */
+@media print {
+  body {
+    background: #ffffff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .cv-print-root,
+  .cv-print-root * {
+    visibility: visible;
+  }
+  .cv-print-root {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .cv-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    border-radius: 0 !important;
+  }
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
 }

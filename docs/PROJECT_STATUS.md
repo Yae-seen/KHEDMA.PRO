@@ -1,6 +1,6 @@
 # Project status — khedma.pro
 
-_Last updated: 2026-07-15 (end of Phase 2)._
+_Last updated: 2026-07-15 (Phase 3 + trust pages)._
 
 ## Built
 
@@ -30,19 +30,37 @@ parchment), root layout, homepage, and the three pillar landing pages
 - **Ecosystem**: contextual editorial links to massar-service.net on 3 pages
   (ISPITS → /resultats-bac, enseignement, par-niveau → /orientation-universitaire).
 
+### Phase 3 — Emploi pillar + CV builder (this batch)
+- **`/emploi` hub**: real content targeting `emploi public maroc` — where to look
+  (emploi-public.ma, ANAPEC, grands recruteurs), the concours-vs-contractuel split,
+  by-sector and by-city orientation, anti-scam, CV CTA, FAQ + JSON-LD.
+- **`/cv` CV builder**: a fully **client-side** tool (Moroccan format) — live A4 preview,
+  localStorage persistence, print-to-PDF via the browser. No account, no backend, and
+  the CV data never leaves the device. Link-worthy, AIO-resistant, targets `cv maroc`.
+- **2 emploi guides**: `trouver-emploi-public-maroc`, `modele-cv-maroc`.
+- **Scope note (stack-driven):** live job-board ingestion, user accounts, and
+  application tracking from the brief are NOT built — they require a backend the
+  ecosystem stack intentionally excludes (no DB/auth/Supabase). The emploi pillar
+  instead orients toward official/verified channels and provides the CV tool. Revisit
+  if/when a backend is added.
+
+### Trust & legal pages (this batch)
+- `/a-propos`, `/contact`, `/confidentialite`, `/mentions-legales` — independence
+  notice (not affiliated with any administration), no-data-collection statement,
+  editorial method, and AdSense-readiness basics. Linked from the footer.
+- Contact uses `contact@khedma.pro` (site-domain address) — owner must set up the
+  mailbox/forwarding.
+
 ## Verification (2026-07-15)
-- `npm run type-check` ✅ · `npm run lint` ✅ · `npm run build` ✅ (28 static pages)
-- 0 broken internal links; all in-body external links resolve to official domains.
-- JSON-LD validated in-browser (0 parse errors) on hub + detail + blog.
-- Rendering confirmed in the browser preview (RTL Arabic, statuses, official CTAs).
-- **Caveat:** the automated fact-check/review agents hit the session usage cap and did
-  not all run. Facts were verified structurally (type-check, link audit, source-flag
-  audit, date scan) and by manual spot-review of the highest-risk pages (police, FAR,
-  finances, ISPITS). A dedicated review pass over all 12 guides is a reasonable follow-up.
+- `npm run type-check` ✅ · `npm run lint` ✅ · `npm run build` ✅
+- Automated adversarial fact-check pass over all 17 concours/blog files (one reviewer
+  per file vs the research digest): 21 fixes applied, 37 unverifiable claims softened,
+  **0 unresolved**. Plus structural audits: 0 broken internal links, all in-body
+  external links official, no aggregator mis-flagged `official:true`.
+- JSON-LD validated in-browser; rendering confirmed in the browser preview.
 
 ## Not built yet
-- **Phase 3 — Emploi**: job board (`offre emploi`), public-sector focus, CV builder
-  (Moroccan format), accounts, application tracking.
+- **Phase 3 remainder (needs backend):** live job board, accounts, application tracking.
 - **Phase 4 — Allemagne**: Chancenkarte eligibility calculator, occupation×small-city
   employer finder, cost calculator; absorb the massar `/carriere/allemagne` corridor.
 - **Phase 5 — Arabic**: AR/RTL localization of the content pages.

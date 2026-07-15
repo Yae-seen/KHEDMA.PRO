@@ -27,7 +27,7 @@ export const guide: ConcoursGuide = {
     },
     {
       type: "table",
-      caption: "Répartition des postes selon l'avis relayé de la session 2026",
+      caption: "Répartition indicative des postes selon l'avis relayé de la session 2026",
       headers: ["Spécialité", "Postes"],
       rows: [
         ["Sciences économiques et gestion", "358"],
@@ -50,7 +50,7 @@ export const guide: ConcoursGuide = {
       headers: ["Grade", "Échelle", "Diplôme (sessions récentes)"],
       rows: [
         ["Administrateur des finances 2ème grade", "11", "Master, Master spécialisé ou DESA"],
-        ["Technicien 3ème grade", "9", "Bac+2 (DUT, BTS, technicien spécialisé)"],
+        ["Technicien 3ème grade", "9", "Diplôme précisé dans chaque avis officiel"],
       ],
     },
     {
@@ -88,7 +88,7 @@ export const guide: ConcoursGuide = {
       type: "ul",
       items: [
         "Consultez régulièrement la liste des concours ouverts sur [emploi-public.ma](https://www.emploi-public.ma/fr/concours-liste) et activez les **alertes e-mail** depuis votre compte candidat.",
-        "Gardez un œil sur le site de la DGI (tax.gov.ma) et sur celui du ministère des Finances, qui publient les appels à candidatures.",
+        "Gardez un œil sur le site du ministère de l'Économie et des Finances, où sont publiés les appels à candidatures, en complément d'emploi-public.ma.",
         "Suivez notre [hub Concours](/concours), mis à jour avec le statut vérifié de chaque concours.",
         "Préparez dès maintenant vos documents (diplômes scannés, pièce d'identité, attestations) pour pouvoir postuler dès l'ouverture.",
       ],

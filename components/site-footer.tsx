@@ -24,9 +24,25 @@ export function SiteFooter() {
         ))}
       </div>
       <div className="border-t border-border">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <span>© 2026 Khedma Pro — Maroc.</span>
-          <span>Offres et concours vérifiés. Jamais de frais cachés, jamais de mot de passe demandé.</span>
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-5 text-xs text-muted sm:px-8">
+          <nav aria-label="Liens légaux" className="flex flex-wrap gap-x-5 gap-y-2 font-medium">
+            <Link href="/a-propos" className="hover:text-ink">
+              À propos
+            </Link>
+            <Link href="/contact" className="hover:text-ink">
+              Contact
+            </Link>
+            <Link href="/confidentialite" className="hover:text-ink">
+              Confidentialité
+            </Link>
+            <Link href="/mentions-legales" className="hover:text-ink">
+              Mentions légales
+            </Link>
+          </nav>
+          <div className="flex flex-col gap-2 border-t border-border pt-3 sm:flex-row sm:items-center sm:justify-between">
+            <span>© 2026 Khedma Pro — Maroc. Guide indépendant, non affilié à l&apos;administration.</span>
+            <span>Jamais de frais cachés, jamais de mot de passe demandé.</span>
+          </div>
         </div>
       </div>
     </footer>

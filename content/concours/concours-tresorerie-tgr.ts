@@ -14,7 +14,7 @@ export const guide: ConcoursGuide = {
     },
     {
       type: "p",
-      text: "Le schéma réel est différent : la TGR est une direction du Ministère de l'Économie et des Finances, et le MEF organise des **concours communs** dont les lauréats sont affectés dans ses différentes directions — Trésorerie Générale, Direction Générale des Impôts (DGI), Administration des Douanes (ADII) et services centraux. Lors de la campagne 2026, il n'y a d'ailleurs pas eu de concours séparé au nom de la DGI ou de la TGR : un seul grand concours d'administrateurs des finances a couvert l'ensemble du ministère.",
+      text: "Le schéma réel est différent : la TGR est une direction du Ministère de l'Économie et des Finances, et le MEF organise des **concours communs** dont les lauréats sont affectés dans ses différentes directions — Trésorerie Générale, Direction Générale des Impôts (DGI), Administration des Douanes (ADII) et services centraux. Lors de la campagne 2026, il n'y a d'ailleurs pas eu — d'après les annonces relayées — de concours séparé au nom de la DGI ou de la TGR : un seul grand concours d'administrateurs des finances a couvert l'ensemble du ministère.",
     },
     {
       type: "note",
@@ -23,7 +23,7 @@ export const guide: ConcoursGuide = {
     { type: "h2", text: "Les concours transverses du MEF : la vraie porte d'entrée" },
     {
       type: "p",
-      text: "Le grand rendez-vous de 2026 a été le concours des **administrateurs des finances 2ème grade (échelle 11)** : 503 postes, candidatures closes le 3 juin 2026, épreuve écrite passée le 5 juillet 2026. Ce concours est donc **clôturé** — inutile de chercher un lien d'inscription. Selon l'avis relayé lors de cette session, les postes étaient répartis par spécialité, avec la part du lion pour les sciences économiques et de gestion (358 postes) et les sciences juridiques (130 postes).",
+      text: "Le grand rendez-vous de 2026 a été, selon les annonces relayées, le concours des **administrateurs des finances 2ème grade (échelle 11)** : 503 postes, candidatures closes le 3 juin 2026, épreuve écrite passée le 5 juillet 2026. Ce concours est donc **clôturé** — inutile de chercher un lien d'inscription. Selon l'avis relayé lors de cette session, les postes étaient répartis par spécialité, avec la part du lion pour les sciences économiques et de gestion (358 postes) et les sciences juridiques (130 postes).",
     },
     {
       type: "p",

@@ -55,8 +55,13 @@ weekly and re-check statuses against the official portals.
 ## Status
 - **Phase 1 (done):** scaffold — design system, layout, homepage, 3 pillar pages.
 - **Phase 2 (done):** concours listings + content engine — 12 concours guides, 5 blog
-  guides, hub with "open now" list, sitemap/robots/llms.txt/OG, full JSON-LD.
-- **Phase 3 (next):** Emploi job board + CV builder + accounts.
+  guides, hub with a staleness-guarded "open now" list (ISR), sitemap/robots/llms.txt/OG,
+  full JSON-LD.
+- **Phase 3 (partial — SEO core):** Emploi content hub (`emploi public maroc`) + a
+  client-side **CV builder** (`/cv`, Moroccan format, PDF, no backend) + 2 emploi guides.
+  Live job-board ingestion, accounts, and application tracking are deferred — they need a
+  backend the stack excludes.
+- **Trust pages (done):** `/a-propos`, `/contact`, `/confidentialite`, `/mentions-legales`.
 - **Phase 4:** Allemagne — Chancenkarte calculator + occupation×city employer finder.
 - **Phase 5:** Arabic (AR/RTL) localization.
 

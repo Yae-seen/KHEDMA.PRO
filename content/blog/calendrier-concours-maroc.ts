@@ -19,7 +19,7 @@ export const article: ArticleContent = {
       rows: [
         ["Gendarmerie Royale (élèves gendarmes)", "Fin mars", "Sélection début juillet"],
         ["Forces Armées Royales (officiers, sous-officiers)", "Printemps (clôture ~fin mai)", "Tests et oral en été, rentrée mi-août"],
-        ["ISPITS — santé (admission bacheliers)", "Été (juin–juillet)", "Épreuves écrites en juillet"],
+        ["ISPITS — santé (admission bacheliers)", "Été (juillet)", "Épreuves écrites en juillet"],
         ["Police DGSN", "Mi-septembre", "Épreuve écrite début décembre"],
         ["Forces Auxiliaires (élèves Mokhaznis)", "Automne", "Sélection en fin d'année"],
         ["Enseignement — cadres des AREF (CRMEF)", "Fin octobre – novembre", "Écrit fin novembre, oral début décembre"],
@@ -33,7 +33,7 @@ export const article: ArticleContent = {
     { type: "h2", text: "Le premier semestre : finances, intérieur, justice" },
     {
       type: "p",
-      text: "De janvier à juin, les grands concours administratifs du Ministère de l'Économie et des Finances (douane, impôts, trésorerie via les concours transverses), du [Ministère de l'Intérieur](/concours/concours-ministere-interieur) et du [Ministère de la Justice](/concours/concours-ministere-justice) se succèdent. En 2026, par exemple, le concours des administrateurs des finances et celui des rédacteurs judiciaires se sont tenus au premier semestre. C'est aussi la saison de la [Gendarmerie Royale](/concours/concours-gendarmerie-royale), dont la campagne annuelle s'ouvre habituellement fin mars, et des [Forces Armées Royales](/concours/concours-forces-armees-royales), dont les inscriptions se clôturent en général vers la fin mai.",
+      text: "De janvier à juin, les grands concours administratifs du Ministère de l'Économie et des Finances (douane, impôts, trésorerie via les concours transverses), du [Ministère de l'Intérieur](/concours/concours-ministere-interieur) et du [Ministère de la Justice](/concours/concours-ministere-justice) se succèdent. En 2026, par exemple, le concours des administrateurs des finances et celui des rédacteurs judiciaires ont clôturé leurs candidatures au premier semestre. C'est aussi la saison de la [Gendarmerie Royale](/concours/concours-gendarmerie-royale), dont la campagne annuelle s'ouvre habituellement fin mars, et des [Forces Armées Royales](/concours/concours-forces-armees-royales), dont les inscriptions se clôturent en général vers la fin mai.",
     },
     { type: "h2", text: "L'été : la santé (ISPITS) et la préparation de l'automne" },
     {
