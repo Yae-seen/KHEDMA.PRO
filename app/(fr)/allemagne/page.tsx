@@ -23,7 +23,10 @@ export const metadata: Metadata = {
   title: "Travailler en Allemagne depuis le Maroc : Chancenkarte, métiers, coûts",
   description:
     "Votre parcours réel vers l'Allemagne : testez votre éligibilité à la Chancenkarte, trouvez un employeur par métier et par ville, et estimez votre budget. Sans promesses vides.",
-  alternates: { canonical: "/allemagne" },
+  alternates: {
+    canonical: "/allemagne",
+    languages: { fr: "/allemagne", ar: "/ar/allemagne" },
+  },
 };
 
 const ALLEMAGNE_FAQ = [

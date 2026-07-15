@@ -46,6 +46,13 @@ export const ARTICLES_AR: ArticleMetaAr[] = [
     category: "المباريات",
   },
   {
+    slug: "anapec-inscription-espace-candidat",
+    title: "التسجيل في ANAPEC: إنشاء فضاء المترشح وتسجيل الدخول",
+    description:
+      "دليل عملي لإنشاء فضاء المترشح في ANAPEC وتسجيل الدخول والترشّح للعروض بالمغرب: خطوات مجانية، والوثائق المطلوبة، وكيفية تجنّب عمليات النصب.",
+    category: "الشغل",
+  },
+  {
     slug: "trouver-emploi-public-maroc",
     title: "الشغل العمومي بالمغرب: كيف تحصل عليه (دليل كامل)",
     description:

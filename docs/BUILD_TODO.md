@@ -59,8 +59,13 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 
 **Other build work:**
 - ☑ **Arabic deep content — guides done**: all 21 guides LIVE — `/ar/concours` (hub + 12)
-  and `/ar/blog` (hub + 9), RTL, hreflang, sitemap. Remaining: `/ar/emploi` + `/ar/allemagne`
-  HUBS (interactive tools need Arabic labels — lower priority than the content above).
+  and `/ar/blog` (hub + 9), RTL, hreflang, sitemap.
+- ☑ **`/ar/emploi` + `/ar/allemagne` hubs — SHIPPED 2026-07-16** (owner: "germany and jobs
+  are only in french"). `/ar/emploi` = full Arabic jobs hub (الوظيفة العمومية / بوابة التشغيل
+  العمومي / مباريات التوظيف) + Arabic ANAPEC guide (`/ar/blog/anapec-…`). `/ar/allemagne` =
+  **lean** hub (Arabic Germany demand is ~nil per SEMrush — points to the FR interactive tools,
+  lists the 2 AR Germany guides). `AR_SECTIONS` now routes the AR nav correctly (was bouncing to
+  FR). hreflang + sitemap wired. Interactive tools (Chancenkarte calc, employer finder) stay FR.
 - ☑ **Logo + animated wordmark — SHIPPED 2026-07-16.** "Career case" mark (Majorelle
   suitcase, saffron handle+latch = career-track start) + Bricolage wordmark with the
   track-line hover sweep + one-time entrance; reduced-motion safe. `<Logo/>` in header +

@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title: "Emploi au Maroc : emploi public, secteur privé, CV — le guide",
   description:
     "Trouver un emploi au Maroc : où chercher (emploi public, ANAPEC, secteur privé), par secteur et par ville, éviter les arnaques, et créer un CV gratuit. Guide complet.",
-  alternates: { canonical: "/emploi" },
+  alternates: {
+    canonical: "/emploi",
+    languages: { fr: "/emploi", ar: "/ar/emploi" },
+  },
 };
 
 const EMPLOI_FAQ = [
