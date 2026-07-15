@@ -5,13 +5,19 @@ static guide with zero config; each integration turns on when you provide its ke
 Set variables in Vercel → Project → Settings → Environment Variables (and `.env.local`
 for local dev). See `.env.example`.
 
-## 1. Analytics (GA4 + GTM + Vercel)
+## 1. Analytics (GA4 + Vercel) — LIVE
 
-- **Vercel Analytics + Speed Insights** — already live, no keys needed (auto-on on Vercel).
-- **Google Tag Manager**: create a container at tagmanager.google.com → set
-  `NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX`. Configure GA4 inside GTM, or:
-- **Google Analytics 4 (direct)**: create a GA4 property → set `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX`.
-- The CSP auto-widens for Google domains **only** when one of these is set (tight otherwise).
+- **GA4 is live** (2026-07-16). Measurement ID `G-NQFV0NQGXH` is committed as a
+  default in `components/site-analytics.tsx` + `next.config.ts`, so it loads in
+  production with no env step. The site's Google tag `GT-MR5XFNM9` is a `gtag.js`
+  tag pointing at the same GA4 property — the committed `G-` install captures all
+  data with no double-counting, so nothing more is needed.
+- **Verify**: GA4 → Reports → Realtime should show traffic within ~30 min of deploy.
+- **Vercel Analytics + Speed Insights** — also live, no keys needed (auto-on on Vercel).
+- **Override / new property**: set `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX` in Vercel env
+  (env wins over the committed default). Only a real **GTM container** (`GTM-XXXXXXX`,
+  not a `GT-` tag) should go in `NEXT_PUBLIC_GTM_ID`.
+- The CSP auto-widens for Google domains whenever a GA/GTM id is present (it is).
 - Typed events already fire: `official_portal_click`, `tool_used`, `employer_search`,
   `cv_export`, `language_switch` → GTM dataLayer + Vercel Analytics.
 

@@ -27,8 +27,10 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 - ☐ **Verify GSC + Bing Webmaster** now that the site redeploys with this build (the
   old build has ~3 months of data on the same domain). Submit `sitemap.xml`; then I can
   audit coverage/queries/CWV.
-- ☐ **Activate analytics**: create GA4 property (`NEXT_PUBLIC_GA_ID`) and/or GTM
-  container (`NEXT_PUBLIC_GTM_ID`) in Vercel env. (Code done, env-gated.)
+- ☑ **Analytics — LIVE (2026-07-16).** GA4 `G-NQFV0NQGXH` committed as a default in
+  `site-analytics.tsx` + `next.config.ts` (public id, no env step). The owner's
+  `GT-MR5XFNM9` is a `gtag.js` Google tag → same property, so the `G-` install alone
+  is complete. **Owner: confirm GA4 → Realtime shows traffic after this deploy.**
 - ☐ **Provision Supabase**: create project, run `supabase/migrations/0001_init.sql`,
   set the 3 env vars, enable email auth, seed jobs. (Code done, env-gated.) → `docs/SETUP.md`
 - ☐ **Run IndexNow after deploy**: `node scripts/indexnow.mjs`.

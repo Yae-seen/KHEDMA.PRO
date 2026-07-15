@@ -1,15 +1,20 @@
 import Script from "next/script";
 
 /**
- * Analytics tags, all env-gated so nothing loads until you provide the IDs:
- *   NEXT_PUBLIC_GTM_ID  = "GTM-XXXXXXX"  (Google Tag Manager; can host GA4)
- *   NEXT_PUBLIC_GA_ID   = "G-XXXXXXXXXX" (Google Analytics 4, direct)
+ * Analytics tags. The GA4 measurement ID is committed as a default so analytics
+ * is live in production without a manual env step (it is a public, non-secret ID
+ * that ships in the page HTML anyway); env vars still override:
+ *   NEXT_PUBLIC_GA_ID   = "G-XXXXXXXXXX" (Google Analytics 4 — default below)
+ *   NEXT_PUBLIC_GTM_ID  = "GTM-XXXXXXX"  (optional Google Tag Manager container)
+ * Note: the site's Google tag is "GT-MR5XFNM9", a gtag.js tag that routes to the
+ * same GA4 property as G-NQFV0NQGXH — installing the G- ID alone captures all data
+ * with no double-counting. A GT-/GTM- id must NOT go in the gtm.js/ns.html path.
  * Vercel Analytics + Speed Insights are wired separately in the root layout.
- * If an ID is unset, its script is simply not rendered.
+ * Keep the GA default in sync with next.config.ts.
  */
 export function SiteAnalytics() {
   const gtm = process.env.NEXT_PUBLIC_GTM_ID;
-  const ga = process.env.NEXT_PUBLIC_GA_ID;
+  const ga = process.env.NEXT_PUBLIC_GA_ID || "G-NQFV0NQGXH";
 
   return (
     <>

@@ -5,9 +5,12 @@ const IS_DEV = process.env.NODE_ENV !== "production";
 const DEV_SCRIPT_SRC = IS_DEV ? " 'unsafe-eval'" : "";
 const DEV_CONNECT_SRC = IS_DEV ? " ws://localhost:* http://localhost:*" : "";
 
-// Analytics CSP is widened only when a Google tag ID is actually configured, so
-// the default policy stays tight. Supabase (if set) needs connect-src to its host.
-const ANALYTICS_ON = !!(process.env.NEXT_PUBLIC_GTM_ID || process.env.NEXT_PUBLIC_GA_ID);
+// Analytics CSP is widened only when a Google tag ID is configured. The GA4
+// measurement ID is committed as a default (it is a public, non-secret ID that
+// ships in the page HTML anyway) so analytics is live without a manual env step;
+// env vars still override. Keep this in sync with site-analytics.tsx.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-NQFV0NQGXH";
+const ANALYTICS_ON = !!(process.env.NEXT_PUBLIC_GTM_ID || GA_ID);
 const G_SCRIPT = ANALYTICS_ON ? " https://www.googletagmanager.com https://www.google-analytics.com" : "";
 const G_CONNECT = ANALYTICS_ON
   ? " https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net"
