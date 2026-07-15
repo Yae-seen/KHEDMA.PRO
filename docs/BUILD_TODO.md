@@ -48,6 +48,14 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
   strengthen thin spots; ensure no page reads templated.
 - ☐ **FR↔AR hreflang** completion as more AR pages go live.
 
+## ☑ Deploy fixed — site is LIVE (2026-07-16)
+Production was 404ing on every route. Three stacked causes, all fixed & verified
+(www.khedma.pro/, /concours, /ar/concours, apex all return 200):
+1. Build failed — `middleware.ts` `@/` alias rejected by the Edge bundler → removed.
+2. Production branch was `main` (repo is `master`) → pushes became Previews → set to `master`.
+3. **Framework Preset was `null`** → builds served 404 on all routes → pinned via
+   `vercel.json` `{"framework":"nextjs"}`. Keep vercel.json; do not remove.
+
 ## ☑ Done (recent)
 - ☑ Phases 2–5 (concours engine, emploi + CV builder, Allemagne tools, Arabic/RTL foundation).
 - ☑ Design overhaul — "Majorelle & Saffron" identity + motion.
