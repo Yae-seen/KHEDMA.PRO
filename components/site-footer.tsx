@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PILLARS } from "@/lib/site-config";
 import { DICT, localePath, type Locale } from "@/lib/i18n";
+import { Logo } from "@/components/logo";
 
 export function SiteFooter({ locale = "fr" }: { locale?: Locale }) {
   const t = DICT[locale];
@@ -8,10 +9,8 @@ export function SiteFooter({ locale = "fr" }: { locale?: Locale }) {
     <footer className="mt-20 border-t border-border bg-surface">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
         <div className="sm:col-span-2 lg:col-span-1">
-          <div className="text-lg font-extrabold text-ink">
-            Khedma<span className="text-primary">Pro</span>
-          </div>
-          <p className="mt-2 max-w-xs text-sm text-muted">{t.footerTagline}</p>
+          <Logo locale={locale} />
+          <p className="mt-3 max-w-xs text-sm text-muted">{t.footerTagline}</p>
         </div>
         {PILLARS.map((p, i) => (
           <div key={p.key}>

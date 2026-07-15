@@ -144,6 +144,124 @@ summary:focus-visible,
   * { transition-duration: 0.01ms !important; }
 }
 
+/* ---- Brand logo: the "career case" -------------------------------------- */
+.kp-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.kp-mark {
+  height: 1.9rem;
+  width: auto;
+  flex: none;
+  overflow: visible;
+}
+.kp-word {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+.kp-word-text {
+  font-family: var(--font-bricolage), var(--font-inter), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-ink);
+}
+[dir="rtl"] .kp-word-text {
+  font-family: var(--font-cairo), var(--font-bricolage), sans-serif;
+  letter-spacing: 0;
+}
+.kp-pro {
+  color: var(--color-primary);
+}
+.kp-underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.28rem;
+  height: 2.5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+[dir="rtl"] .kp-underline {
+  transform-origin: right center;
+  background: linear-gradient(270deg, var(--color-accent), var(--color-primary));
+}
+.kp-logo:hover .kp-underline,
+.kp-logo:focus-visible .kp-underline {
+  transform: scaleX(1);
+}
+/* Mark micro-interactions + one-time entrance. */
+.kp-handle,
+.kp-latch,
+.kp-case {
+  transform-box: fill-box;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.kp-handle {
+  transform-origin: center bottom;
+  animation: kp-handle-draw 0.7s ease-out both;
+}
+.kp-latch {
+  transform-origin: center;
+  animation: kp-latch-pop 0.5s 0.45s ease-out both;
+}
+.kp-logo:hover .kp-handle {
+  transform: translateY(-1.5px);
+}
+.kp-logo:hover .kp-latch {
+  transform: scale(1.15);
+}
+.kp-logo:hover .kp-case {
+  transform: translateY(-0.5px);
+}
+@keyframes kp-handle-draw {
+  from {
+    stroke-dasharray: 42;
+    stroke-dashoffset: 42;
+  }
+  to {
+    stroke-dasharray: 42;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes kp-latch-pop {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kp-handle,
+  .kp-latch,
+  .kp-case,
+  .kp-underline {
+    animation: none !important;
+    transition: none !important;
+    transform: none;
+  }
+  .kp-handle {
+    stroke-dashoffset: 0 !important;
+  }
+  .kp-underline {
+    transform: scaleX(0);
+  }
+  .kp-logo:hover .kp-underline,
+  .kp-logo:focus-visible .kp-underline {
+    transform: scaleX(1);
+  }
+}
+
 /* CV builder — print only the CV sheet, at A4. */
 @media print {
   body { background: #ffffff; }
