@@ -27,7 +27,10 @@ export async function generateMetadata({
   return {
     title: c.metaTitle,
     description: c.metaDescription,
-    alternates: { canonical: `/emploi/villes/${c.slug}` },
+    alternates: {
+      canonical: `/emploi/villes/${c.slug}`,
+      languages: { fr: `/emploi/villes/${c.slug}`, ar: `/ar/emploi/villes/${c.slug}` },
+    },
   };
 }
 

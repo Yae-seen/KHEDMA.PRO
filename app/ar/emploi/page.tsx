@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JOB_CHANNELS } from "@/lib/emploi-data";
 import { EMPLOI_AR } from "@/lib/emploi-ar";
+import { CITY_EMPLOI_AR } from "@/lib/city-emploi-ar";
 import { ARTICLES_AR, AR_BLOG_LABELS } from "@/lib/articles-ar";
 import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
@@ -130,12 +131,19 @@ export default function EmploiArPage() {
         <h2 className="mt-14 text-2xl font-bold tracking-tight text-ink">{EMPLOI_AR.citiesTitle}</h2>
         <p className="mt-2 max-w-2xl text-muted">{EMPLOI_AR.citiesLead}</p>
         <div className="mt-5 flex flex-wrap gap-2">
-          {EMPLOI_AR.cities.map((city) => (
-            <span key={city} className="rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-medium text-ink">
-              {city}
-            </span>
+          {CITY_EMPLOI_AR.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/ar/emploi/villes/${c.slug}`}
+              className="rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-medium text-ink transition-colors hover:border-primary hover:text-primary"
+            >
+              {c.nameAr}
+            </Link>
           ))}
         </div>
+        <Link href="/ar/emploi/villes" className="mt-4 inline-block text-sm font-semibold text-primary hover:text-primary-dark">
+          الشغل حسب المدينة — الدليل ←
+        </Link>
 
         <div className="mt-14 rounded-2xl border-2 border-primary/25 bg-primary/5 p-6 sm:p-8">
           <div className="text-xs font-bold text-primary">أداة مجانية</div>

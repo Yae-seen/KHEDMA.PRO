@@ -101,6 +101,33 @@ export const ARTICLES: ArticleMeta[] = [
     updatedAt: "2026-07-16",
   },
   {
+    slug: "trouver-stage-maroc",
+    title: "Trouver un stage au Maroc : offres, convention et stage PFE",
+    description:
+      "Guide concret pour trouver un stage au Maroc : types de stage, où chercher, la convention, la gratification et comment éviter les stages abusifs.",
+    category: "Emploi",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
+    slug: "lettre-motivation-maroc",
+    title: "Lettre de motivation au Maroc : structure, modèle et erreurs",
+    description:
+      "Rédiger une lettre de motivation efficace au Maroc : structure vous-moi-nous, choix du français ou de l'arabe, trames par secteur et erreurs à éviter.",
+    category: "Emploi",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
+    slug: "visa-allemagne-maroc",
+    title: "Visa Allemagne Maroc 2026 : travail, recherche d'emploi, études",
+    description:
+      "Visa Allemagne depuis le Maroc : visa travail, recherche d'emploi (Chancenkarte), études et Ausbildung. Conditions, procédure, délais et coûts 2026.",
+    category: "Allemagne",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
     slug: "trouver-employeur-allemagne-metier-ville",
     title: "Trouver un employeur en Allemagne : la stratégie métier × ville",
     description:

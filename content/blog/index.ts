@@ -11,6 +11,9 @@ import { article as emploiParVille } from "@/content/blog/chercher-emploi-par-vi
 import { article as cvMaroc } from "@/content/blog/modele-cv-maroc";
 import { article as chancenkarte } from "@/content/blog/chancenkarte-carte-opportunite-guide";
 import { article as employeurAllemagne } from "@/content/blog/trouver-employeur-allemagne-metier-ville";
+import { article as trouverStageMaroc } from "@/content/blog/trouver-stage-maroc";
+import { article as lettreMotivationMaroc } from "@/content/blog/lettre-motivation-maroc";
+import { article as visaAllemagneMaroc } from "@/content/blog/visa-allemagne-maroc";
 
 const articles: ArticleContent[] = [
   commentPostuler,
@@ -25,6 +28,9 @@ const articles: ArticleContent[] = [
   cvMaroc,
   chancenkarte,
   employeurAllemagne,
+  trouverStageMaroc,
+  lettreMotivationMaroc,
+  visaAllemagneMaroc,
 ];
 
 export const BLOG_CONTENT: Record<string, ArticleContent> = Object.fromEntries(

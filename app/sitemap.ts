@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.baseUrl}/ar`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE.baseUrl}/ar/concours`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE.baseUrl}/ar/emploi`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE.baseUrl}/ar/emploi/villes`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE.baseUrl}/ar/allemagne`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE.baseUrl}/ar/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE.baseUrl}/a-propos`, lastModified, changeFrequency: "yearly", priority: 0.3 },
@@ -33,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: "monthly",
     priority: 0.7,
+  }));
+
+  const cityArRoutes: MetadataRoute.Sitemap = CITY_EMPLOI.map((c) => ({
+    url: `${SITE.baseUrl}/ar/emploi/villes/${c.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.6,
   }));
 
   const concoursRoutes: MetadataRoute.Sitemap = CONCOURS.map((c) => ({
@@ -70,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
     ...cityRoutes,
+    ...cityArRoutes,
     ...concoursRoutes,
     ...articleRoutes,
     ...concoursArRoutes,

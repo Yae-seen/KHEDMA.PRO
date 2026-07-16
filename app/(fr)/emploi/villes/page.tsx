@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Emploi par ville au Maroc : où chercher dans chaque grande ville",
   description:
     "Le marché de l'emploi ville par ville au Maroc : secteurs qui recrutent, grands employeurs et zones d'activité à Casablanca, Rabat, Tanger, Fès, Agadir et plus.",
-  alternates: { canonical: "/emploi/villes" },
+  alternates: {
+    canonical: "/emploi/villes",
+    languages: { fr: "/emploi/villes", ar: "/ar/emploi/villes" },
+  },
 };
 
 export default function VillesIndexPage() {
