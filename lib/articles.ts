@@ -83,6 +83,15 @@ export const ARTICLES: ArticleMeta[] = [
     updatedAt: "2026-07-15",
   },
   {
+    slug: "chercher-emploi-par-ville-maroc",
+    title: "Chercher un emploi par ville au Maroc : le guide 2026",
+    description:
+      "Chercher un emploi par ville au Maroc : secteurs qui recrutent, canaux locaux, ANAPEC et réflexes anti-arnaque. Guide pratique par ville.",
+    category: "Emploi",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
     slug: "modele-cv-maroc",
     title: "Modèle de CV au Maroc : structure, conseils et erreurs à éviter",
     description:

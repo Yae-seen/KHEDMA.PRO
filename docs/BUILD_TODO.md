@@ -50,8 +50,13 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
   22.2K/KD22, `بوابة التشغيل العمومي` 33.1K/KD31. Portal how-to (account/search/apply),
   distinct from the conceptual `trouver-emploi-public-maroc`. FR+AR, YMYL verify workflow
   (caught a real FAQ misread + softened unverified "gratuit"). Auto-listed on both emploi hubs.
-- ☐ **③  `city × emploi` programmatic cluster** — Rabat/Casa/Fès/Agadir/Tanger (KD 14–21);
-  template + deduped real listings (ties into the Supabase job board when live).
+- ☑ **③  `city × emploi` cluster — SHIPPED 2026-07-16** (`/emploi/villes` + `/emploi/villes/[ville]`,
+  10 FR city pages). Each city individually web-researched for DISTINCT content (real sectors,
+  named employers/zones — Casanearshore, Technopolis, Fès Shore, Haliopolis, Agropolis, Atlantic
+  Free Zone, Tetouan Shore… — local ANAPEC, city-specific FAQ) to dodge thin-content/AdSense risk;
+  researchers hedged/removed unconfirmed specifics. Pillar `/blog/chercher-emploi-par-ville-maroc`
+  (FR+AR) anchors it; linked from `/emploi`. Sitemap + build (81 pages). AR city pages deferred
+  (French city terms are the KD-winnable ones).
 - ☐ **④  Concours `مباراة التعليم` seasonal cluster** — year + `التسجيل` long-tails
   (KD 14–27), timed to the Sept rentrée. Concours engine scaffold already exists.
 - ☐ **⑤  `visa allemagne maroc` surface** on `/allemagne` — 1.3K/KD27, the ONE Germany

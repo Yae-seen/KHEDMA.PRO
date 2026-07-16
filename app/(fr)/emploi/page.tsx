@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { JOB_CHANNELS, SECTORS, CITIES } from "@/lib/emploi-data";
+import { JOB_CHANNELS, SECTORS } from "@/lib/emploi-data";
+import { CITY_EMPLOI } from "@/lib/city-emploi-data";
 import { ARTICLES } from "@/lib/articles";
 import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
@@ -174,16 +175,23 @@ export default function EmploiPage() {
         {/* Cities */}
         <h2 className="mt-14 text-2xl font-bold tracking-tight text-ink">Par ville</h2>
         <p className="mt-2 max-w-2xl text-muted">
-          Les principaux bassins d&apos;emploi au Maroc. La recherche se concentre autour des grandes
-          villes et de leurs zones industrielles et de services.
+          Chaque grande ville a ses propres secteurs et ses grands employeurs. Choisissez la vôtre
+          pour cibler votre recherche.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
-          {CITIES.map((city) => (
-            <span key={city} className="rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-medium text-ink">
-              {city}
-            </span>
+          {CITY_EMPLOI.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/emploi/villes/${c.slug}`}
+              className="rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-medium text-ink transition-colors hover:border-primary hover:text-primary"
+            >
+              {c.name}
+            </Link>
           ))}
         </div>
+        <Link href="/emploi/villes" className="mt-4 inline-block text-sm font-semibold text-primary hover:text-primary-dark">
+          Emploi par ville — voir le guide →
+        </Link>
 
         {/* CV builder highlight */}
         <div className="mt-14 rounded-2xl border-2 border-primary/25 bg-primary/5 p-6 sm:p-8">

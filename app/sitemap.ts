@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { ARTICLES } from "@/lib/articles";
+import { CITY_EMPLOI } from "@/lib/city-emploi-data";
 import { CONCOURS } from "@/lib/concours-data";
 import { CONCOURS_GUIDES_AR } from "@/content/ar/concours";
 import { BLOG_CONTENT_AR } from "@/content/ar/blog";
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE.baseUrl, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE.baseUrl}/concours`, lastModified, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE.baseUrl}/emploi`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE.baseUrl}/emploi/villes`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE.baseUrl}/cv`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/allemagne`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
@@ -25,6 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.baseUrl}/confidentialite`, lastModified, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE.baseUrl}/mentions-legales`, lastModified, changeFrequency: "yearly", priority: 0.2 },
   ];
+
+  const cityRoutes: MetadataRoute.Sitemap = CITY_EMPLOI.map((c) => ({
+    url: `${SITE.baseUrl}/emploi/villes/${c.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
 
   const concoursRoutes: MetadataRoute.Sitemap = CONCOURS.map((c) => ({
     url: `${SITE.baseUrl}/concours/${c.slug}`,
@@ -60,6 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
+    ...cityRoutes,
     ...concoursRoutes,
     ...articleRoutes,
     ...concoursArRoutes,

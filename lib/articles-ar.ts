@@ -67,6 +67,13 @@ export const ARTICLES_AR: ArticleMetaAr[] = [
     category: "الشغل",
   },
   {
+    slug: "chercher-emploi-par-ville-maroc",
+    title: "البحث عن عمل حسب المدينة في المغرب: دليل 2026",
+    description:
+      "البحث عن عمل حسب المدينة في المغرب: القطاعات التي توظّف، القنوات المحلية، أنابيك وردود الفعل ضد النصب. دليل عملي مدينة بمدينة.",
+    category: "الشغل",
+  },
+  {
     slug: "modele-cv-maroc",
     title: "نموذج سيرة ذاتية بالمغرب: البنية والنصائح والأخطاء",
     description:

@@ -7,6 +7,7 @@ import { article as parNiveau } from "@/content/blog/concours-par-niveau-diplome
 import { article as anapec } from "@/content/blog/anapec-inscription-espace-candidat";
 import { article as emploiPublicPortail } from "@/content/blog/emploi-public-ma-portail";
 import { article as emploiPublic } from "@/content/blog/trouver-emploi-public-maroc";
+import { article as emploiParVille } from "@/content/blog/chercher-emploi-par-ville-maroc";
 import { article as cvMaroc } from "@/content/blog/modele-cv-maroc";
 import { article as chancenkarte } from "@/content/blog/chancenkarte-carte-opportunite-guide";
 import { article as employeurAllemagne } from "@/content/blog/trouver-employeur-allemagne-metier-ville";
@@ -20,6 +21,7 @@ const articles: ArticleContent[] = [
   anapec,
   emploiPublicPortail,
   emploiPublic,
+  emploiParVille,
   cvMaroc,
   chancenkarte,
   employeurAllemagne,
