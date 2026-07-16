@@ -108,6 +108,10 @@ export const guide: ConcoursGuide = {
       type: "p",
       text: "وبمجرد التحاقك بالمنصب، ستنتقل من صفة المترشّح إلى مستخدم يومي للخدمات الرقمية للمدرسة المغربية، مثل مسار. ولمتابعة وضعية هذه المباراة وباقي المباريات الكبرى، يُحدَّث [مركز المباريات](/ar/concours) لدينا تباعًا مع صدور الإعلانات.",
     },
+    {
+      type: "note",
+      text: "**أدلة عملية ذات صلة:** [التسجيل في المباراة](/ar/blog/inscription-concours-enseignement) · [الاطّلاع على النتائج](/ar/blog/resultats-concours-enseignement) · [التحضير للاختبارات](/ar/blog/preparer-concours-enseignement) · [مباراة التعليم الأولي](/ar/blog/concours-enseignement-prescolaire).",
+    },
   ],
   howTo: {
     name: "كيف تترشّح لمباراة التعليم (أطر الأكاديميات الجهوية AREF)",

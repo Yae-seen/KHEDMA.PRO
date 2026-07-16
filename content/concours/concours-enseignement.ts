@@ -108,6 +108,10 @@ export const guide: ConcoursGuide = {
       type: "p",
       text: "Une fois en poste, vous passerez du statut de candidat à celui d'utilisateur quotidien des services numériques de l'école marocaine, comme Massar. Pour suivre l'état de ce concours et des autres grands recrutements, notre [hub Concours](/concours) est mis à jour au fil des annonces.",
     },
+    {
+      type: "note",
+      text: "**Guides pratiques liés :** [s'inscrire au concours](/blog/inscription-concours-enseignement) · [consulter les résultats](/blog/resultats-concours-enseignement) · [préparer les épreuves](/blog/preparer-concours-enseignement) · [le concours du préscolaire (التعليم الأولي)](/blog/concours-enseignement-prescolaire).",
+    },
   ],
   howTo: {
     name: "Comment candidater au concours de l'enseignement (cadres des AREF)",

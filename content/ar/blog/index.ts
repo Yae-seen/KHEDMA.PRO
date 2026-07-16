@@ -4,6 +4,10 @@ import { article as arnaques } from "@/content/ar/blog/concours-arnaques-comment
 import { article as exemplesSujets } from "@/content/ar/blog/exemples-concours-anciens-sujets";
 import { article as calendrier } from "@/content/ar/blog/calendrier-concours-maroc";
 import { article as parNiveau } from "@/content/ar/blog/concours-par-niveau-diplome";
+import { article as inscriptionConcoursEnseignement } from "@/content/ar/blog/inscription-concours-enseignement";
+import { article as resultatsConcoursEnseignement } from "@/content/ar/blog/resultats-concours-enseignement";
+import { article as preparerConcoursEnseignement } from "@/content/ar/blog/preparer-concours-enseignement";
+import { article as concoursEnseignementPrescolaire } from "@/content/ar/blog/concours-enseignement-prescolaire";
 import { article as anapec } from "@/content/ar/blog/anapec-inscription-espace-candidat";
 import { article as emploiPublicPortail } from "@/content/ar/blog/emploi-public-ma-portail";
 import { article as emploiPublic } from "@/content/ar/blog/trouver-emploi-public-maroc";
@@ -21,6 +25,10 @@ const articles: ArticleContent[] = [
   exemplesSujets,
   calendrier,
   parNiveau,
+  inscriptionConcoursEnseignement,
+  resultatsConcoursEnseignement,
+  preparerConcoursEnseignement,
+  concoursEnseignementPrescolaire,
   anapec,
   emploiPublicPortail,
   emploiPublic,

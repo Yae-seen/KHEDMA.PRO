@@ -56,6 +56,42 @@ export const ARTICLES: ArticleMeta[] = [
     updatedAt: "2026-07-15",
   },
   {
+    slug: "inscription-concours-enseignement",
+    title: "Inscription au concours de l'enseignement au Maroc : le guide",
+    description:
+      "Comment s'inscrire au concours des enseignants-cadres des AREF : plateforme officielle, création de compte, dossier, pièces et fenêtre annuelle.",
+    category: "Concours",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
+    slug: "resultats-concours-enseignement",
+    title: "Résultats du concours de l'enseignement : où les consulter",
+    description:
+      "Où et comment consulter les résultats du concours de l'enseignement au Maroc : présélection, admis à l'écrit et listes définitives par AREF.",
+    category: "Concours",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
+    slug: "preparer-concours-enseignement",
+    title: "Préparer le concours de l'enseignement : épreuves & méthode",
+    description:
+      "Comment préparer la مباراة التعليم : structure des épreuves, plan d'entraînement, anciens sujets et نماذج, et conseils concrets par matière.",
+    category: "Concours",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
+    slug: "concours-enseignement-prescolaire",
+    title: "Concours enseignement préscolaire au Maroc : le guide",
+    description:
+      "Concours de l'enseignement préscolaire et primaire (التعليم الأولي) au Maroc : public visé, profils, conditions, inscription et préparation.",
+    category: "Concours",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
     slug: "anapec-inscription-espace-candidat",
     title: "ANAPEC : inscription et espace candidat, le guide clair",
     description:
