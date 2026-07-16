@@ -53,6 +53,13 @@ export const ARTICLES_AR: ArticleMetaAr[] = [
     category: "الشغل",
   },
   {
+    slug: "emploi-public-ma-portail",
+    title: "بوابة التشغيل العمومي emploi-public.ma: حساب وترشح للمباريات",
+    description:
+      "دليل عملي لبوابة التشغيل العمومي emploi-public.ma: إنشاء حساب مترشح، البحث عن مباراة، وإيداع الترشيح عبر الإنترنت دون نصب.",
+    category: "الشغل",
+  },
+  {
     slug: "trouver-emploi-public-maroc",
     title: "الشغل العمومي بالمغرب: كيف تحصل عليه (دليل كامل)",
     description:

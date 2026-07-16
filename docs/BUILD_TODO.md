@@ -45,8 +45,11 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
   login` 3.6K/KD12, `inscription anapec`, `espace candidat`. YMYL research→draft→verify
   workflow; grounded in loi 51-99, anapec.ma, ANAPEC anti-scam alert. **Follow-up: confirm
   exact form-field labels + login URLs during the Morocco window (2026-08-16 → 09-04).**
-- ☐ **②  Public-employment pillar** — `emploi public` 110K/KD31, `emploi public ma`
-  22.2K/KD22, `emploi public maroc` 12.1K/KD25, `بوابة التشغيل العمومي` 33.1K/KD31.
+- ☑ **②  Public-employment portal — SHIPPED 2026-07-16** (`/blog/emploi-public-ma-portail`
+  + `/ar/blog/emploi-public-ma-portail`). Targets `emploi public` 110K, `emploi public ma`
+  22.2K/KD22, `بوابة التشغيل العمومي` 33.1K/KD31. Portal how-to (account/search/apply),
+  distinct from the conceptual `trouver-emploi-public-maroc`. FR+AR, YMYL verify workflow
+  (caught a real FAQ misread + softened unverified "gratuit"). Auto-listed on both emploi hubs.
 - ☐ **③  `city × emploi` programmatic cluster** — Rabat/Casa/Fès/Agadir/Tanger (KD 14–21);
   template + deduped real listings (ties into the Supabase job board when live).
 - ☐ **④  Concours `مباراة التعليم` seasonal cluster** — year + `التسجيل` long-tails

@@ -5,6 +5,7 @@ import { article as exemplesSujets } from "@/content/ar/blog/exemples-concours-a
 import { article as calendrier } from "@/content/ar/blog/calendrier-concours-maroc";
 import { article as parNiveau } from "@/content/ar/blog/concours-par-niveau-diplome";
 import { article as anapec } from "@/content/ar/blog/anapec-inscription-espace-candidat";
+import { article as emploiPublicPortail } from "@/content/ar/blog/emploi-public-ma-portail";
 import { article as emploiPublic } from "@/content/ar/blog/trouver-emploi-public-maroc";
 import { article as cvMaroc } from "@/content/ar/blog/modele-cv-maroc";
 import { article as chancenkarte } from "@/content/ar/blog/chancenkarte-carte-opportunite-guide";
@@ -17,6 +18,7 @@ const articles: ArticleContent[] = [
   calendrier,
   parNiveau,
   anapec,
+  emploiPublicPortail,
   emploiPublic,
   cvMaroc,
   chancenkarte,

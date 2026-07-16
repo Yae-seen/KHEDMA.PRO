@@ -65,6 +65,15 @@ export const ARTICLES: ArticleMeta[] = [
     updatedAt: "2026-07-16",
   },
   {
+    slug: "emploi-public-ma-portail",
+    title: "emploi-public.ma : créer un compte et postuler aux concours",
+    description:
+      "Guide pratique du portail emploi-public.ma : créer un compte candidat, chercher un concours et déposer sa candidature en ligne, sans arnaque.",
+    category: "Emploi",
+    publishedAt: "2026-07-16",
+    updatedAt: "2026-07-16",
+  },
+  {
     slug: "trouver-emploi-public-maroc",
     title: "Emploi public au Maroc : comment le décrocher (guide complet)",
     description:
