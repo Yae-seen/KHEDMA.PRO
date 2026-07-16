@@ -63,7 +63,13 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
   page with real demand. Build this; do NOT expand Germany further for SEO (demand desert).
 - ☐ **⑥  CV/stage exactness** — ensure `/cv` targets `cv maroc` (480/KD12) & `stage maroc`
   (1.3K/KD14) exactly.
-- ☐ **Content-quality pass for AdSense**: depth/originality/EEAT; no page reads templated.
+- ☑ **Content-quality / AdSense-EEAT audit — DONE 2026-07-16** (`docs/research/adsense-eeat-audit-2026-07-16.md`).
+  6-agent audit → fixes applied: **P0** killed the triplicated anti-scam boilerplate across the 10
+  city pages (canonical box only; city-specific FAQ; validated 0 duplicate FAQ / 0 boilerplate in
+  whereToLook); Tétouan/Marrakech real named employers; brand accuracy (Sitel→Foundever, Renault
+  Tanger not "-Nissan"); Fès/Oujda/Tétouan differentiated; modele-cv rewritten Morocco-specific;
+  metaTitle years normalized; /concours meta trimmed. Confirmed clean: trust pages, independence,
+  no fake login UI, no gov logos, no live AdSense code yet (gated).
 
 **Other build work:**
 - ☑ **Arabic deep content — guides done**: all 21 guides LIVE — `/ar/concours` (hub + 12)

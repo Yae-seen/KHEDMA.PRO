@@ -93,12 +93,12 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "modele-cv-maroc",
-    title: "Modèle de CV au Maroc : structure, conseils et erreurs à éviter",
+    title: "Modèle de CV au Maroc : structure, langue et exemples 2026",
     description:
-      "Comment faire un bon CV au format marocain : les rubriques attendues, la mise en page, les erreurs qui éliminent, et un outil gratuit pour le créer en PDF.",
+      "Faire un CV au format marocain : rubriques attendues, langue FR ou arabe, photo et CIN, exemples offshoring et industrie, erreurs qui éliminent.",
     category: "Emploi",
     publishedAt: "2026-07-15",
-    updatedAt: "2026-07-15",
+    updatedAt: "2026-07-16",
   },
   {
     slug: "trouver-employeur-allemagne-metier-ville",

@@ -1,7 +1,8 @@
 /**
  * Per-city job-market data for the /emploi/villes/[ville] cluster. Each city was
  * individually web-researched (2026-07-16) for DISTINCT, real content — sectors,
- * named employers/zones, local channels — to avoid thin/templated pages.
+ * named employers/zones, local channels — to avoid thin/templated pages. The
+ * anti-scam notice is rendered ONCE by the page template (not repeated per city).
  */
 
 export interface CitySector { label: string; note: string; }
@@ -60,7 +61,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Intelcia (centres de relation client)",
       "Marjane Holding"
     ],
-    "whereToLook": "Commencez par l'ANAPEC : la région Casablanca-Settat compte plusieurs agences (par ex. Casablanca-Anfa, Hay Mohammadi, Sidi Bernoussi) qui publient des offres et proposent des ateliers CV et intermédiation gratuits sur anapec.org. Pour l'industrie, ciblez directement les zones d'Aïn Sebaâ et Sidi Bernoussi (candidatures spontanées, associations de zone comme AZIAN). Pour l'offshoring et le tertiaire, surveillez les plateformes marocaines (ReKrute, Emploi.ma, jobsquare.ma) et LinkedIn, où les grands comptes de Casanearshore recrutent en continu. Règle de sécurité : un emploi ou une inscription ANAPEC ne se paient jamais. Ne versez aucun « frais de dossier », « frais de formation » ou caution à un recruteur, et passez toujours par les canaux officiels de l'entreprise.",
+    "whereToLook": "Commencez par l'ANAPEC : la région Casablanca-Settat compte plusieurs agences (par ex. Casablanca-Anfa, Hay Mohammadi, Sidi Bernoussi) qui publient des offres et proposent des ateliers CV et intermédiation gratuits sur anapec.org. Pour l'industrie, ciblez directement les zones d'Aïn Sebaâ et Sidi Bernoussi (candidatures spontanées, associations de zone comme AZIAN). Pour l'offshoring et le tertiaire, surveillez les plateformes marocaines (ReKrute, Emploi.ma, jobsquare.ma) et LinkedIn, où les grands comptes de Casanearshore recrutent en continu.",
     "faq": [
       {
         "question": "Quels secteurs recrutent le plus à Casablanca ?",
@@ -71,8 +72,8 @@ export const CITY_EMPLOI: CityEmploi[] = [
         "answer": "Oui, la majorité des postes de relation client et de back-office au parc Casanearshore visent des marchés francophones : un bon niveau de français oral est souvent le premier critère, l'anglais ou l'espagnol étant un plus."
       },
       {
-        "question": "Comment éviter les arnaques à l'emploi ?",
-        "answer": "Ne payez jamais pour un poste, une « pré-inscription » ou une formation obligatoire. L'ANAPEC et les recruteurs sérieux ne demandent aucun paiement. Méfiez-vous des offres reçues par message qui exigent des frais ou vos données bancaires."
+        "question": "Vaut-il mieux viser l'industrie ou l'offshoring à Casablanca ?",
+        "answer": "Cela dépend de votre profil. L'offshoring de Casanearshore recrute en continu, souvent dès le niveau bac avec un bon français et une formation assurée en interne : c'est la voie la plus rapide. L'industrie des zones d'Aïn Sebaâ–Sidi Bernoussi valorise davantage les diplômes techniques (OFPPT) et l'expérience, mais offre des postes de production et de maintenance plus stables. Beaucoup de candidats commencent en centre d'appels puis basculent vers l'industrie ou le tertiaire."
       }
     ]
   },
@@ -90,7 +91,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       },
       {
         "label": "Offshoring, IT et centres de relation client",
-        "note": "Le parc Technopolis (Salé) regroupe des acteurs BPO/ITO comme Capgemini, Dell, CGI, IBM, Atos et Sitel, qui recrutent en développement, infogérance et service client francophone."
+        "note": "Le parc Technopolis (Salé) regroupe des acteurs BPO/ITO comme Capgemini, Dell, CGI, IBM, Atos et Foundever (ex-Sitel), qui recrutent en développement, infogérance et service client francophone."
       },
       {
         "label": "Télécoms et numérique",
@@ -111,24 +112,24 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Dell (Technopolis)",
       "CGI Maroc (Technopolis, Sala Al Jadida)",
       "IBM et Atos (offshoring, Technopolis)",
-      "Sitel / centres de relation client (Technopolis)",
+      "Foundever (ex-Sitel) — centres de relation client (Technopolis / Rabat)",
       "Maroc Telecom (siège, Hay Riad)",
       "Bank Al-Maghrib (siège de la banque centrale)",
       "Université Mohammed V de Rabat"
     ],
-    "whereToLook": "Commencez par l'ANAPEC : l'agence dispose de points d'accueil dans l'agglomération Rabat-Salé et publie ses offres sur anapec.org, avec des ateliers CV et des sessions de recrutement gratuites. Pour l'offshoring et l'IT, visez directement les pages carrières des entreprises de Technopolis (Capgemini, Dell, CGI, IBM, Sitel) et les plateformes comme ReKrute, Emploi.ma et LinkedIn, très actives pour les centres de relation client à Rabat-Salé. Pour la fonction publique, suivez le portail officiel des concours (emploi-public.ma) et les annonces des ministères, car l'essentiel de l'emploi de la capitale passe par concours. Règle de sécurité : un emploi ou un concours légitime ne se paie jamais. Ne versez aucun argent pour une « garantie », un « dossier » ou une formation obligatoire, ne communiquez pas vos données bancaires, et passez toujours par les canaux officiels de l'employeur ou de l'ANAPEC.",
+    "whereToLook": "Commencez par l'ANAPEC : l'agence dispose de points d'accueil dans l'agglomération Rabat-Salé et publie ses offres sur anapec.org, avec des ateliers CV et des sessions de recrutement gratuites. Pour l'offshoring et l'IT, visez directement les pages carrières des entreprises de Technopolis (Capgemini, Dell, CGI, IBM, Foundever) et les plateformes comme ReKrute, Emploi.ma et LinkedIn, très actives pour les centres de relation client à Rabat-Salé. Pour la fonction publique, suivez le portail officiel des concours (emploi-public.ma) et les annonces des ministères, car l'essentiel de l'emploi de la capitale passe par concours.",
     "faq": [
       {
         "question": "Quels sont les principaux employeurs à Rabat ?",
-        "answer": "Le premier employeur de Rabat est l'administration publique (ministères et institutions nationales), la ville étant la capitale. S'y ajoutent le pôle offshoring de Technopolis à Salé (Capgemini, Dell, CGI, IBM, Sitel), des sièges comme Maroc Telecom et Bank Al-Maghrib, ainsi que l'université Mohammed V."
+        "answer": "Le premier employeur de Rabat est l'administration publique (ministères et institutions nationales), la ville étant la capitale. S'y ajoutent le pôle offshoring de Technopolis à Salé (Capgemini, Dell, CGI, IBM, Foundever ex-Sitel), des sièges comme Maroc Telecom et Bank Al-Maghrib, ainsi que l'université Mohammed V."
       },
       {
         "question": "Technopolis est-il vraiment à Rabat ?",
         "answer": "Technopolis se situe administrativement à Salé, mais dans la même agglomération que Rabat, à proximité de la ville et de l'aéroport Rabat-Salé. C'est le principal parc offshoring/IT de la région Rabat-Salé-Kénitra et un point d'entrée majeur pour les emplois en IT et centres de relation client."
       },
       {
-        "question": "Comment trouver un emploi à Rabat sans se faire arnaquer ?",
-        "answer": "Passez par l'ANAPEC (anapec.org), les pages carrières des entreprises et des plateformes reconnues comme ReKrute ou Emploi.ma. Un recruteur sérieux ne demande jamais d'argent : refusez tout paiement pour un poste, un concours ou un dossier, et ne partagez pas vos coordonnées bancaires."
+        "question": "Comment se déroulent les concours de la fonction publique à Rabat ?",
+        "answer": "L'essentiel de l'emploi de la capitale passe par concours. Les postes sont annoncés sur le portail officiel emploi-public.ma et les sites des ministères, avec un dossier à déposer puis, en général, une épreuve écrite et un entretien oral. La participation est gratuite et conditionnée au diplôme requis ; surveillez régulièrement les avis, car les délais de dépôt sont souvent courts."
       }
     ]
   },
@@ -166,11 +167,12 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Royal Mansour Marrakech",
       "Four Seasons Resort Marrakech",
       "Mandarin Oriental Marrakech",
-      "Groupes hôteliers internationaux présents à Marrakech (Accor, Marriott, Hilton, Club Med)",
-      "Zone industrielle de Sidi Ghanem (quartier Menara, route de Safi)",
-      "Centres d'appels / BPO référencés sur moncallcenter.ma à Marrakech"
+      "Teleperformance et Concentrix (centres de relation client, dont un site à Sidi Ghanem)",
+      "Intelcia (plateforme de relation client à Marrakech)",
+      "Zone industrielle de Sidi Ghanem (~450 entreprises, quartier Menara, route de Safi)",
+      "Chabi Chic et Fenyadi (arts de la table, mobilier et décoration artisanale, Sidi Ghanem)"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC de Marrakech (Douar Laâskar / Hay El Hassani, tél. 05 24 49 29 88 ; agence régionale Marrakech-Safi : r.marrakech-safi@anapec.org) pour vous inscrire et consulter les offres, notamment en hôtellerie-restauration. Pour le tourisme, postulez en direct sur les pages carrières des palaces et grands hôtels, et présentez-vous en personne (CV en main) avant la haute saison. Pour les centres d'appels, utilisez moncallcenter.ma et rekrute.com. Pour l'artisanat et la déco, démarchez directement les showrooms et ateliers de Sidi Ghanem. Règle de sécurité : un emploi ou une inscription ANAPEC ne se paient jamais. Ne versez aucun argent pour « réserver un poste », une « formation obligatoire » ou un « test », et passez uniquement par les canaux officiels et les sites de recrutement reconnus.",
+    "whereToLook": "Commencez par l'agence ANAPEC de Marrakech (Douar Laâskar / Hay El Hassani, tél. 05 24 49 29 88 ; agence régionale Marrakech-Safi : r.marrakech-safi@anapec.org) pour vous inscrire et consulter les offres, notamment en hôtellerie-restauration. Pour le tourisme, postulez en direct sur les pages carrières des palaces et grands hôtels, et présentez-vous en personne (CV en main) avant la haute saison. Pour les centres d'appels, utilisez moncallcenter.ma et rekrute.com, où Teleperformance, Concentrix et Intelcia publient leurs campagnes marrakchies. Pour l'artisanat et la déco, démarchez directement les showrooms et ateliers de Sidi Ghanem.",
     "faq": [
       {
         "question": "Quel est le secteur qui recrute le plus à Marrakech ?",
@@ -196,7 +198,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "sectors": [
       {
         "label": "Automobile / câblage",
-        "note": "Premier secteur de la ville : l'usine Renault-Nissan de Melloussa et des centaines d'équipementiers (câblage, assemblage, qualité) recrutent en permanence des opérateurs et techniciens."
+        "note": "Premier secteur de la ville : l'usine Renault Tanger (usine de Melloussa) et des centaines d'équipementiers (câblage, assemblage, qualité) recrutent en permanence des opérateurs et techniciens."
       },
       {
         "label": "Aéronautique",
@@ -216,7 +218,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       }
     ],
     "employers": [
-      "Renault Tanger Med (usine de Melloussa)",
+      "Renault Tanger (usine de Melloussa)",
       "Tanger Free Zone (TFZ) — plus de 900 entreprises",
       "Tanger Automotive City (TAC)",
       "Port Tanger Med / Tanger Med Zones",
@@ -226,7 +228,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Safran (aéronautique)",
       "DHL Supply Chain (logistique)"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC de Tanger, qui gère des sessions de recrutement de masse pour les usines des zones franches (automobile, câblage, offshoring) — l'inscription et l'accompagnement y sont gratuits. Pour l'industrie, visez directement les pages carrières des zones (Tanger Med Zones, Tanger Free Zone) et des grands équipementiers. Le CRI Tanger-Tétouan-Al Hoceïma et les portails d'emploi marocains (emploi.ma, jobsquare.ma, rekrute) publient régulièrement les offres des zones. Règle d'or anti-arnaque : un vrai recruteur ne demande JAMAIS d'argent pour un poste, un test, un badge ou un « dossier ». Ni ANAPEC ni Renault, Yazaki ou une zone franche ne font payer une candidature. Passez par les canaux officiels des entreprises et méfiez-vous des offres reçues par WhatsApp qui réclament un paiement ou vos données bancaires.",
+    "whereToLook": "Commencez par l'agence ANAPEC de Tanger, qui gère des sessions de recrutement de masse pour les usines des zones franches (automobile, câblage, offshoring) — l'inscription et l'accompagnement y sont gratuits. Pour l'industrie, visez directement les pages carrières des zones (Tanger Med Zones, Tanger Free Zone) et des grands équipementiers. Le CRI Tanger-Tétouan-Al Hoceïma et les portails d'emploi marocains (emploi.ma, jobsquare.ma, rekrute) publient régulièrement les offres des zones.",
     "faq": [
       {
         "question": "Quels secteurs recrutent le plus à Tanger ?",
@@ -237,8 +239,8 @@ export const CITY_EMPLOI: CityEmploi[] = [
         "answer": "Beaucoup de postes d'opérateur en câblage, assemblage ou textile sont accessibles avec un niveau bac ou une formation courte, avec formation assurée à l'embauche. Les postes de technicien, qualité ou maintenance demandent un bac+2 (OFPPT, génie industriel). En offshoring, le bilinguisme français ou espagnol prime souvent sur le diplôme."
       },
       {
-        "question": "Comment postuler sans se faire arnaquer à Tanger ?",
-        "answer": "Passez par l'ANAPEC, les pages carrières officielles des entreprises et les zones (Tanger Med Zones, TFZ). Ne payez jamais pour un emploi, un test ou un badge : aucune usine ni aucun centre d'appels sérieux ne fait payer un candidat. Toute demande d'argent ou de coordonnées bancaires avant embauche est un signal d'arnaque."
+        "question": "Quelle formation ouvre les portes des usines de Tanger ?",
+        "answer": "Pour les postes d'opérateur en câblage, assemblage ou textile, une formation courte suffit et l'usine assure la qualification à l'embauche. Pour les métiers techniques, les filières de l'OFPPT (électricité, maintenance industrielle) et surtout l'IFMIA (Institut de Formation aux Métiers de l'Industrie Automobile), implanté à proximité des zones franches, alimentent directement Renault et ses équipementiers en techniciens qualité et maintenance."
       }
     ]
   },
@@ -248,7 +250,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "nameAr": "فاس",
     "metaTitle": "Emploi Fès : secteurs, employeurs et zones qui recrutent",
     "metaDescription": "Guide emploi Fès : offshoring (Fès Shore), industrie (Bensouda, Ras El Ma), artisanat du cuir et tourisme. Employeurs réels, zones industrielles et où postuler sans payer.",
-    "intro": "Le marché de l'emploi de Fès repose sur un double moteur : une plateforme offshoring dynamique (Fès Shore) qui fait de la région Fès-Meknès la 3e destination BPO du Maroc après Casablanca et Rabat, et un tissu industriel réparti sur plusieurs zones (agroalimentaire, textile, métallurgie). À cela s'ajoute l'ancrage historique de la ville dans l'artisanat d'art (cuir, céramique, zellige) et le tourisme culturel, qui restent de gros pourvoyeurs d'emplois. C'est un bassin où les recrutements de masse dans les centres d'appels côtoient des emplois plus traditionnels de production et de services.",
+    "intro": "Fès réunit deux identités professionnelles rarement côte à côte : celle de capitale historique de l'artisanat d'art marocain — cuir des tanneries de Chouara, céramique et zellige, encore aujourd'hui de gros pourvoyeurs d'emplois — et celle de troisième destination offshoring du pays, derrière Casablanca et Rabat, grâce à la plateforme Fès Shore. Autour de ce couple artisanat/BPO gravitent un tissu industriel réparti sur les zones de Bensouda, Ras El Ma et Ain Chkef (agroalimentaire, textile, métallurgie) et un tourisme culturel adossé à la médina classée à l'UNESCO. Résultat : des recrutements de masse en centres d'appels y côtoient des emplois de production et des métiers traditionnels transmis d'atelier en atelier.",
     "sectors": [
       {
         "label": "Offshoring / centres d'appels (BPO)",
@@ -281,7 +283,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Parc industriel Ain Cheggag (PIAC, province de Sefrou — en développement)",
       "Tanneries de Chouara et écosystème artisanal du cuir de la médina"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC de Fès (inscription gratuite, offres et ateliers d'orientation) et son portail anapec.org. Pour l'offshoring, les plateformes comme Concentrix et Intelcia recrutent en continu via leurs pages carrières et lors de journées de recrutement à Fès Shore ; les portails spécialisés moncallcenter.ma, rekrute.com et jobsquare.ma listent beaucoup d'offres locales. Pour l'industrie, visez directement les zones de Bensouda, Ras El Ma et Ain Chkef, et suivez le CRI Fès-Meknès (fesmeknesinvest.ma) pour les nouvelles implantations. Pour l'artisanat, la Maison de l'Artisan (région Fès-Meknès) et les coopératives sont des points d'entrée. Règle de sécurité : un employeur ou l'ANAPEC ne demandent jamais d'argent — ne payez aucun « frais de dossier », test, formation obligatoire ou uniforme pour obtenir un poste, et méfiez-vous des offres reçues par WhatsApp exigeant un paiement à l'avance. Passez toujours par les canaux officiels de l'entreprise.",
+    "whereToLook": "Commencez par l'agence ANAPEC de Fès (inscription gratuite, offres et ateliers d'orientation) et son portail anapec.org. Pour l'offshoring, les plateformes comme Concentrix et Intelcia recrutent en continu via leurs pages carrières et lors de journées de recrutement à Fès Shore ; les portails spécialisés moncallcenter.ma, rekrute.com et jobsquare.ma listent beaucoup d'offres locales. Pour l'industrie, visez directement les zones de Bensouda, Ras El Ma et Ain Chkef, et suivez le CRI Fès-Meknès (fesmeknesinvest.ma) pour les nouvelles implantations. Pour l'artisanat, la Maison de l'Artisan (région Fès-Meknès) et les coopératives sont des points d'entrée.",
     "faq": [
       {
         "question": "Quel est le principal secteur qui recrute à Fès ?",
@@ -292,8 +294,8 @@ export const CITY_EMPLOI: CityEmploi[] = [
         "answer": "Pour les postes de conseiller clientèle, le niveau bac ou une bonne expression en français (parfois espagnol ou anglais) suffit souvent ; l'expérience n'est pas toujours exigée et une formation est assurée en interne. Pour l'encadrement, la qualité ou l'ingénierie (ITO/ESO), un diplôme supérieur est demandé."
       },
       {
-        "question": "Les recruteurs à Fès demandent-ils de payer des frais ?",
-        "answer": "Non. Un recrutement légitime, y compris via l'ANAPEC ou les grandes plateformes, ne demande jamais de paiement. Toute demande d'argent pour « réserver un poste », payer une formation obligatoire ou des frais de dossier est un signal d'arnaque. Postulez uniquement via les canaux officiels des entreprises et les portails reconnus."
+        "question": "À quelles périodes les centres d'appels de Fès recrutent-ils le plus ?",
+        "answer": "Les plateformes de Fès Shore intensifient leurs recrutements en deux temps forts : janvier-février et septembre-octobre, quand les donneurs d'ordre européens lancent leurs campagnes. C'est à ces moments que les postes de conseiller clientèle, souvent accessibles sans diplôme avec un bon français, sont les plus nombreux ; anticipez votre candidature quelques semaines à l'avance et préparez un CV court et un test de langue."
       }
     ]
   },
@@ -336,7 +338,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Station touristique Taghazout Bay (hôtels Hyatt, Riu, golf, marina)",
       "Hôtels de la corniche d'Agadir (groupes Riu, Iberostar, Robinson/Club, Sofitel)"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC d'Agadir (Cité Dakhla, Bd du 11 Janvier) et l'agence régionale Souss-Massa : elles centralisent les offres, l'orientation et les contrats saisonniers agricoles et hôteliers — le service est gratuit. Pour l'hôtellerie, candidatez en direct auprès des DRH des complexes de la corniche et de Taghazout Bay, et surveillez les campagnes de recrutement avant la haute saison. Pour l'agroalimentaire, ciblez les stations de conditionnement d'Aït Melloul, Biougra et Ouled Teima au moment de la récolte. Consultez aussi les plateformes marocaines (emploi.ma, Rekrute, Dreamjob, MarocAnnonces) et la CCIS Souss-Massa. Règle de sécurité : un employeur ou l'ANAPEC ne demandent jamais d'argent pour un poste, un « dossier » ou une « formation obligatoire ». Ne payez jamais pour être recruté et passez uniquement par des canaux officiels.",
+    "whereToLook": "Commencez par l'agence ANAPEC d'Agadir (Cité Dakhla, Bd du 11 Janvier) et l'agence régionale Souss-Massa : elles centralisent les offres, l'orientation et les contrats saisonniers agricoles et hôteliers — le service est gratuit. Pour l'hôtellerie, candidatez en direct auprès des DRH des complexes de la corniche et de Taghazout Bay, et surveillez les campagnes de recrutement avant la haute saison. Pour l'agroalimentaire, ciblez les stations de conditionnement d'Aït Melloul, Biougra et Ouled Teima au moment de la récolte. Consultez aussi les plateformes marocaines (emploi.ma, Rekrute, Dreamjob, MarocAnnonces) et la CCIS Souss-Massa.",
     "faq": [
       {
         "question": "Quels secteurs recrutent le plus à Agadir ?",
@@ -356,7 +358,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "slug": "meknes",
     "name": "Meknès",
     "nameAr": "مكناس",
-    "metaTitle": "Emploi Meknès 2026 : secteurs, zones industrielles et employeurs",
+    "metaTitle": "Emploi Meknès : secteurs, zones industrielles et employeurs",
     "metaDescription": "Emploi Meknès : agro-industrie (Agropolis), câblage automobile, viticulture et tourisme. Zones industrielles, employeurs réels et où postuler sans payer.",
     "intro": "Capitale agricole du plateau du Saïss, Meknès tire son marché de l'emploi de l'agro-industrie et de la transformation alimentaire, portées par le pôle Agropolis et le grand rendez-vous annuel qu'est le SIAM. La ville s'est aussi imposée comme un site de câblage automobile, avec plusieurs équipementiers internationaux installés à Agropolis, tandis que la viticulture, l'huile d'olive et le tourisme patrimonial (ville impériale classée, Volubilis à proximité) complètent le tissu local. C'est un bassin où l'industrie manufacturière côtoie l'agriculture et les services publics.",
     "sectors": [
@@ -392,7 +394,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Les Celliers de Meknès (viticulture)",
       "SIAM — Salon International de l'Agriculture au Maroc (emplois saisonniers, avril)"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC de Meknès (dépôt de CV en ligne sur anapec.org et convocations aux sessions de recrutement, notamment pour l'agro-industrie et le câblage). Pour l'industrie, visez directement les services RH des unités d'Agropolis et des zones de Mejjat, Sidi Bouzekri et SSMK, souvent via des sessions collectives d'opérateurs. Le SIAM (fin avril) est un moment fort pour l'emploi agricole et événementiel. Consultez aussi les portails Marocannonces, Dreamjob et les pages emploi régionales. Règle de sécurité : un emploi légitime ne se paie jamais — ne versez aucun argent pour un poste, une \"formation obligatoire\" ou un test, passez par les canaux officiels de l'entreprise ou de l'ANAPEC, et méfiez-vous des offres qui exigent un virement avant embauche.",
+    "whereToLook": "Commencez par l'agence ANAPEC de Meknès (dépôt de CV en ligne sur anapec.org et convocations aux sessions de recrutement, notamment pour l'agro-industrie et le câblage). Pour l'industrie, visez directement les services RH des unités d'Agropolis et des zones de Mejjat, Sidi Bouzekri et SSMK, souvent via des sessions collectives d'opérateurs. Le SIAM (fin avril) est un moment fort pour l'emploi agricole et événementiel. Consultez aussi les portails Marocannonces, Dreamjob et les pages emploi régionales.",
     "faq": [
       {
         "question": "Quels sont les principaux secteurs qui recrutent à Meknès ?",
@@ -403,8 +405,8 @@ export const CITY_EMPLOI: CityEmploi[] = [
         "answer": "Agropolis est le pôle agro-industriel de Meknès, aménagé par MEDZ, dédié à la transformation agroalimentaire, à la logistique et aux activités tertiaires. Il accueille plusieurs dizaines d'entreprises, dont des équipementiers automobiles, et constitue l'un des premiers bassins d'emploi industriel de la ville."
       },
       {
-        "question": "Comment postuler à Meknès sans se faire arnaquer ?",
-        "answer": "Déposez votre candidature via l'ANAPEC ou directement auprès des RH des entreprises. Ne payez jamais pour obtenir un emploi, un test ou une formation dite obligatoire : aucune entreprise sérieuse ni l'ANAPEC ne demandent d'argent avant l'embauche."
+        "question": "Le SIAM crée-t-il des emplois à Meknès ?",
+        "answer": "Oui. Le Salon International de l'Agriculture au Maroc (SIAM), organisé chaque année fin avril à Meknès, génère une vague d'emplois saisonniers et événementiels : hôtes et hôtesses d'accueil, logistique, montage de stands, sécurité, restauration et transport. C'est aussi une occasion de contacts directs avec les entreprises agro-industrielles de la région, au-delà de la seule durée du salon."
       }
     ]
   },
@@ -412,9 +414,9 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "slug": "oujda",
     "name": "Oujda",
     "nameAr": "وجدة",
-    "metaTitle": "Emploi Oujda 2026 : secteurs, employeurs et zones qui recrutent",
+    "metaTitle": "Emploi Oujda : secteurs, employeurs et zones qui recrutent",
     "metaDescription": "Guide de l'emploi Oujda : offshoring (Oujda Shore), câblage automobile (Aptiv), énergies renouvelables et services. Où chercher et éviter les arnaques.",
-    "intro": "Capitale de la région de l'Oriental, Oujda a bâti son marché de l'emploi autour de la Technopole d'Oujda et de son pôle offshoring Oujda Shore, qui ont fait de la ville un point d'ancrage pour les centres d'appels, le BPO et les services aux entreprises loin de l'axe Casablanca-Rabat. L'arrivée du câblage automobile (usine Aptiv) et la montée des énergies renouvelables (zone Cleantech, institut IFMEREE) diversifient une économie longtemps dominée par le commerce, l'administration et les métiers de proximité. La position frontalière et le rôle de chef-lieu régional entretiennent aussi une forte demande dans les services, la santé et l'éducation.",
+    "intro": "À Oujda, deux paris industriels redessinent l'emploi de l'Oriental : l'usine de câblage automobile Aptiv, qui recrute par vagues opérateurs et techniciens, et le pôle des énergies renouvelables — zone franche Cleantech et institut IFMEREE — qui forme et emploie dans le solaire, l'éolien et l'efficacité énergétique. Ces moteurs se greffent sur le parc offshoring Oujda Shore, adossé à la Technopole, qui a fait de la ville un point d'ancrage BPO loin de l'axe Casablanca-Rabat. En tant que capitale régionale et ville frontalière, Oujda conserve enfin une forte demande dans le commerce, l'administration, la santé et l'éducation, socle stable de son marché du travail longtemps dominé par les métiers de proximité.",
     "sectors": [
       {
         "label": "Offshoring et relation client (BPO)",
@@ -447,7 +449,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "IFMEREE Oujda (institut de formation aux métiers des énergies renouvelables)",
       "Institut OFPPT spécialisé dans les métiers de l'offshoring"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC d'Oujda (avenue Mohammed VI) : l'inscription est gratuite et donne accès aux offres locales et aux programmes Idmaj et Tahfiz. Pour l'industrie et l'offshoring, surveillez les campagnes de recrutement de masse relayées par l'ANAPEC et l'OFPPT, notamment pour l'usine Aptiv et les centres d'Oujda Shore, qui demandent souvent un niveau bac ou plus et un bon niveau de français. Les plateformes comme Dreamjob.ma et Jobsquare.ma publient des offres filtrées par ville, et le Centre régional d'investissement de l'Oriental (CRI Oriental) informe sur les entreprises qui s'implantent. Règle de sécurité : un employeur ou centre d'appels légitime ne demande jamais d'argent pour un poste, une formation obligatoire payante ou un « dossier ». Ne payez rien, ne communiquez pas vos données bancaires, et passez par les canaux officiels (ANAPEC, sites carrière des entreprises, agences physiques).",
+    "whereToLook": "Commencez par l'agence ANAPEC d'Oujda (avenue Mohammed VI) : l'inscription est gratuite et donne accès aux offres locales et aux programmes Idmaj et Tahfiz. Pour l'industrie et l'offshoring, surveillez les campagnes de recrutement de masse relayées par l'ANAPEC et l'OFPPT, notamment pour l'usine Aptiv et les centres d'Oujda Shore, qui demandent souvent un niveau bac ou plus et un bon niveau de français. Les plateformes comme Dreamjob.ma et Jobsquare.ma publient des offres filtrées par ville, et le Centre régional d'investissement de l'Oriental (CRI Oriental) informe sur les entreprises qui s'implantent.",
     "faq": [
       {
         "question": "Quels sont les secteurs qui recrutent le plus à Oujda ?",
@@ -455,7 +457,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       },
       {
         "question": "Comment postuler aux emplois de la Technopole d'Oujda et d'Oujda Shore ?",
-        "answer": "Inscrivez-vous à l'ANAPEC d'Oujda et suivez ses annonces, car les recrutements de masse (Aptiv, centres offshoring) passent souvent par l'ANAPEC et l'OFPPT. Vous pouvez aussi postuler directement sur les sites carrière des entreprises installées dans la Technopole. Méfiez-vous de toute « offre » qui exige un paiement."
+        "answer": "Inscrivez-vous à l'ANAPEC d'Oujda et suivez ses annonces, car les recrutements de masse (Aptiv, centres offshoring) passent souvent par l'ANAPEC et l'OFPPT. Vous pouvez aussi postuler directement sur les sites carrière des entreprises installées dans la Technopole. Les campagnes Aptiv, adossées à des formations OFPPT, sont une porte d'entrée fréquente pour les opérateurs de câblage."
       },
       {
         "question": "Faut-il parler français ou espagnol pour travailler à Oujda ?",
@@ -467,7 +469,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "slug": "kenitra",
     "name": "Kénitra",
     "nameAr": "القنيطرة",
-    "metaTitle": "Emploi Kénitra : automobile, zone franche et employeurs 2026",
+    "metaTitle": "Emploi Kénitra : automobile, zone franche et employeurs",
     "metaDescription": "Guide emploi Kénitra : l'usine Stellantis, l'Atlantic Free Zone, l'agro-industrie du Gharb, où postuler via l'ANAPEC et éviter les arnaques au recrutement.",
     "intro": "Kénitra est devenue l'un des pôles automobiles majeurs du Maroc grâce à l'usine Stellantis (ex-PSA) et à l'Atlantic Free Zone, l'une des plus grandes zones franches d'Afrique, qui concentre plus de 80 entreprises et environ 21 000 salariés. La ville reste aussi le débouché naturel de la plaine du Gharb, région agricole et agro-industrielle très active, ce qui donne à son marché de l'emploi une double identité : industrie exportatrice d'un côté, agriculture et agroalimentaire de l'autre. Sa position sur l'axe Casablanca-Tanger, à 40 km de Rabat et reliée par autoroute et voie ferrée aux grands ports, en fait également un point logistique.",
     "sectors": [
@@ -502,7 +504,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       "Nexteer Automotive – systèmes de direction",
       "Ancienne zone industrielle de Kénitra et port fluvial de Mehdia (activités logistiques et agro-industrielles)"
     ],
-    "whereToLook": "L'agence ANAPEC de Kénitra est le point de départ officiel : elle publie des offres locales, notamment industrielles, et oriente vers les formations qualifiantes (câblage, maintenance) souvent adossées aux recrutements de la zone franche. Surveillez le Salon de l'Emploi de l'Atlantic Free Zone (AFZIA), où les entreprises de la zone recrutent directement operateurs et techniciens. Les grands équipementiers (Yazaki, Lear, Stellantis) recrutent aussi via leurs propres pages carrières et des campagnes de recrutement massives annoncées sur les sites d'emploi marocains. Règle de sécurité : un vrai recruteur ne demande jamais d'argent. Ne payez aucun « frais de dossier », test médical payant à l'avance ou « caution » pour obtenir un poste ou un badge d'entrée en zone franche ; passez par l'ANAPEC, les portails carrières officiels des entreprises et les entretiens sur site.",
+    "whereToLook": "L'agence ANAPEC de Kénitra est le point de départ officiel : elle publie des offres locales, notamment industrielles, et oriente vers les formations qualifiantes (câblage, maintenance) souvent adossées aux recrutements de la zone franche. Surveillez le Salon de l'Emploi de l'Atlantic Free Zone (AFZIA), où les entreprises de la zone recrutent directement opérateurs et techniciens. Les grands équipementiers (Yazaki, Lear, Stellantis) recrutent aussi via leurs propres pages carrières et des campagnes de recrutement massives annoncées sur les sites d'emploi marocains.",
     "faq": [
       {
         "question": "Quels emplois recrutent le plus à Kénitra ?",
@@ -524,7 +526,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
     "nameAr": "تطوان",
     "metaTitle": "Emploi Tétouan : secteurs, employeurs et zones qui recrutent",
     "metaDescription": "Emploi Tétouan : offshoring à Tetouan Shore, industrie légère à Tétouan Park, tourisme à Tamuda Bay et textile. Employeurs réels et où chercher.",
-    "intro": "Le marché de l'emploi de Tétouan repose sur un mélange atypique : un pôle d'offshoring et de centres d'appels (Tetouan Shore), une industrie légère et logistique en croissance (Tétouan Park), et surtout une forte saisonnalité touristique portée par le littoral voisin de Tamuda Bay (M'diq, Martil, Cabo Negro). C'est aussi une ville universitaire et administrative — l'Université Abdelmalek Essaâdi y a son siège — ce qui alimente l'emploi public et les services. Enfin, Tétouan profite en périphérie de la dynamique industrielle de la région Tanger-Tétouan-Al Hoceïma (automobile, textile).",
+    "intro": "L'emploi à Tétouan est rythmé par deux réalités très différentes : la saison touristique du littoral voisin de Tamuda Bay (M'diq, Martil, Cabo Negro), qui gonfle chaque été les besoins en hôtellerie, restauration et animation, et le statut de ville universitaire et administrative — siège de l'Université Abdelmalek Essaâdi — qui alimente un emploi public et de services plus régulier. À ces deux piliers s'ajoutent un pôle d'offshoring et de centres d'appels (Tetouan Shore, premier parc d'offshoring du Maroc), une industrie légère et logistique en développement (Tétouan Park) et un tissu de confection textile concentré à M'diq et Fnideq. La ville profite aussi, en périphérie, de la dynamique industrielle de la région Tanger-Tétouan-Al Hoceïma.",
     "sectors": [
       {
         "label": "Offshoring, centres d'appels et BPO",
@@ -549,13 +551,14 @@ export const CITY_EMPLOI: CityEmploi[] = [
     ],
     "employers": [
       "Tetouan Shore (parc d'offshoring / BPO, géré par Tanger Med Zones)",
+      "Intelcia, Outsourcia et Atento — plateformes de relation client à Tetouan Shore",
+      "Foundever (ex-Sitel) — centre de relation client à Tetouan Shore",
       "Tétouan Park (zone d'industrie légère et logistique pour PME/PMI)",
       "Université Abdelmalek Essaâdi (siège à Tétouan, principal employeur universitaire du Nord)",
       "Sofitel Tamuda Bay Beach & Spa (M'diq)",
-      "Entreprises de confection textile de M'diq et Fnideq (recrutement via ANAPEC)",
-      "Écosystème automobile régional Renault / Tanger Med (à proximité, dans la région Tanger-Tétouan)"
+      "Entreprises de confection textile de M'diq et Fnideq (recrutement fréquent via l'ANAPEC)"
     ],
-    "whereToLook": "Commencez par l'agence ANAPEC de Tétouan (Avenue Al Massira) : elle diffuse régulièrement des campagnes de recrutement, notamment pour le textile de M'diq/Fnideq et l'industrie de Tétouan Park. Créez votre profil sur anapec.org et suivez leurs annonces. Pour l'offshoring, candidatez directement auprès des sociétés installées à Tetouan Shore. Pour le tourisme, visez janvier-avril pour la saison estivale et postulez en direct auprès des hôtels de Tamuda Bay. Les plateformes nationales (Emploi.ma, Dreamjob.ma, Marocannonces, Indeed) publient aussi des offres locales. Règle de sécurité : un emploi ou un concours ne se paie jamais. N'envoyez pas d'argent pour un \"dossier\", un \"test\" ou une \"réservation de poste\", et passez toujours par les canaux officiels de l'employeur ou de l'ANAPEC.",
+    "whereToLook": "Commencez par l'agence ANAPEC de Tétouan (Avenue Al Massira) : elle diffuse régulièrement des campagnes de recrutement, notamment pour le textile de M'diq/Fnideq et l'industrie de Tétouan Park. Créez votre profil sur anapec.org et suivez leurs annonces. Pour l'offshoring, candidatez directement auprès des sociétés installées à Tetouan Shore (Intelcia, Outsourcia, Atento, Foundever). Pour le tourisme, visez janvier-avril pour préparer la saison estivale et postulez en direct auprès des hôtels de Tamuda Bay. Les plateformes nationales (Emploi.ma, Dreamjob.ma, Marocannonces, Indeed) publient aussi des offres locales.",
     "faq": [
       {
         "question": "Quels secteurs recrutent le plus à Tétouan ?",
@@ -567,7 +570,7 @@ export const CITY_EMPLOI: CityEmploi[] = [
       },
       {
         "question": "Comment postuler via l'ANAPEC à Tétouan ?",
-        "answer": "Rendez-vous à l'agence ANAPEC de Tétouan (Avenue Al Massira), créez un compte sur anapec.org et consultez les offres locales. L'ANAPEC relaie fréquemment des campagnes pour le textile et l'industrie de la région. Le service est gratuit : aucun paiement n'est jamais demandé pour accéder à une offre."
+        "answer": "Rendez-vous à l'agence ANAPEC de Tétouan (Avenue Al Massira), créez un compte sur anapec.org et consultez les offres locales. L'ANAPEC relaie fréquemment des campagnes pour le textile de M'diq/Fnideq et l'industrie de Tétouan Park, ainsi que des sessions saisonnières avant l'été touristique de Tamuda Bay."
       }
     ]
   }
