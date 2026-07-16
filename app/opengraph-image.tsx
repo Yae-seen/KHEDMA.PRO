@@ -22,25 +22,23 @@ export default function OpengraphImage() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "72px",
-              height: "72px",
-              borderRadius: "16px",
-              background: "#4338ca",
-              fontSize: "40px",
-              fontWeight: 800,
-            }}
-          >
-            K
-          </div>
-          <div style={{ display: "flex", fontSize: "44px", fontWeight: 800 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "22px" }}>
+          {/* "career case" mark — Majorelle suitcase, saffron handle + latch */}
+          <svg width="96" height="82" viewBox="0 0 40 34" fill="none">
+            <path
+              d="M14 12 V10 A3 3 0 0 1 17 7 H23 A3 3 0 0 1 26 10 V12"
+              stroke="#f59e0b"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <rect x="5" y="12" width="30" height="19" rx="4.5" fill="#4a3fd4" />
+            <line x1="5" y1="20" x2="35" y2="20" stroke="#ffffff" strokeOpacity="0.18" strokeWidth="1.5" />
+            <rect x="16.5" y="18" width="7" height="4" rx="2" fill="#f59e0b" />
+          </svg>
+          <div style={{ display: "flex", fontSize: "48px", fontWeight: 800 }}>
             <span>Khedma</span>
-            <span style={{ color: "#818cf8" }}>Pro</span>
+            <span style={{ color: "#9a90f0" }}>Pro</span>
           </div>
         </div>
         <div

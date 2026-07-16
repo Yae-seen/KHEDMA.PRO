@@ -72,7 +72,7 @@ Legend: ☐ open · ◐ in progress · ☑ done · 🔒 blocked on a decision ·
 - ☑ **Logo + animated wordmark — SHIPPED 2026-07-16.** "Career case" mark (Majorelle
   suitcase, saffron handle+latch = career-track start) + Bricolage wordmark with the
   track-line hover sweep + one-time entrance; reduced-motion safe. `<Logo/>` in header +
-  footer. TODO later: wire the mark into the OG image + a favicon.
+  footer. Mark also wired into the OG image (`opengraph-image.tsx`) + favicon (`app/icon.svg`).
 - ☐ **FR↔AR hreflang** completion as more AR pages go live.
 
 > **Ecosystem note (blind spot from the scrape):** the giant untapped gap vs
