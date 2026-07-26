@@ -6,6 +6,11 @@ import { SITE } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/ar" },
+  // Every route under /ar is Arabic, so the locale override belongs here rather
+  // than on /ar alone — otherwise the sub-pages inherit the root's fr_MA. Any
+  // child that declares its own openGraph replaces this wholesale and must
+  // restate type/siteName/locale.
+  openGraph: { type: "website", siteName: SITE.name, locale: "ar_MA" },
 };
 
 /**
@@ -31,8 +36,6 @@ export default function ArLayout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <SiteFooter locale="ar" />
-      <link rel="alternate" hrefLang="fr" href={SITE.baseUrl} />
-      <link rel="alternate" hrefLang="ar" href={`${SITE.baseUrl}/ar`} />
     </div>
   );
 }

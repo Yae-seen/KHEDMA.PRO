@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     canonical: "/ar",
     languages: { fr: "/", ar: "/ar" },
   },
-  openGraph: { locale: "ar_MA" },
 };
 
 const PILLARS_AR = [

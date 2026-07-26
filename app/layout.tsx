@@ -21,15 +21,16 @@ export const metadata: Metadata = {
   title: { default: `${SITE.name} — ${SITE.tagline}`, template: `%s | ${SITE.name}` },
   description: SITE.description,
   applicationName: SITE.name,
-  openGraph: {
-    type: "website",
-    siteName: SITE.name,
-    title: `${SITE.name} — ${SITE.tagline}`,
-    description: SITE.description,
-    url: SITE.baseUrl,
-    locale: SITE.locale,
-  },
-  twitter: { card: "summary_large_image", title: `${SITE.name} — ${SITE.tagline}`, description: SITE.description },
+  // Deliberately no title/description/url here. Next inherits openGraph and
+  // twitter wholesale into every child that doesn't redeclare them, so literal
+  // values stamped the homepage's title, description and URL onto every article.
+  // Left unset, Next derives og:/twitter: title+description from each page's own
+  // `title`/`description`. It does NOT derive og:url from `alternates.canonical`,
+  // so og:url is simply not emitted — scrapers fall back to the fetched URL,
+  // which beats every page claiming to be the homepage. If og:url is ever wanted,
+  // it must be set per page alongside the canonical, never here.
+  openGraph: { type: "website", siteName: SITE.name, locale: SITE.locale },
+  twitter: { card: "summary_large_image" },
 };
 
 /**
