@@ -30,6 +30,41 @@ const VALUES: [string, string][] = [
 
 const STEP_LABELS = ["Étape 01", "Étape 02", "Étape 03"];
 
+/**
+ * Concrete entry points, not a link dump. The three pillar links above land on
+ * hubs; a reader arriving on the homepage usually has one of these four specific
+ * questions, and each destination is the page that actually answers it.
+ */
+const STARTING_POINTS: { href: string; kicker: string; title: string; blurb: string }[] = [
+  {
+    href: "/blog/anapec-inscription-espace-candidat",
+    kicker: "Emploi",
+    title: "Créer votre espace candidat ANAPEC",
+    blurb:
+      "L'inscription est gratuite — personne ne doit vous faire payer. Le guide clair, étape par étape.",
+  },
+  {
+    href: "/cv",
+    kicker: "Outil gratuit",
+    title: "Votre CV au format marocain",
+    blurb:
+      "Générateur gratuit, sans compte et sans collecte de données. Export PDF prêt à envoyer.",
+  },
+  {
+    href: "/concours/concours-enseignement",
+    kicker: "Concours",
+    title: "Concours de l'enseignement",
+    blurb: "Conditions d'accès, périodes d'annonce et comment déposer votre candidature.",
+  },
+  {
+    href: "/allemagne",
+    kicker: "Outil gratuit",
+    title: "Calculer vos points Chancenkarte",
+    blurb:
+      "Estimez votre éligibilité pour l'Allemagne, puis le coût réel du départ — à titre indicatif.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -95,7 +130,8 @@ export default function HomePage() {
             </div>
             <div>
               <dt className="text-3xl font-extrabold text-white sm:text-4xl">
-                <CountUp value={3} />
+                {/* Chancenkarte calculator, employer finder, cost estimator, CV builder. */}
+                <CountUp value={4} />
               </dt>
               <dd className="mt-1 text-sm text-white/60">outils gratuits</dd>
             </div>
@@ -149,6 +185,42 @@ export default function HomePage() {
               </Reveal>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Starting points — routes homepage authority into the pages that answer
+          a specific question, rather than stopping at the three hubs. */}
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8">
+          <Reveal>
+            <div className="text-sm font-bold uppercase tracking-widest text-primary">
+              Commencez ici
+            </div>
+            <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+              Les quatre questions qu&apos;on nous pose le plus
+            </h2>
+          </Reveal>
+
+          <ul className="mt-12 grid gap-6 sm:grid-cols-2">
+            {STARTING_POINTS.map((s, i) => (
+              <Reveal as="li" key={s.href} delay={i * 90}>
+                <Link
+                  href={s.href}
+                  className="group flex h-full flex-col rounded-2xl border border-border bg-bg p-6 shadow-soft transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lift"
+                >
+                  <span className="text-xs font-bold uppercase tracking-widest text-accent-dark">
+                    {s.kicker}
+                  </span>
+                  <span className="mt-2 text-xl font-extrabold text-ink">{s.title}</span>
+                  <span className="mt-3 flex-1 text-sm leading-relaxed text-muted">{s.blurb}</span>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary transition-colors group-hover:text-primary-dark">
+                    Lire
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </ul>
         </div>
       </section>
 
