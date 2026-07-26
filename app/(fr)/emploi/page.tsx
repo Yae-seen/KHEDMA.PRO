@@ -3,10 +3,8 @@ import Link from "next/link";
 import { JOB_CHANNELS, SECTORS } from "@/lib/emploi-data";
 import { CITY_EMPLOI } from "@/lib/city-emploi-data";
 import { ARTICLES } from "@/lib/articles";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 import { LastVerified } from "@/components/last-verified";
 
 export const metadata: Metadata = {
@@ -52,16 +50,6 @@ export default function EmploiPage() {
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "Accueil", href: "/" },
-            { label: "Emploi", href: "/emploi" },
-          ]),
-          buildFaqJsonLd(EMPLOI_FAQ),
-        ]}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 lg:py-16">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Emploi", href: "/emploi" }]} />

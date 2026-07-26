@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ALLEMAGNE_LAST_VERIFIED, CHANCENKARTE_MODEL } from "@/lib/allemagne-data";
 import { ARTICLES_AR, AR_BLOG_LABELS } from "@/lib/articles-ar";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 import { OfficialLink } from "@/components/official-link";
 
 export const metadata: Metadata = {
@@ -51,16 +49,6 @@ export default function AllemagneArPage() {
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "الرئيسية", href: "/ar" },
-            { label: "ألمانيا", href: "/ar/allemagne" },
-          ]),
-          buildFaqJsonLd(ALLEMAGNE_FAQ_AR),
-        ]}
-      />
-
       <section className="relative overflow-hidden bg-night text-white">
         <div
           aria-hidden="true"

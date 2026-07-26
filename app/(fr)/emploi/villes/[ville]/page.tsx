@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CITY_EMPLOI, getCityEmploi } from "@/lib/city-emploi-data";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 import { LastVerified } from "@/components/last-verified";
 
 const LAST_VERIFIED = "2026-07-16";
@@ -47,18 +45,6 @@ export default async function CityEmploiPage({
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "Accueil", href: "/" },
-            { label: "Emploi", href: "/emploi" },
-            { label: "Par ville", href: "/emploi/villes" },
-            { label: c.name, href: `/emploi/villes/${c.slug}` },
-          ]),
-          buildFaqJsonLd(c.faq),
-        ]}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-4xl px-5 py-12 sm:px-8">
           <Breadcrumb

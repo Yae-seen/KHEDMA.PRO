@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CITY_EMPLOI_AR } from "@/lib/city-emploi-ar";
-import { buildBreadcrumbJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "الشغل حسب المدينة في المغرب: أين تبحث في كل مدينة",
@@ -18,14 +16,6 @@ export const metadata: Metadata = {
 export default function VillesIndexArPage() {
   return (
     <>
-      <JsonLd
-        data={buildBreadcrumbJsonLd([
-          { label: "الرئيسية", href: "/ar" },
-          { label: "الشغل", href: "/ar/emploi" },
-          { label: "حسب المدينة", href: "/ar/emploi/villes" },
-        ])}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 lg:py-16">
           <Breadcrumb

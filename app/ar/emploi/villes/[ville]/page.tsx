@@ -3,10 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CITY_EMPLOI_AR, getCityEmploiAr } from "@/lib/city-emploi-ar";
 import { AR_BLOG_LABELS } from "@/lib/articles-ar";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 
 const LAST_VERIFIED = "2026-07-16";
 const ANAPEC_GUIDE = "/ar/blog/anapec-inscription-espace-candidat";
@@ -49,18 +47,6 @@ export default async function CityEmploiArPage({
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "الرئيسية", href: "/ar" },
-            { label: "الشغل", href: "/ar/emploi" },
-            { label: "حسب المدينة", href: "/ar/emploi/villes" },
-            { label: c.nameAr, href: `/ar/emploi/villes/${c.slug}` },
-          ]),
-          buildFaqJsonLd(c.faq),
-        ]}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-4xl px-5 py-12 sm:px-8">
           <Breadcrumb

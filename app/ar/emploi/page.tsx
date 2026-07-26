@@ -4,10 +4,8 @@ import { JOB_CHANNELS } from "@/lib/emploi-data";
 import { EMPLOI_AR } from "@/lib/emploi-ar";
 import { CITY_EMPLOI_AR } from "@/lib/city-emploi-ar";
 import { ARTICLES_AR, AR_BLOG_LABELS } from "@/lib/articles-ar";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 import { OfficialLink } from "@/components/official-link";
 
 const LAST_VERIFIED = "2026-07-16";
@@ -27,16 +25,6 @@ export default function EmploiArPage() {
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "الرئيسية", href: "/ar" },
-            { label: "الشغل", href: "/ar/emploi" },
-          ]),
-          buildFaqJsonLd(EMPLOI_AR.faq),
-        ]}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 lg:py-16">
           <Breadcrumb

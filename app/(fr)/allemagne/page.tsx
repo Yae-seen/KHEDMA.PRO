@@ -9,13 +9,11 @@ import {
   ALLEMAGNE_LAST_VERIFIED,
 } from "@/lib/allemagne-data";
 import { ARTICLES } from "@/lib/articles";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ChancenkarteCalculator } from "@/components/chancenkarte-calculator";
 import { CostEstimator } from "@/components/cost-estimator";
 import { EmployerFinder } from "@/components/employer-finder";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
 import { LastVerified } from "@/components/last-verified";
 import { OfficialLink } from "@/components/official-link";
 
@@ -62,16 +60,6 @@ export default function AllemagnePage() {
 
   return (
     <>
-      <JsonLd
-        data={[
-          buildBreadcrumbJsonLd([
-            { label: "Accueil", href: "/" },
-            { label: "Allemagne", href: "/allemagne" },
-          ]),
-          buildFaqJsonLd(ALLEMAGNE_FAQ),
-        ]}
-      />
-
       {/* Hero */}
       <section className="relative overflow-hidden bg-night text-white">
         <div

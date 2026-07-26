@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CITY_EMPLOI } from "@/lib/city-emploi-data";
-import { buildBreadcrumbJsonLd } from "@/lib/structured-data";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Emploi par ville au Maroc : où chercher dans chaque grande ville",
@@ -18,14 +16,6 @@ export const metadata: Metadata = {
 export default function VillesIndexPage() {
   return (
     <>
-      <JsonLd
-        data={buildBreadcrumbJsonLd([
-          { label: "Accueil", href: "/" },
-          { label: "Emploi", href: "/emploi" },
-          { label: "Par ville", href: "/emploi/villes" },
-        ])}
-      />
-
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 lg:py-16">
           <Breadcrumb
