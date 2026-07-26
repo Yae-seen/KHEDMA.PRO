@@ -21,16 +21,49 @@ const PILLARS_AR = [
     desc: "جميع مباريات التوظيف بالمغرب حسب الوزارة وآخر أجل — مع الشروط وكيفية الترشح عبر البوابة الرسمية دون نصب.",
   },
   {
-    href: "/emploi",
+    href: "/ar/emploi",
     tag: "عروض موثوقة و السيرة الذاتية",
     title: "الشغل",
     desc: "أين تبحث فعلاً عن عمل بالمغرب — القطاع العام والخاص — مع أداة مجانية لإنشاء سيرة ذاتية بالصيغة المغربية.",
   },
   {
-    href: "/allemagne",
+    href: "/ar/allemagne",
     tag: "بطاقة الفرص و المهن",
     title: "ألمانيا",
     desc: "طريقك الحقيقي إلى ألمانيا: احسب نقاط بطاقة الفرص (Chancenkarte)، وابحث عن مشغّل حسب المهنة والمدينة.",
+  },
+];
+
+/**
+ * Arabic counterpart of the French homepage entry points: the pillar cards above
+ * land on hubs, these land on the page that answers one concrete question. The
+ * CV builder has no Arabic route yet, so it points at the shared French tool —
+ * the same fallback localePath() applies to untranslated sections.
+ */
+const STARTING_POINTS_AR: { href: string; kicker: string; title: string; blurb: string }[] = [
+  {
+    href: "/ar/blog/anapec-inscription-espace-candidat",
+    kicker: "الشغل",
+    title: "إنشاء فضاء المترشح في أنابيك",
+    blurb: "التسجيل مجاني بالكامل — لا أحد له الحق في مطالبتك بالأداء. الدليل خطوة بخطوة.",
+  },
+  {
+    href: "/cv",
+    kicker: "أداة مجانية",
+    title: "سيرتك الذاتية بالصيغة المغربية",
+    blurb: "أداة مجانية بدون حساب وبدون جمع للمعطيات، مع تصدير PDF جاهز للإرسال.",
+  },
+  {
+    href: "/ar/concours/concours-enseignement",
+    kicker: "المباريات",
+    title: "مباراة التعليم",
+    blurb: "شروط الترشح، فترات الإعلان، وكيفية إيداع ملفك عبر البوابة الرسمية.",
+  },
+  {
+    href: "/ar/allemagne",
+    kicker: "أداة مجانية",
+    title: "احسب نقاط بطاقة الفرص",
+    blurb: "قدِّر أهليتك للانتقال إلى ألمانيا، ثم الكلفة الحقيقية للسفر — بشكل تقريبي.",
   },
 ];
 
@@ -88,7 +121,7 @@ export default function ArHomePage() {
               المباريات المفتوحة
             </Link>
             <Link
-              href="/allemagne"
+              href="/ar/allemagne"
               className="rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/10"
             >
               طريقك إلى ألمانيا ←
@@ -118,6 +151,35 @@ export default function ArHomePage() {
               </span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Starting points — feeds homepage authority into the pages that answer a
+          specific question, mirroring the French homepage. */}
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
+          <h2 className="text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+            الأسئلة الأربعة الأكثر تكراراً
+          </h2>
+          <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+            {STARTING_POINTS_AR.map((s) => (
+              <li key={s.href}>
+                <Link
+                  href={s.href}
+                  className="group flex h-full flex-col rounded-2xl border border-border bg-bg p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-primary hover:shadow-md"
+                >
+                  <span className="text-xs font-bold uppercase tracking-wide text-primary">
+                    {s.kicker}
+                  </span>
+                  <span className="mt-3 text-xl font-bold text-ink">{s.title}</span>
+                  <span className="mt-2 flex-1 text-sm leading-loose text-muted">{s.blurb}</span>
+                  <span className="mt-4 inline-block text-sm font-semibold text-primary transition-colors group-hover:text-primary-dark">
+                    اقرأ ←
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
