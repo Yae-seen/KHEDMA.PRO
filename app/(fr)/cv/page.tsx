@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CvBuilder } from "@/components/cv-builder";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqSection } from "@/components/faq-section";
-import { JsonLd } from "@/components/json-ld";
-import { buildFaqJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "CV Builder gratuit — créer un CV au format marocain (PDF)",
@@ -43,7 +42,6 @@ const CV_FAQ = [
 export default function CvPage() {
   return (
     <>
-      <JsonLd data={buildFaqJsonLd(CV_FAQ)} />
       <section className="no-print border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8">
           <Breadcrumb
@@ -59,6 +57,13 @@ export default function CvPage() {
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-muted">
             Remplissez, prévisualisez en direct, et enregistrez en PDF. Gratuit, sans inscription, et
             vos données ne quittent jamais votre appareil.
+          </p>
+          <p className="mt-4 text-sm text-muted">
+            Vous ne savez pas quoi écrire ?{" "}
+            <Link href="/cv/exemples" className="font-semibold text-primary hover:underline">
+              Partez d&apos;un exemple de CV marocain
+            </Link>{" "}
+            — 5 modèles prêts à ouvrir dans le générateur.
           </p>
         </div>
       </section>

@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.baseUrl}/emploi`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE.baseUrl}/emploi/villes`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE.baseUrl}/cv`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE.baseUrl}/cv/exemples`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/allemagne`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE.baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE.baseUrl}/ar`, lastModified, changeFrequency: "weekly", priority: 0.8 },

@@ -2,6 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { track } from "@/lib/analytics";
+import {
+  CV_MODELS,
+  CV_STORAGE_KEY,
+  EMPTY_CV,
+  type CvData,
+  type Experience,
+  type Formation,
+  type Langue,
+} from "@/lib/cv-models";
 
 /**
  * Client-side CV builder. Everything lives in the browser — the form data is
@@ -11,91 +20,11 @@ import { track } from "@/lib/analytics";
  * civil light).
  */
 
-interface Experience {
-  poste: string;
-  entreprise: string;
-  ville: string;
-  periode: string;
-  description: string;
-}
-
-interface Formation {
-  diplome: string;
-  etablissement: string;
-  annee: string;
-}
-
-interface Langue {
-  langue: string;
-  niveau: string;
-}
-
-interface CvData {
-  prenom: string;
-  nom: string;
-  titre: string;
-  telephone: string;
-  email: string;
-  ville: string;
-  profil: string;
-  experiences: Experience[];
-  formations: Formation[];
-  competences: string;
-  langues: Langue[];
-}
-
-const EMPTY: CvData = {
-  prenom: "",
-  nom: "",
-  titre: "",
-  telephone: "",
-  email: "",
-  ville: "",
-  profil: "",
-  experiences: [{ poste: "", entreprise: "", ville: "", periode: "", description: "" }],
-  formations: [{ diplome: "", etablissement: "", annee: "" }],
-  competences: "",
-  langues: [
-    { langue: "Arabe", niveau: "Langue maternelle" },
-    { langue: "Français", niveau: "Courant" },
-  ],
-};
-
-const SAMPLE: CvData = {
-  prenom: "Yasmine",
-  nom: "El Amrani",
-  titre: "Technicienne spécialisée en génie civil",
-  telephone: "06 12 34 56 78",
-  email: "yasmine.elamrani@email.ma",
-  ville: "Casablanca",
-  profil:
-    "Technicienne spécialisée en génie civil, rigoureuse et organisée, à la recherche d'un poste dans le secteur public. Expérience de chantier et maîtrise des logiciels de dessin technique.",
-  experiences: [
-    {
-      poste: "Technicienne de chantier (stage)",
-      entreprise: "Entreprise de travaux publics",
-      ville: "Casablanca",
-      periode: "2024 – 2025",
-      description: "Suivi de chantier, métrés, contrôle qualité et coordination des équipes.",
-    },
-  ],
-  formations: [
-    {
-      diplome: "Diplôme de technicien spécialisé en génie civil",
-      etablissement: "OFPPT",
-      annee: "2024",
-    },
-    { diplome: "Baccalauréat sciences physiques", etablissement: "Lycée Ibn Sina", annee: "2022" },
-  ],
-  competences: "AutoCAD, métrés, lecture de plans, MS Office, gestion de chantier",
-  langues: [
-    { langue: "Arabe", niveau: "Langue maternelle" },
-    { langue: "Français", niveau: "Courant" },
-    { langue: "Anglais", niveau: "Intermédiaire" },
-  ],
-};
-
-const STORAGE_KEY = "khedma-cv-v1";
+// Shape, blank state and the ready-to-fill models are shared with /cv/exemples,
+// which loads a model by writing this same storage key before navigating here.
+const EMPTY = EMPTY_CV;
+const SAMPLE = CV_MODELS[1].data;
+const STORAGE_KEY = CV_STORAGE_KEY;
 
 const inputClass =
   "mt-1 w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm text-ink outline-none transition-colors focus:border-primary";

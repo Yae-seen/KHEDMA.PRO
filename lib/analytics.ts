@@ -12,7 +12,8 @@ export type KhedmaEvent =
   | { name: "tool_used"; tool: "chancenkarte" | "cv_builder" | "employer_finder" | "cost_estimator" }
   | { name: "employer_search"; occupation: string; city: string }
   | { name: "language_switch"; to: "fr" | "ar" }
-  | { name: "cv_export" };
+  | { name: "cv_export" }
+  | { name: "cv_model_load"; model: string };
 
 type Props = Record<string, string | number | boolean>;
 

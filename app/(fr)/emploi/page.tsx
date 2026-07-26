@@ -152,6 +152,12 @@ export default function EmploiPage() {
               <Link href="/cv" className="inline-block text-sm font-semibold text-primary hover:text-primary-dark">
                 Préparer mon CV →
               </Link>
+              <Link
+                href="/cv/exemples"
+                className="inline-block text-sm font-semibold text-primary hover:text-primary-dark"
+              >
+                Exemples de CV marocain →
+              </Link>
             </div>
           </div>
         </div>
