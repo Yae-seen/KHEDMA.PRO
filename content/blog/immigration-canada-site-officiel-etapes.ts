@@ -155,7 +155,7 @@ export const article: ArticleContent = {
     },
     {
       type: "p",
-      text: "Et c'est précisément pour ça que ceux qui vous promettent le contraire mentent. Si vous voulez savoir exactement combien ça coûte et reconnaître ceux qui veulent votre argent, lisez [« Immigration Canada gratuite » : la vérité](/blog/immigration-canada-gratuite-verite).",
+      text: "Et c'est précisément pour ça que ceux qui vous promettent le contraire mentent. Si vous voulez savoir exactement combien ça coûte et reconnaître ceux qui veulent votre argent, lisez [« Immigration Canada gratuite » : la vérité](/blog/immigration-canada-gratuite-verite). Le point de départ de toutes nos ressources est [la page Canada](/canada).",
     },
   ],
   faq: [

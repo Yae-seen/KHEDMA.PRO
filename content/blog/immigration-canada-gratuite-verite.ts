@@ -157,7 +157,7 @@ export const article: ArticleContent = {
     },
     {
       type: "p",
-      text: "Personne ne vous dira que la vraie route est plus lente que celle qu'on vous vend. Elle l'est. Elle est aussi ouverte à plus de monde qu'on ne le croit, et elle ne vous coûtera pas vos économies chez un intermédiaire. Pour le détail des étapes officielles, lisez [notre guide du site officiel et des vraies étapes](/blog/immigration-canada-site-officiel-etapes).",
+      text: "Personne ne vous dira que la vraie route est plus lente que celle qu'on vous vend. Elle l'est. Elle est aussi ouverte à plus de monde qu'on ne le croit, et elle ne vous coûtera pas vos économies chez un intermédiaire. Pour le détail des étapes officielles, lisez [notre guide du site officiel et des vraies étapes](/blog/immigration-canada-site-officiel-etapes), et retrouvez l'ensemble de nos ressources sur [la page Canada](/canada).",
     },
   ],
   faq: [

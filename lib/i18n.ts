@@ -21,7 +21,7 @@ export function dir(locale: Locale): "ltr" | "rtl" {
  */
 // Sections with an Arabic version. /emploi + /allemagne are hubs only (no AR
 // sub-routes like /emploi/offres — those stay French and are linked explicitly).
-const AR_SECTIONS = ["/concours", "/blog", "/emploi", "/allemagne"];
+const AR_SECTIONS = ["/concours", "/blog", "/emploi", "/allemagne", "/canada"];
 
 export function localePath(locale: Locale, path: string): string {
   if (locale === "fr") return path;
@@ -50,6 +50,7 @@ export const DICT: Record<Locale, Dict> = {
       { label: "Concours", href: "/concours" },
       { label: "Emploi", href: "/emploi" },
       { label: "Allemagne", href: "/allemagne" },
+      { label: "Canada", href: "/canada" },
       { label: "Blog", href: "/blog" },
     ],
     cta: "Concours ouverts",
@@ -72,6 +73,7 @@ export const DICT: Record<Locale, Dict> = {
       { label: "المباريات", href: "/concours" },
       { label: "الشغل", href: "/emploi" },
       { label: "ألمانيا", href: "/allemagne" },
+      { label: "كندا", href: "/canada" },
       { label: "المدونة", href: "/blog" },
     ],
     cta: "المباريات المفتوحة",
