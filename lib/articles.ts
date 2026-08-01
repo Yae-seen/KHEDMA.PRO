@@ -4,7 +4,7 @@ export interface ArticleMeta {
   slug: string;
   title: string;
   description: string;
-  category: "Concours" | "Emploi" | "Allemagne";
+  category: "Concours" | "Emploi" | "Allemagne" | "Canada";
   publishedAt: string;
   updatedAt: string;
 }
@@ -183,6 +183,24 @@ export const ARTICLES: ArticleMeta[] = [
     category: "Allemagne",
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
+  },
+  {
+    slug: "immigration-canada-gratuite-verite",
+    title: "« Immigration Canada gratuite » : la vérité et les vrais chiffres",
+    description:
+      "L'immigration gratuite au Canada n'existe pas. Frais officiels IRCC, argent exigé en banque, et la liste de ce qu'un vrai agent ne vous demandera jamais.",
+    category: "Canada",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+  },
+  {
+    slug: "immigration-canada-site-officiel-etapes",
+    title: "Immigration Canada : le site officiel et les vraies étapes",
+    description:
+      "Une seule adresse officielle : canada.ca. Les étapes d'Entrée express dans l'ordre exact d'IRCC — admissibilité, score, documents, profil, invitation.",
+    category: "Canada",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
   },
 ];
 
