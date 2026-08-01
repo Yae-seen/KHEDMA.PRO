@@ -18,6 +18,8 @@ import { article as employeurAllemagne } from "@/content/ar/blog/trouver-employe
 import { article as trouverStageMaroc } from "@/content/ar/blog/trouver-stage-maroc";
 import { article as lettreMotivationMaroc } from "@/content/ar/blog/lettre-motivation-maroc";
 import { article as visaAllemagneMaroc } from "@/content/ar/blog/visa-allemagne-maroc";
+import { article as canadaGratuite } from "@/content/ar/blog/immigration-canada-gratuite-verite";
+import { article as canadaEtapes } from "@/content/ar/blog/immigration-canada-site-officiel-etapes";
 
 const articles: ArticleContent[] = [
   commentPostuler,
@@ -39,6 +41,8 @@ const articles: ArticleContent[] = [
   trouverStageMaroc,
   lettreMotivationMaroc,
   visaAllemagneMaroc,
+  canadaGratuite,
+  canadaEtapes,
 ];
 
 export const BLOG_CONTENT_AR: Record<string, ArticleContent> = Object.fromEntries(

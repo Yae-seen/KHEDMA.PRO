@@ -1,6 +1,6 @@
 /** Arabic metadata for the /ar/blog surface (titles/descriptions per slug). */
 
-export type ArCategory = "المباريات" | "الشغل" | "ألمانيا";
+export type ArCategory = "المباريات" | "الشغل" | "ألمانيا" | "كندا";
 
 export interface ArticleMetaAr {
   slug: string;
@@ -142,6 +142,20 @@ export const ARTICLES_AR: ArticleMetaAr[] = [
     description:
       "المغاربة لا يبحثون عن «Ausbildung» بل عن مهنة في مدينة ألمانية تُوظّف. الطريقة العملية لإيجاد مشغّل يكفل.",
     category: "ألمانيا",
+  },
+  {
+    slug: "immigration-canada-gratuite-verite",
+    title: "«الهجرة إلى كندا مجانًا»: الحقيقة والأرقام الرسمية",
+    description:
+      "الهجرة المجانية إلى كندا غير موجودة. الرسوم الرسمية لـ IRCC، والمال المطلوب في البنك، ولائحة ما لن يطلبه منك موظف حقيقي أبدًا.",
+    category: "كندا",
+  },
+  {
+    slug: "immigration-canada-site-officiel-etapes",
+    title: "الهجرة إلى كندا: الموقع الرسمي والخطوات الحقيقية",
+    description:
+      "عنوان رسمي واحد: canada.ca. خطوات الدخول السريع بالترتيب نفسه الذي تعتمده IRCC — الأهلية، النقطة، الوثائق، الملف، الدعوة.",
+    category: "كندا",
   },
 ];
 
