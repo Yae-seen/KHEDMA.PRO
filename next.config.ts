@@ -47,9 +47,31 @@ const SECURITY_HEADERS = [
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
 ];
 
+// Legacy URLs from the pre-rebuild khedma.pro that Google still crawls (GSC reports
+// them as "Not found (404)"). They carry earned equity — mostly on the Germany
+// pillar — so redirect them permanently onto the closest current page instead of
+// letting it evaporate. Re-check the GSC 404 list before adding or removing rows.
+const LEGACY_REDIRECTS: { source: string; destination: string }[] = [
+  { source: "/fr", destination: "/" },
+  { source: "/ausbildung", destination: "/allemagne" },
+  { source: "/travailler-en-allemagne", destination: "/allemagne" },
+  { source: "/visa-allemagne-maroc", destination: "/blog/visa-allemagne-maroc" },
+  { source: "/chancenkarte", destination: "/blog/chancenkarte-carte-opportunite-guide" },
+  { source: "/chancekarte", destination: "/blog/chancenkarte-carte-opportunite-guide" },
+  {
+    source: "/en/blog/chancenkarte-2026-conditions-marocains",
+    destination: "/blog/chancenkarte-carte-opportunite-guide",
+  },
+  { source: "/en/germany/costs", destination: "/allemagne#budget" },
+  { source: "/ar/germany/costs", destination: "/ar/allemagne" },
+];
+
 const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: SECURITY_HEADERS }];
+  },
+  async redirects() {
+    return LEGACY_REDIRECTS.map((r) => ({ ...r, permanent: true }));
   },
 };
 
