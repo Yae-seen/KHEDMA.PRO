@@ -93,9 +93,12 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "anapec-inscription-espace-candidat",
-    title: "ANAPEC : inscription et espace candidat, le guide clair",
+    // Title carries "connexion" because most of the ANAPEC search demand this page
+    // already ranks for is login-intent (anapec login, anapec se connecter,
+    // inscription anapec login) — GSC, 28 days to 2026-07-30, positions 8.4-11.
+    title: "ANAPEC : inscription, connexion et espace candidat",
     description:
-      "Comment créer votre espace candidat ANAPEC, postuler aux offres et vous connecter — un guide simple, gratuit et sans arnaque pour votre recherche d'emploi.",
+      "Créer votre espace candidat ANAPEC, vous connecter et postuler aux offres : le guide clair, étape par étape. Inscription gratuite, sans arnaque.",
     category: "Emploi",
     publishedAt: "2026-07-16",
     updatedAt: "2026-07-16",
